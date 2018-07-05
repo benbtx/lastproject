@@ -1,0 +1,25 @@
+{
+    "widgetUrl": "widgets/BurstAnalysis",
+    "tmplateUrl": "widgets/BurstAnalysis/Widget.html",
+    "styleUrl": "widgets/BurstAnalysis/css/style.css",
+    "pickPipeTips": "",
+    "baseMapContainerClass": "widgets-basemap",
+    "serviceUrl": {
+        "imageServiceUrl": "pipe"
+    },
+    "identifyParameters": {
+        "tolerance": 3
+    },
+    "simpleMarkerSymbol": {
+        "color": "#ff00ff",
+        "size": 10,
+        "outline": {
+            "color": "#00ff00",
+            "width": 1
+        }
+    },
+    "simpleLineSymbol": {
+        "color": "#00ffff",
+        "width": 3
+    }
+}

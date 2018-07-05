@@ -1,0 +1,106 @@
+.widget-VehicleDriverBaseInfoManagement {
+    height: 100%;  
+    .go{
+        width: 200px;
+    }  
+    .driverinfo-tool {
+        margin: 4px;
+        .btn_search {
+            &:hover {
+                cursor: pointer
+            }
+        }        
+    }
+    .btn{
+        padding: 4px 8px;
+    }
+    .minwidth{
+        width: 150px;   
+        height: 30px;     
+    }
+    .driverinfo {
+        float: left;
+        width: 100%;
+        height: calc(100% - 51px);
+        overflow-y: auto;
+        margin: 4px;
+         .driverinfo-pagecontrol{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            margin-left: 5px;
+                background-color: white;
+        }
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+            table-layout: fixed;
+            tbody {
+                border-top: 1px solid #ddd;
+            }
+            a {
+                cursor: pointer;
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                    overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+
+            td,th{
+                text-align: center;
+                vertical-align:middle; 
+                min-width: 60px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;               
+            }
+            .checkwidth{
+                width: 40px;
+            }
+        }
+    }
+}
+
+.widget-VehicleDriverBaseInfoManagement_addpopup{
+    float: left;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    margin: 5px; 
+    .vehicleImg{
+        width: 100px;
+        height: 100px;
+    }
+    .widget-VehicleDriverBaseInfoManagement_addpopup{
+        margin-top: 5px;
+    }
+    .form-group{
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .col-lg-3{
+        text-align: right !important;
+    } 
+    .must-span{
+        color:red;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .must-width{
+        min-width: 120px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

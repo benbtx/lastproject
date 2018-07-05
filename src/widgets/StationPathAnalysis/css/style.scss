@@ -1,0 +1,21 @@
+.widget-StationPathAnalysis {
+    .time select {
+        display: table-cell;
+        width: 40%;
+    }
+    .timeline {
+        display: inline-block;
+        border: 1px solid #dddddd;
+        width: 40px;
+        position: relative;
+        top: 15px;
+    }
+    .query {
+        margin-top: 15px;
+    }
+}
+
+.widget-detailpanel-jizhanguijifenxi .panel-heading {
+    background-color: #337ab7;
+    color: white;
+}

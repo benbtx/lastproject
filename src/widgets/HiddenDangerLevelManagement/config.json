@@ -1,0 +1,35 @@
+{
+    "widgetUrl": "widgets/HiddenDangerLevelManagement",
+    "tmplateUrl": "widgets/HiddenDangerLevelManagement/Widget.html",
+    "styleUrl": "widgets/HiddenDangerLevelManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getHiddenDangerLevelList": "/level/list",
+    "getHiddenDangerLevelInfo": "/level/info/",
+    "addHiddenDangerLevel": "/level/add",
+    "deleteHiddenDangerLevel": "/level/delete/",
+    "updateHiddenDangerLevel": "/level/update",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "filterOptions": [{
+            "label": "地名 ",
+            "value": "poi",
+            "queryurl": "poi",
+            "layerids": [0, 1, 2, 3],
+            "queryFields": ["TEXT"],
+            "tip": "输入地名"
+        },
+        {
+            "label": "坐标",
+            "value": "coordinate",
+            "tip": "输入以空格隔开的坐标"
+        },
+        {
+            "label": "图幅",
+            "value": "gridid",
+            "queryurl": "grid",
+            "layerids": [0, 1],
+            "queryFields": ["ENAME"],
+            "tip": "输入图幅号"
+        }
+    ]
+}

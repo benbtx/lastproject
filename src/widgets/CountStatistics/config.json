@@ -1,0 +1,15 @@
+{
+    "widgetUrl": "widgets/CountStatistics",
+    "tmplateUrl": "widgets/CountStatistics/Widget.html",
+    "styleUrl": "widgets/CountStatistics/css/style.css",
+    "LayerName": "/exts/TFExtentionSOE/getLayerInfor",
+    "CountstatisticService": "/exts/TFExtentionSOE/statistic",
+    "fieldIntersect": "/exts/TFExtentionSOE/fieldIntersect",
+    "VisibleField": ["SUBTYPE", "DESIGNDEPT", "DATATYPE", "ANTIGRADE", "DISTRICT", "MATERIAL", "OWNERDEPT", "MANAGEDEPT", "VENDER", "MANUFACTURER", "BURY_STYLE", "ASSEMBLER"],
+    "shieldField": ["OBJECTID"],
+    "queryAlias": "/exts/TFExtentionSOE/queryAlias",
+    "getuniquevalue": "/exts/TFExtentionSOE/getFieldUniqueValue",
+    "uniquemaxnum": 20,
+    "barcolor": "#337AB7"
+
+}

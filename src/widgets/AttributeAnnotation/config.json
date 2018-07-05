@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/AttributeAnnotation",
+    "tmplateUrl": "widgets/AttributeAnnotation/Widget.html",
+    "styleUrl": "widgets/AttributeAnnotation/css/style.scss",
+    "hello": "Hello ",
+    "tolerance": 3,
+    "layerfield": "/exts/TFExtentionSOE/queryAlias",
+    "fieldconfig": "/webapp/fieldconfig",
+    "fieldconfigset": "/webapp/fieldconfig/set",
+    "color": "#00ffff",
+    "identifycursor": "url(./widgets/AttributeAnnotation/images/identify1.cur),auto",
+    "zoomscale": 200,
+    "exceptAttribute": ["OBJECTID","MANAGEDEPT_CODE"]
+}

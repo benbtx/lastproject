@@ -1,0 +1,5 @@
+{
+    "widgetUrl":"widgets/LoadMask",
+    "tmplateUrl":"widgets/LoadMask/Widget.html",
+    "styleUrl":"widgets/LoadMask/css/style.css"
+}

@@ -1,0 +1,19 @@
+.widget-workspace{
+    .go{
+        width: 135px;  
+    }
+    .bookmarkname {
+        z-index: auto !important
+    }
+    .currpage,.goto{ 
+         z-index: auto !important
+    }
+    td{
+        vertical-align:middle; 
+        text-align:center;
+    }
+    .pageturning{
+          z-index: auto !important
+    }
+  
+}

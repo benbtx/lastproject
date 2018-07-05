@@ -1,0 +1,116 @@
+.widget-fullpanel {
+    // * {
+    //     margin: 0px;
+    //     padding: 0px;
+    //     list-style: none;
+    // }
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    z-index: 3;
+    /* 头部 */
+    .headbar {
+        // background-color: #004c99;
+        background-color: #337ab7; // border-top-width: 3px;
+        // border-top-color: #CCC;
+        border-top-style: solid;
+        height: 54px;
+    }
+    /* 功能性样式 */
+    .widget-fullpanel-con {
+        position: relative; // top: 10px;
+        // margin: 5px;
+        // height: 100%;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: calc(100% - 55px);
+    }
+    .widget-fullpanel-con-div {
+        height: 100%;
+    }
+    .widget-fullpanel-tit-tool {
+        // display: inline-block;
+        //width: 20%;
+        line-height: 30px;
+        // margin-right: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+        float: right!important;
+        color: white;
+        z-index: 2;
+        position: absolute;
+        right: 10px;
+        .closefullpanel {
+            width: 20px;
+        }
+    }
+    .widget-fullpanel-tit {
+        height: 50px !important;
+        // width: 95%;
+        width: 100%;
+        position: relative; // background-color: #004c99;
+        background-color: #337ab7
+    }
+    .widget-fullpanel-tit-ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        left: -1px;
+        bottom: 0px;
+    }
+    .widget-fullpanel-tit-li {
+        float: left; // width: 58px;
+        height: 26px !important; // margin-left: 6px;
+        // margin-right: 4px;
+        margin-left: 1px;
+        margin-right: 0px;
+        line-height: 30px;
+        text-align: center;
+        overflow: hidden;
+        background-color: #bfbfbf;
+        border: 1px solid #eee;
+        margin-bottom: -1px;
+        cursor: pointer;
+    }
+    .widget-fullpanel-tit-li.select {
+        background-color: #fff;
+        border-bottom-color: #fff !important;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        padding: 0px;
+        font-weight: bold;
+        border-bottom-width: 0px !important;
+    }
+    .widget-fullpanel-tit-li a {
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .widget-fullpanel-tit-li a:visited {
+        text-decoration: none;
+        color: #000
+    }
+    .widget-fullpanel-tit-li a:hover {
+        color: #f90;
+        text-decoration: none;
+    }
+    .btn {
+        padding-right: 4px;
+    }
+    .fullpanel_fold,
+    .fullpanel_close {
+        border: 0px; // background-color: #004c99;
+        background-color: #337ab7;
+        cursor: pointer;
+        padding: 10px 2px;
+        font-size: 18px;
+    }
+}

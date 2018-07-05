@@ -1,0 +1,18 @@
+{
+    "widgetUrl": "widgets/GasStopAnalysis",
+    "tmplateUrl": "widgets/GasStopAnalysis/Widget.html",
+    "styleUrl": "widgets/GasStopAnalysis/css/style.css",
+    "pickPipeTips": "",
+    "baseMapContainerClass": "widgets-basemap",
+    "identifyParameters": {
+        "tolerance": 3
+    },
+    "simpleMarkerSymbol":{
+        "color":"#00ffff",
+        "size":10,
+        "outline":{
+            "color":"#ff00ff",
+            "width":1
+        }
+    }
+}

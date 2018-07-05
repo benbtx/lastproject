@@ -1,0 +1,48 @@
+<div class="widget-fullpanel">
+    <div class="headbar">
+        <div class="widget-fullpanel-tit-tool">
+            <button type="button" class="tools fullpanel_fold">
+                <span class="glyphicon glyphicon-chevron-down "></span>
+                
+            </button>
+
+            <button type="button" class="tools fullpanel_close">
+                 <!-- <span class="glyphicon glyphicon-remove-circle " aria-hidden="true"></span> -->
+                 <img class="pull-right closefullpanel" src="./widgets/Popup/images/close.png"></img>
+            </button>
+
+   
+            <!-- <button type="button" class="btn btn-default btn-xs widget-fullpanel-unfold-panel">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                    展开
+                </button>
+            <button type="button" class="btn btn-default btn-xs widget-fullpanel-fold-panel">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    折叠
+                </button>    -->
+            <!--<button type="button" class="btn btn-danger btn-xs text-danger widget-fullpanel-close-panel">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    关闭
+                </button>-->
+
+        </div>
+        <div id='widget-fullpanel-tit' class='widget-fullpanel-tit'>
+            <ul class='widget-fullpanel-tit-ul'>
+            </ul>
+        </div>
+    </div>
+    <div id="widget-fullpanel-con" class="widget-fullpanel-con">
+    </div>
+</div>
+$$
+<li class='widget-fullpanel-tit-li <%= uniqClass %> select'>
+    <a>
+         <span class="li_tit" data-text='<%- title %>' > <%- title %>  </span>
+            <span class="glyphicon glyphicon-remove <%= uniqClass %>"></span>
+    </a>
+</li>
+$$
+<div class='widget-fullpanel-con-div <%=uniqClass %> select'>
+    <!--公告
+    <%=uniqClass %>-->
+</div>

@@ -1,0 +1,15 @@
+{
+    "widgetUrl": "widgets/PlanDailyReport",
+    "tmplateUrl": "widgets/PlanDailyReport/Widget.html",
+    "styleUrl": "widgets/PlanDailyReport/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getUserList": "/user/list",
+    "getDailyReport": "/Plan/Daily_Plan_Statics",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "lines":["6","9","10","11","12"],
+    "rangeall":"00",
+    "maxsize":100000
+}

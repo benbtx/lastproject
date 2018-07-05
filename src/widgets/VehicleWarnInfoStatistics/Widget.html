@@ -1,0 +1,165 @@
+<div class="widget-VehicleWarnInfoStatistics ">
+        <div class="warninfo-search">
+            <table class="table table-bordered  table-striped">
+                 <tr>
+                    <th>  
+                        <div class="form-inline">
+                            <div class="form-group company_serch" style="display: none;">
+                                公司
+                                <select class="input-sm form-control company minwidth" ></select>
+                            </div>
+                            <div class="form-group department_btn groupleft">
+                                部门
+                                <select class="input-sm form-control department minwidth"></select>                                   
+                            </div>
+                            <div class="form-group groupleft">
+                                车牌号
+                                <select class="input-sm form-control plate_number minwidth"></select>
+                            </div>
+                            <div class="form-group groupleft">
+                                报警类型
+                                <select class="input-sm form-control alarm_type_id minwidth"></select>
+                            </div>
+                             <div class="form-group groupleft">
+                                报警日期
+                                <input type="text" class="form-control start_date minwidth" placeholder="年-月-日">       
+                                ~
+                                <input type="text" class="form-control end_date minwidth"  placeholder="年-月-日"> 
+                            </div>
+
+                            <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search" style="margin-left: 10px;" >
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                            </button>
+                             <button id="btn_print" type="button" class="btn btn-default btn-success btn_print">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印
+                            </button>
+                             <a id="exportlinkwarninfo"  style="display:none;"></a>
+                             <button id="btn_export" type="button" class="btn btn-default btn_export">
+                                <span class="glyphicon glyphicon-export" aria-hidden="true"></span>导出
+                            </button>                            
+                        </div>                                
+                    </th>
+                </tr>  
+            </table>          
+        </div>
+                    <div class="warninfo-list" id="warninfo-list">
+                        <div class="reportname" style="text-align: center;font-weight: 600;">车辆报警统计表</div>
+                        <table style="width: 100%;" class="table table-bordered  table-striped"  border="1" cellspacing="0" cellpadding="0">
+                            <caption class="warninfocaption"  style="text-align: left;font-weight:600;"><div class="cxgs" style="float:left;">公司：</div><div class='cxqj' style="float:right;">查询日期：</div></caption>                          
+                            <head>
+                                <tr>
+                                    <th>部门名称</th>
+                                    <th>报警总数(个)</th>
+                                    <th>车牌号</th>
+                                    <th>报警类型</th>
+                                    <th>报警数(个)</th>
+                                    <th>车辆报警数合计(个)</th>
+                                </tr>
+                            </head>
+                            <tbody class="warninfostatistcslist">                                
+                                
+                            </tbody>
+                        </table>
+                       <label class="shenhe" style="float: left;text-align: left;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label>  
+                        <label class="zhibiao" style="float: left;text-align: center;margin-left: calc(40%);vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label>  
+                        <label class="shijian" style="float: right;text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label>
+                    </div>
+                
+
+            <script language="javascript" type="text/javascript">  
+                function mothedexport(){
+                    exportExcel("warninfo-list","车辆报警统计表","exportlinkwarninfo");
+                }
+            </script>
+            <script src="../../vendor/extentjs/exportexcel.js"></script>
+</div>
+$$
+<table class="table table-bordered  table-striped"  border="1" cellspacing="0" cellpadding="0">
+    <tr>
+                    <th style="text-align:left;">
+                        <div class="form-inline">
+                            <div class="form-group company_serch groupleft" style="margin-left: 38px;">
+                                 公司
+                                <select class="input-sm form-control company minwidth" ></select>
+                            </div>
+                            <div class="form-group department_btn groupleft" style="margin-left: 38px;">
+                                部门
+                                <select class="input-sm form-control department minwidth"></select>                                   
+                            </div>
+                            <div class="form-group groupleft">
+                                车牌号
+                                <select class="input-sm form-control plate_number minwidth"></select>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                 <tr>
+                    <th style="text-align:left;">  
+                        <div class="form-inline">                            
+                            <div class="form-group groupleft">
+                                报警类型
+                                <select class="input-sm form-control alarm_type_id minwidth"></select>
+                            </div>
+                             <div class="form-group groupleft">
+                                报警日期
+                                <input type="text" class="form-control start_date minwidth" placeholder="年-月-日">       
+                                ~
+                                <input type="text" class="form-control end_date minwidth"  placeholder="年-月-日"> 
+                            </div>
+
+                            <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search" style="margin-left: 10px;" >
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                            </button>
+                             <button id="btn_print" type="button" class="btn btn-default btn-success btn_print">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印
+                            </button>
+                             <a id="exportlinkwarninfo"  style="display:none;"></a>
+                             <button id="btn_export" type="button" class="btn btn-default btn_export">
+                                <span class="glyphicon glyphicon-export" aria-hidden="true"></span>导出
+                            </button>                            
+                        </div>                                
+                    </th>
+                </tr>
+                  
+            </table> 
+$$
+<table class="table table-bordered  table-striped" border="1" cellspacing="0" cellpadding="0">
+                 <tr>
+                    <th>  
+                        <div class="form-inline">                           
+                            <div class="form-group department_btn">
+                                部门
+                                <select class="input-sm form-control department minwidth"></select>                                   
+                            </div>
+                            <div class="form-group groupleft">
+                                车牌号
+                                <select class="input-sm form-control plate_number minwidth"></select>
+                            </div>
+                            <div class="form-group groupleft">
+                                报警类型
+                                <select class="input-sm form-control alarm_type_id minwidth"></select>
+                            </div>
+                             <div class="form-group groupleft">
+                                报警日期
+                                <input type="text" class="form-control start_date minwidth" placeholder="年-月-日">       
+                                ~
+                                <input type="text" class="form-control end_date minwidth"  placeholder="年-月-日"> 
+                            </div>
+
+                            <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search" style="margin-left: 10px;" >
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                            </button>
+                             <button id="btn_print" type="button" class="btn btn-default btn-success btn_print">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印
+                            </button>
+                             <a id="exportlinkwarninfo"  style="display:none;"></a>
+                             <button id="btn_export" type="button" class="btn btn-default btn_export">
+                                <span class="glyphicon glyphicon-export" aria-hidden="true"></span>导出
+                            </button>                            
+                        </div>                                
+                    </th>
+                </tr>  
+            </table> 
+    
+
+

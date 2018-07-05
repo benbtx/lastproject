@@ -1,0 +1,30 @@
+<div class="CountStatisticschart">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <% for (var n = 0, m =layers.length;n < m; n++) {%>
+            <% if(n === 0){%>
+                <li class="active">
+                    <a href="#<%=layershref[n] %>" data-toggle="tab">
+                        <%= layers[n] %>
+                    </a>
+                </li>
+                <%}else {%>
+                    <li>
+                        <a href="#<%=layershref[n] %>" data-toggle="tab">
+                            <%= layers[n] %>
+                        </a>
+                    </li>
+             <%}%>
+        <% } %>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <% for (var n = 0, m =layershref.length;n < m; n++) {%>
+            <% if(n === 0){%>
+                <div class="tab-pane fade active in" id="<%=layershref[n] %>">
+                </div>
+                <%}else {%>
+                    <div class="tab-pane fade" id="<%=layershref[n] %>">
+                    </div>
+            <%}%>
+        <% } %>
+    </div>
+</div>

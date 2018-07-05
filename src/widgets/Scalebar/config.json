@@ -1,0 +1,5 @@
+{
+    "widgetUrl":"widgets/Scalebar",
+    "tmplateUrl":"widgets/Scalebar/Widget.html",
+    "styleUrl":"widgets/Scalebar/css/style.css"
+}

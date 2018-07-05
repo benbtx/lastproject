@@ -1,0 +1,111 @@
+<div class="wideget-LengthStatistics">
+    <form role="form" onsubmit="return false;">
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    统计字段
+                    <span class="glyphicon glyphicon-question-sign" title="设定需要查询的字段。左侧为不同的图层，右侧为该图层的属性。可多选。"></span>
+                </legend>
+                <div class="foldable">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td style="width:50%">
+                                <ul class="list-group length_layers">
+                                    <% layers.forEach(function(item) { %>
+                                        <li class="list-group-item">
+                                            <div class="checkbox check">
+                                                <label>
+                                                    <input type="checkbox" name="<%= item.layerid %>"  layerdata="<%= item.layerdbname %>" value="<%= item.layername %>">
+                                                        <%= item.layername %>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <% }); %>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-group length_attribution"></ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+        <fieldset>
+            <legend>
+                过滤条件(可选)
+                <span class="glyphicon glyphicon-question-sign" title="设定更多的过滤条件。包含 SQL 过滤和 查询范围 过滤。"></span>
+            </legend>
+            <div style="display:none" class="foldable">
+
+
+
+
+
+
+                    <div class="form-group">
+                        <fieldset>
+                            图层名称
+                            <select class="input-sm form-control lengthstatisticlayers"> 
+                            
+                            </select>
+                        </fieldset>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <fieldset>
+                            图层字段
+                            <ul class="list-group lengthstatisticfields"></ul>
+                        </fieldset>
+                    </div>
+                
+
+                    <div class="form-group">
+                        <fieldset>
+                            构造查询语句
+                        
+                            <table class="table table-bordered" style=" margin-bottom:0px !important">
+                                <tr>
+                                    <td class="lengthstatisticleftoperate">
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value="=">=</button>
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value="%">%</button>
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value="<">&lt</button>
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value=">">&gt</button>
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value="Like">Like</button>
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value="Not">Not</button>
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value="And">And</button>
+                                        <button type="button" class="btn btn-sm btn-default lengthstatisticoperator" value="Or">Or</button>
+                                    </td>
+                                    <td class="uniquevaluelist">
+                                        <button type="button" class="btn btn-sm btn-default btn-block lengthstatisticgetuniquevalue">获取唯一值</button>
+                                        <ul class="list-group lengthstatisticuniquevalue"></ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </div>
+                    
+
+
+
+
+
+                <div class="form-group">
+                    sql条件
+                    <textarea class="form-control length_filter" rows="3" style="max-width:100%" placeholder="OBJECID &gt; 0"></textarea>
+                    <button type="button" class="btn btn-sm btn-danger length_clear">清除</button>
+                </div>
+                <div class="form-group">
+                    几何条件
+                    <button type="button" class="btn btn-sm btn-default length_range">绘制范围</button>
+                    <button type="button" class="btn btn-sm btn-danger length_clearRange">清空范围</button>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <button type="button" class="btn btn-sm btn-primary btn-block start-analyse LengthStatistics " data-analyze-text="统计中...">统计</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,454 @@
+.widget-XJHistoryQuery {
+    margin: 0 -5px;
+    height: 100%;
+    .querycontainer {
+        height: 100%;
+        .queryresultcontainer {
+            height: calc(100% - 120px);
+            .queryResult {
+                height: 100%;
+            }
+        }
+        .query {
+            margin-top: 15px;
+        }
+    }
+}
+
+.widget-detailpanel-xunjianlishichaxun .panel-heading {
+    background-color: #337ab7;
+    color: white;
+}
+
+
+/*结果表样式*/
+
+.XJHistoryQuery-result {
+    height: 100%;
+    .navigation {
+        button.backup {
+            position: absolute;
+            right: 20px;
+            top: 45px;
+        }
+    }
+    .tab-content {
+        height: calc(100% - 41px);
+        #historyhidedanger {
+            height: 100%;
+            .selector {
+                height: 45px;
+                padding: 10px 4px 4px;
+                label {
+                    margin-left: 5px;
+                    font-weight: lighter;
+                    vertical-align: middle;
+                    margin-bottom: 0;
+                }
+                select {
+                    height: 25px;
+                    font-size: 10px;
+                    padding: 3px 6px;
+                    width: 100px;
+                }
+            }
+            .hidedangerlist {
+                height: calc(100% - 45px);
+                border: 1px solid #dddddd;
+                padding: 0px 3px;
+                overflow-y: auto;
+                .item {
+                    border-bottom: 1px solid #dddddd;
+                    display: inline-flex;
+                    padding: 5px 3px;
+                    div.img {
+                        width: 50px;
+                        height: 50px;
+                        display: inline-flex;
+                        border: 1px solid #dddddd;
+                        cursor: pointer;
+                        ul.findimg {
+                            width: 50px;
+                            padding: 0;
+                            list-style: none;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                            overflow: hidden;
+                        }
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                    div.content {
+                        cursor: pointer;
+                        display: inline-block;
+                        width: 220px;
+                        div.head {
+                            height: 30px;
+                            font-weight: bold;
+                            span.right {
+                                float: right;
+                            }
+                        }
+                        div.foot {
+                            height: 20px;
+                            span.right {
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+            .hidedangerlist.department {
+                height: 100%;
+            }
+            .hidedangerlist.company {
+                height: calc(100% - 90px);
+            }
+            .pagination {
+                width: 100%;
+                height: 45px;
+                padding: 10px 0;
+                margin: 0;
+                .page {
+                    margin-left: 0;
+                }
+                .go {
+                    width: 120px;
+                    float: right;
+                    * {
+                        z-index: auto;
+                    }
+                }
+            }
+        }
+        #historyxunjianlayer {
+            height: 290px;
+            li {
+                height: 30px;
+                label {
+                    font-weight: initial;
+                }
+                input {
+                    cursor: pointer;
+                }
+                div.pipe-layers-control {
+                    display: inline-block;
+                    position: absolute;
+                    right: 40px;
+                    input.todaylayer {
+                        margin-left: 50px;
+                        cursor: pointer;
+                    }
+                    input.untiltodaylayer {
+                        margin-left: 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        #historyworker {
+            height: 100%;
+            .selector {
+                padding: 10px 4px 4px;
+                label {
+                    margin-left: 5px;
+                    font-weight: lighter;
+                    vertical-align: middle;
+                    margin-bottom: 0;
+                }
+                select {
+                    height: 25px;
+                    font-size: 10px;
+                    padding: 3px 6px;
+                    width: 100px;
+                }
+                select.company {
+                    width: 240px;
+                }
+            }
+            /* 巡检人员列表样式*/
+            .workerlist {
+                height: calc(100% - 45px);
+                border: 1px solid #dddddd;
+                padding: 0px 3px;
+                overflow-y: auto;
+                .item {
+                    border-bottom: 1px solid #dddddd;
+                    .maininfo {
+                        div.img {
+                            width: 55px;
+                            height: 55px;
+                            display: inline-flex;
+                            border: 1px solid #dddddd;
+                            padding: 2px;
+                            margin-top: 3px;
+                            cursor: pointer;
+                            position: relative;
+                            img.avatar {
+                                border-radius: 50px;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        div.content {
+                            cursor: pointer;
+                            display: inline-block;
+                            width: 218px;
+                            div.head {
+                                height: 30px;
+                                font-weight: bold;
+                                span.right {
+                                    float: right;
+                                }
+                                span.title {
+                                    width: 65px;
+                                    display: inline-block;
+                                    a {
+                                        color: #9e9898;
+                                    }
+                                    a[userstate="workNormal"] {
+                                        color: #337ab7;
+                                    }
+                                }
+                                span.tool {
+                                    margin-left: -6px;
+                                    a.thumbnail {
+                                        display: inline-block;
+                                        padding: 0;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                            div.foot {
+                                height: 20px;
+                                span.right {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                    .relativeinfo {
+                        border-top: 1px solid #dddddd;
+                        overflow-y: auto;
+                        #workerlog {
+                            p {
+                                padding: 0px 25px;
+                            }
+                            span.text {
+                                margin-left: 50px;
+                            }
+                            span.time {
+                                float: right;
+                            }
+                        }
+                        #workercheckpoint {
+                            padding: 5px 5px 0px;
+                            div.checkplan {
+                                border-bottom: 1px solid #dddddd;
+                                height: 25px;
+                                div.progress {
+                                    width: 100px;
+                                    display: inline-flex;
+                                    margin-bottom: 0;
+                                    float: right;
+                                    height: 20px;
+                                    margin-bottom: 0;
+                                    .progress-bar {
+                                        color: #337ab7;
+                                    }
+                                }
+                            }
+                            div.checkpoints {
+                                padding: 0px;
+                                p.checkpointitem {
+                                    padding-left: 30px;
+                                    span.checkpointname {
+                                        display: inline-block;
+                                        width: 120px;
+                                    }
+                                    span.checktime {
+                                        float: right;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        #workerpath {
+                            img {
+                                cursor: pointer;
+                            }
+                            span.pathname {
+                                margin-left: 30px;
+                            }
+                            span.timespan {
+                                /* float: right;*/
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+                }
+                /*人员状态样式*/
+                div.item[userstate="noWork"] {
+                    img.avatar[oraginal="no"] {
+                        opacity: 0.4;
+                    }
+                }
+                div.item[userstate="offWork"] {
+                    img.avatar[oraginal="no"] {
+                        opacity: 0.4;
+                    }
+                }
+                div.item[userstate="workNormal"] {
+                    div.avatar-state {
+                        background: url("img/onWorkState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 21px;
+                        top: 21px;
+                    }
+                }
+                div.item[userstate="workNetError"] {
+                    div.avatar-state {
+                        background: url("img/netErrorState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 21px;
+                        top: 21px;
+                    }
+                }
+                div.item[userstate="workNoGps"] {
+                    div.avatar-state {
+                        background: url("img/workNoGps.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 21px;
+                        top: 21px;
+                    }
+                }
+                div.item[userstate="workGpsError"] {
+                    div.avatar-state {
+                        background: url("img/gpsErrorState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 21px;
+                        top: 21px;
+                    }
+                }
+                div.item[userstate="offWork"] {
+                    div.avatar-state {
+                        background: url("img/offWorkState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 21px;
+                        top: 21px;
+                    }
+                }
+            }
+            .workerlist.department {
+                height: 100%;
+            }
+            .workerlist.company {
+                height: calc(100% - 115px);
+            }
+            .pagination {
+                width: 100%;
+                height: 45px;
+                padding: 10px 0;
+                margin: 0;
+                .page {
+                    margin-left: 0;
+                }
+                .go {
+                    width: 120px;
+                    float: right;
+                    * {
+                        z-index: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widget-XJHistoryQuery-pictureshow {
+    img {
+        height: 400px!important;
+    }
+}
+
+
+/*隐患详情样式*/
+
+.historyhidedangerdetail {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    font-size: 15px;
+    .detailinfo {
+        font-size: 17px;
+        color: black;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-left-width: 2px;
+        border-left-color: #337AB7;
+        border-left-style: solid;
+        padding-left: 10px;
+    }
+    .yhxx {
+        border: 0px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: gray;
+        tr {
+            height: 30px;
+            td {
+                border: 0px;
+                padding: 4px;
+                .picture-search {
+                    // width: 100%;
+                    width: 180px;
+                    height: 135px;
+                    overflow-y: scroll;
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin-bottom: 0;
+                    }
+                    img {
+                        width: 170px;
+                        height: 170px;
+                    }
+                }
+                audio.one {
+                    height: 15px;
+                    margin-bottom: -10px;
+                }
+                .yy {
+                    height: 40px;
+                    overflow-y: scroll;
+                    /* display: inline-block; */
+                    width: 350px;
+                }
+                .bz {
+                    height: 30px;
+                    overflow-y: scroll;
+                    /* display: inline-block; */
+                    width: 350px; // border:1px solid black
+                }
+            }
+        }
+    }
+}

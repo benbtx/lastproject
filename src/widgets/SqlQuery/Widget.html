@@ -1,0 +1,100 @@
+<div class="wideget-sqlquery">
+    <form role="form" onsubmit="return false;">
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    图层名称
+                    <span class="glyphicon glyphicon-question-sign" title="选择将要进行查询的图层。"></span>
+                </legend>
+                <div class="foldable">
+                    <select class="input-sm form-control layers"> 
+                        <% layers.forEach(function(item) { %>
+                        <option value="<%= item.urlindex+':'+item.id %>">
+                                <%= item.mapname %>
+                        </option>
+                        <% }); %>
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    图层字段
+                    <span class="glyphicon glyphicon-question-sign" title="选择将要查询的字段。"></span>
+                </legend>
+                <div class="foldable">
+
+                        <ul class="list-group fields"></ul>
+
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <!--<fieldset>
+                <legend>
+                    运算符
+                    <span class="glyphicon glyphicon-question-sign" title="选择使用的运算符。运算符表示输入值与查询值的关系。"></span>
+                </legend>
+                <div class="foldable">
+                    <select class="input-sm form-control operator"> 
+                        <option></option>
+                        <option>&lt</option>
+                        <option>&gt</option>
+                        <option>=</option>
+                        <option>Like</option>
+                        <option>Not</option>
+                        <option>And</option>
+                        <option>Or</option>
+                    </select>
+                </div>
+            </fieldset>-->
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    构造查询语句
+                    <span class="glyphicon glyphicon-question-sign" title="所选属性对应的唯一值。"></span>
+                </legend>
+                <div class="foldable">
+                    <!--<select class="input-sm form-control uniquevalue"></select>-->
+
+
+                    <table class="table table-bordered" style=" margin-bottom:0px !important">
+                        <tr>
+                            <td class="leftoperate">
+                                <button type="button" class="btn btn-sm btn-default operator" title="等于" value="=">=</button>
+                                <button type="button" class="btn btn-sm btn-default operator" title="模糊匹配" value="like">模糊</button>
+                                <button type="button" class="btn btn-sm btn-default operator" title="大于" value=">">&gt</button>
+                                <button type="button" class="btn btn-sm btn-default operator" title="小于" value="<">&lt</button>
+                                <button type="button" class="btn btn-sm btn-default operator" title="不等于" value="<>">非</button>
+                                <button type="button" class="btn btn-sm btn-default operator" title="并且" value="and">并且</button>
+                                <button type="button" class="btn btn-sm btn-default operator" title="或者" value="or">或者</button>
+                                <button type="button" class="btn btn-sm btn-default operator" title="任意字符串占位符" value="%">%</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-default btn-block getuniquevalue">获取唯一值</button>
+                                <ul class="list-group uniquevalue"></ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    组合查询条件
+                    <span class="glyphicon glyphicon-question-sign" title="组合而成的查询语句。可手动输入查询语句。"></span>
+                </legend>
+                <div class="foldable">
+                    <textarea class="input-sm form-control filter" rows="3" placeholder="OBJECID &gt; 0"></textarea>
+                    <button type="button" class="btn btn-sm btn-danger clear">清除</button>
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-group ">
+            <button type="button" class="btn btn-sm btn-primary btn-block search" data-analyze-text="查询中...">查询</button>
+        </div>
+    </form>
+</div>

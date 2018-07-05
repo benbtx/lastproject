@@ -1,0 +1,30 @@
+<div class="BufferAnalysis">
+    <form role="form" onsubmit="return false;">
+        <fieldset>
+            <legend>
+                分析类型
+                <span class="glyphicon glyphicon-question-sign" title="设定分析的要素类型。"></span>
+            </legend>
+            <div class="foldable">
+                <div class="light-well BufferAnalysis-type">
+                    <span class="BufferAnalysis-type-radio"><input type="radio" class='BufferAnalysisTypeRadio' name="BufferAnalysisTypeRadio" value="point" checked="checked"/>点要素</span>
+                    <span class="BufferAnalysis-type-radio"><input type="radio"  class='BufferAnalysisTypeRadio' name="BufferAnalysisTypeRadio"  value="line"/>线要素</span>
+                    <span class="BufferAnalysis-type-radio"><input type="radio"  class='BufferAnalysisTypeRadio' name="BufferAnalysisTypeRadio"  value="polygon"/>面要素</span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                缓冲距离（米）
+                <span class="glyphicon glyphicon-question-sign" title="输入缓冲距离（单位：m）。"></span>
+            </legend>
+            <div class="foldable">
+                <div class="input-group">
+                    <input type="text" class="input-sm form-control BufferAnalysis-distance">
+                    <span class="input-group-addon">米</span>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <button type="button" class="btn btn-sm btn-primary btn-block BufferAnalysis-bufferBtn " data-analyze-text="分析中...">开始分析</button>
+</div>

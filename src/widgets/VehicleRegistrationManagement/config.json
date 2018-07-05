@@ -1,0 +1,55 @@
+{
+    "widgetUrl": "widgets/VehicleRegistrationManagement",
+    "tmplateUrl": "widgets/VehicleRegistrationManagement/Widget.html",
+    "styleUrl": "widgets/VehicleRegistrationManagement/css/style.css",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList":"/groups/list",
+    "getUserList":"/user/list",
+    "getVehicleTypeList":"/SysConfig/List",
+    "getVehicleList": "/Car/List",   
+    "addVehicle": "/Car/Add",
+    "deleteVehicle": "/Car/Delete/",
+    "updateVehicle": "/Car/Update",   
+    "addVehicleGps": "/CarGPSBind/Add",
+    "updateVehicleGps": "/CarGPSBind/Update",
+    "getVehicleGps":"/CarGPSBind/List",
+    "pagenumber": 0,
+    "pagesize": 50,
+    "currentpage":1,
+    "sbpagenumber": 0,
+    "sbpagesize": 50,
+    "sbcurrentpage":1,
+    "rangeall":"00",
+    "maxsize":100000,
+    "key":"0010",
+    "popupsize":{
+        "height":500,
+        "width":610
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加车辆信息成功！",
+        "delete":"删除车辆信息成功！",
+        "update":"更新车辆信息成功！",
+        "other":"服务端ajax出错，获取数据失败!",
+        "addgps":"注册gps设备信息成功！",
+        "updategps":"修改gps设备信息成功！"
+    },
+    "isdicdata":[
+        {
+            "id":"1",
+            "value":"启用"
+        },{
+            "id":"0",
+            "value":"停用"
+        }
+    ],
+    "isrun":{
+        "1":"启用",
+        "0":"停用"
+    }
+}

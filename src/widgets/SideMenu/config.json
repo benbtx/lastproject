@@ -1,0 +1,11 @@
+{
+    "widgetUrl": "widgets/SideMenu",
+    "tmplateUrl": "widgets/SideMenu/Widget.html",
+    "styleUrl": "widgets/SideMenu/css/style.css",
+    "panelWidgetPath": "widgets/Panel",
+    "fullpanelWidgetPath": "widgets/FullPanel",
+    "halfpanelWidgetPath": "widgets/HalfPanel",
+    "terminalWidgetPath":"widgets/TerminalPanel",
+    "panelWidgetMain": "Widget",
+    "menuListData": null
+}

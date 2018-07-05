@@ -1,0 +1,605 @@
+<div class="widget-VehicleRegistrationManagement ">
+    <div class="form-inline vehicleinfo-tool">
+        <div class="form-group company_serch groupleft" style="display: none;">
+            公司
+            <select class="input-sm form-control company minwidth" ></select>
+        </div>
+         <div class="form-group department_btn groupleft">
+            部门
+            <select class="input-sm form-control department minwidth"></select>                                                                
+         </div>
+         <div class="form-group groupleft">
+            车牌号
+            <input type="text" class="input-sm form-control plate_number minwidth" placeholder="请输入车牌号"> 
+            <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+            </button>           
+         </div>         
+       
+        <div id="toolbar" class="btn-group btn-group toolbar pull-right"> 
+            <button type="button" class="btn btn-default btn-primary btn_add" >
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>登记
+            </button>             
+            <button  type="button" class="btn btn-default btn-primary btn_edit">
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+            </button>
+            <button type="button" class="btn btn-default btn-danger btn_delete">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+            </button>
+            <button type="button" class="btn btn-default btn-primary btn_add_gps" >
+                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>注册GPS
+            </button>
+             <button type="button" class="btn btn-default btn-primary btn_edit_gps" >
+                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>修改GPS
+            </button>
+             <button type="button" class="btn btn-default btn-primary btn_history_gps" >
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>GPS安装历程
+            </button>
+            <button type="button" class="btn btn-default btn-primary btn_refresh toolbar" handletype="refresh">
+                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>刷新
+            </button>            
+        </div>
+    </div>
+    <div class="vehicleinfo">
+        <table class="table table-bordered  table-striped">
+            <tbody>
+                <tr>
+                    <th class="checkwidth"><input type="checkbox" class="select_car_all_list"/></th>
+                    <th title="所属部门">所属部门</th>
+                    <th title="车牌号">车牌号</th>
+                    <th title="限速(km/h)">限速(km/h)</th>
+                    <th title="状态">状态</th>
+                    <th title="使用类型">使用类型</th>
+                    <th title="负责人">负责人</th>
+                    <th title="GPS设备编号">GPS设备编号</th>                                  
+                    <th title="GPS电话号码">GPS电话号码</th>
+                    <th title="GPS安装时间">GPS安装时间</th>
+                    <th title="登记时间">登记时间</th>
+                    <th title="查看详细">查看详细</th>
+                </tr>
+            </tbody>
+            <tbody  class="vehiclelist">            
+                
+            </tbody>
+        </table>
+        <div class="form-inline vehicleinfo-tool vehicleinfo-pagecontrol">
+            <div class="input-group  col-md-3">
+                <label  class="pagecontrol">总共-条，每页</label>
+                <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                        
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                    </select><label>条</label>
+                <label class="selectpagecontrol"> ，当前选中-条</label>
+            </div>            
+            <div class="pull-right input-group btn-toolbar" role="toolbar">
+                <div class=" btn-group btn-group-sm">
+                    <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                    <button type="button" class="btn btn-primary disabled content">第-页共-页</button>
+                    <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                </div>
+                <div class="input-group input-group-sm go">
+                    <input type="number" min=1 value=1 class="form-control currpage">
+                    <span class="input-group-btn "> 
+                        <button class="btn btn-default btn-primary pageturning" type="button">跳转</button>
+                    </span>
+                </div>
+            </div>
+    </div>
+    $$
+    <div class="widget-vehiclemanagement_addpopup">
+        <div class="vehiclemanagement">
+            <div class="form-group">
+                <p class="detailinfo"><span>车辆基本信息</span> </p>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>车牌号</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control plate_number must-width" name="plate_number" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The plate_number is not valid"
+                                required data-bv-notempty-message="不能为空"/>
+                </div>                        
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">使用类型</label>                   
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width zb_car_typeid"></select>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">所属部门</label>                   
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width depid"></select>
+                </div>                         
+            </div> 
+             <div class="form-group">
+                <label class="col-lg-3 control-label">负责人</label>                   
+                <div class="col-lg-8">
+                   <input class="input-sm form-control must-width charge_user"></input>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">上限速度(km/h)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width maxspeed">
+                </div>                         
+            </div>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">车辆照片</label>                   
+                <div class="col-lg-8">
+                   <div id="vehicleImg"></div>
+                </div>                         
+            </div> 
+           
+            <div class="form-group">
+                <label class="col-lg-3 control-label">备注</label>                   
+                <div class="col-lg-8">
+                   <textarea type="text" class="form-control notes" style="margin-bottom: 10px;"/>
+                </div>                         
+            </div>            
+            <label class="col-lg-3 control-label">车辆状态</label>                   
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width state"></select>
+                </div>  
+            <div class="form-group">
+                <p class="detailinfo"><span>行驶证信息</span> </p>
+            </div>          
+            <div class="form-group">
+                <label class="col-lg-3 control-label">车辆类型</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width cartype">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">所有人</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width owner">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">品牌型号</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_brand_model">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">住址</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_address">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">使用性质</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_use_properties">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">车辆识别代码</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_vehicle_code">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">发动机号码</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_engine_number">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">注册日期</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_register_date" readonly="readonly">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">发证日期</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_issue_date" readonly="readonly">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">档案编号</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_file_number">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">核定载人数(人)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_approved_passenger">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">总质量(kg)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_total_mass">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">外廓尺寸</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_toverall_size">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">准牵引总质量(kg)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_traction_mass">
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">检验记录</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_tinspection_record">
+                </div>                         
+            </div> 
+             <div class="form-group">
+                <label class="col-lg-3 control-label">行驶证备注</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width diving_license">
+                </div>                         
+            </div> 
+
+            <div class="form-group">
+                <p class="detailinfo"><span>GPS安装信息</span> </p>
+            </div>
+            <div class="form-group">  
+                <label class="control-label addgps" style="float: right;margin-right: 60px;">新增GPS设备资料</label>                               
+                <div  class="col-lg-8"> <input type="checkbox" class="car_gps_install checkClass"></div>                                   
+            </div> 
+            <div class="addvehiclegps">
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><span class="must-span">*</span><label>GPS设备编号</label></div> 
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_code" disabled>
+                    </div>                         
+                </div> 
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS设备型号</label>                   
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_model" disabled>
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS电话号码</label>                   
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_phone" disabled>
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><span class="must-span">*</span><label>安装时间</label></div>                 
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width install_time" placeholder="年-月-日" readonly="readonly" disabled>
+                    </div>                         
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../vendor/extentjs/extentImgUpload.js"></script>
+    $$
+    <div class="widget-vehiclemanagement_addpopup">
+        <div class="vehiclemanagement">            
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>车牌号</label></div>                    
+                <div class="col-lg-8">
+                    <select class="input-sm form-control must-width plate_number"></select>                   
+                </div>                        
+            </div>             
+            <div class="addvehiclegps">
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><span class="must-span">*</span><label>GPS设备编号</label></div> 
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_code">
+                    </div>                         
+                </div> 
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS设备型号</label>                   
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control must-width gps_device_model">
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS电话号码</label>                   
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control must-width gps_device_phone">
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><span class="must-span">*</span><label>安装时间</label></div>                 
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control must-width install_time" readonly="readonly">
+                    </div>                         
+                </div>
+            </div>
+        </div>
+    </div>   
+    $$
+    <div class="widget-vehiclemanagement_addpopup">
+        <div class="vehiclemanagement">            
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><label>车牌号</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control must-width plate_number" disabled="true">                   
+                </div>                        
+            </div>             
+            <div class="addvehiclegps">
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><span class="must-span">*</span><label>GPS设备编号</label></div> 
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_code">
+                    </div>                         
+                </div> 
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS设备型号</label>                   
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control must-width gps_device_model">
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS电话号码</label>                   
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control must-width gps_device_phone">
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><span class="must-span">*</span><label>安装时间</label></div>                 
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control must-width install_time" readonly="readonly">
+                    </div>                         
+                </div>
+            </div>
+        </div>
+    </div>   
+    $$
+    <div class="widget-vehiclegps-history">
+            <div class=" btn-group btn-group-sm toolbar ">                
+                <div class="form-inline" style="float: left;"> 
+                    <div class="form-group">
+                        <label>车牌号</label>                           
+                    </div>
+                    <div class="form-group">                        
+                        <select class="input-sm form-control plate_number must-width"></select>                           
+                    </div>
+                    <button type="button" class="btn btn-default  btn-primary btn_search" >
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                    </button>
+                                         
+                </div>                
+            </div>
+        <div class=" halfpaneltable vehiclegpstlist-table">                    
+                <table class="table table-bordered  table-striped ">
+                        <tbody class="vehiclegpstlist-title">
+                            <tr>
+                                <th class="checkwidth" title="序号">序号</th>
+                                <th title="GPS设备编号">GPS设备编号</th> 
+                                <th title="GPS设备型号">GPS设备型号</th>                                 
+                                <th title="GPS电话号码">GPS电话号码</th>
+                                <th title="GPS安装时间">GPS安装时间</th>                              
+                            </tr>
+                        </tbody>
+                        <tbody class="vehiclegpstlist">
+                        
+                        </tbody>
+                </table>                  
+        </div>
+        
+        <div class="vehiclegpstlist-pagecontrol">
+            <label class="pagecontrol">
+                总共-条
+            </label>   
+            <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                        
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                </select><label>条</label>        
+             <div class="pull-right input-group btn-toolbar " role="toolbar">
+            
+                        <div class=" btn-group btn-group-sm">
+                                <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                                <button type="button" class="btn btn-primary disabled pagecontent">第-页共-页</button>
+                                <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                        </div>
+                        <div class="input-group input-group-sm go">
+                            <input type="number" min=1 value=1 class="form-control currpage">
+                            <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                            </span>
+                        </div>
+            </div>
+        </div>
+    </div>   
+    $$
+     <div class="widget-vehiclemanagement_addpopup">
+        <div class="vehiclemanagement">
+            <div class="form-group">
+                <p class="detailinfo"><span>车辆基本信息</span> </p>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><label>车牌号</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control plate_number must-width" disabled='true' name="plate_number" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The plate_number is not valid"
+                                required data-bv-notempty-message="不能为空"/>
+                </div>                        
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">使用类型</label>                   
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width zb_car_typeid" disabled='true'></select>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">所属部门</label>                   
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width depid" disabled='true'></select>
+                </div>                         
+            </div> 
+             <div class="form-group">
+                <label class="col-lg-3 control-label">负责人</label>                   
+                <div class="col-lg-8">
+                   <input class="input-sm form-control must-width charge_user" disabled='true'></input>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">上限速度(km/h)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width maxspeed" disabled='true'>
+                </div>                         
+            </div>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">车辆照片</label>                   
+                <div class="col-lg-8">
+                   <div id="vehicleImg"></div>
+                </div>                         
+            </div> 
+           
+            <div class="form-group">
+                <label class="col-lg-3 control-label">备注</label>                   
+                <div class="col-lg-8">
+                   <textarea type="text" class="form-control notes" style="margin-bottom: 10px;" disabled='true'/>
+                </div>                         
+            </div>            
+            <label class="col-lg-3 control-label">车辆状态</label>                   
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width state" disabled='true'></select>
+                </div>  
+            <div class="form-group">
+                <p class="detailinfo"><span>行驶证信息</span> </p>
+            </div>          
+            <div class="form-group">
+                <label class="col-lg-3 control-label">车辆类型</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width cartype" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">所有人</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width owner" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">品牌型号</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_brand_model" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">住址</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_address" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">使用性质</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_use_properties" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">车辆识别代码</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_vehicle_code" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">发动机号码</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_engine_number" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">注册日期</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_register_date" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">发证日期</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width zb_issue_date" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">档案编号</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_file_number" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">核定载人数(人)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_approved_passenger" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">总质量(kg)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_total_mass" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">外廓尺寸</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_toverall_size" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">准牵引总质量(kg)</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_traction_mass" disabled='true'>
+                </div>                         
+            </div> 
+            <div class="form-group">
+                <label class="col-lg-3 control-label">检验记录</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width fb_tinspection_record" disabled='true'>
+                </div>                         
+            </div> 
+             <div class="form-group">
+                <label class="col-lg-3 control-label">行驶证备注</label>                   
+                <div class="col-lg-8">
+                   <input type="text" class="form-control must-width diving_license" disabled='true'>
+                </div>                         
+            </div> 
+
+            <div class="form-group">
+                <p class="detailinfo"><span>GPS安装信息</span> </p>
+            </div>            
+            <div class="addvehiclegps">
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><label>GPS设备编号</label></div> 
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_code" disabled>
+                    </div>                         
+                </div> 
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS设备型号</label>                   
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_model" disabled>
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">GPS电话号码</label>                   
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width gps_device_phone" disabled>
+                    </div>                         
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 control-label"><label>安装时间</label></div>                 
+                    <div class="col-lg-8">
+                    <input type="text" class="form-control must-width install_time" readonly="readonly" disabled>
+                    </div>                         
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../vendor/extentjs/extentImgUpload.js"></script>
+    $$
+</div>
+
+

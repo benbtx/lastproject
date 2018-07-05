@@ -1,0 +1,68 @@
+{
+    "templates": [
+        {
+            "id": "DefaultA4L",
+            "name": "A4横向(29.7x21)(cm)",
+            "width": 268.035,
+            "height": 171.583
+        },
+        {
+            "id": "DefaultA4P",
+            "name": "A4纵向(21×29.7)(cm)",
+            "width": 186.409,
+            "height": 229.585
+        },
+        {
+            "id": "DefaultA3L",
+            "name": "A3横向(42×29.7)(cm)",
+            "width": 381.453,
+            "height": 244.187
+        },
+        {
+            "id": "DefaultA3P",
+            "name": "A3纵向(29.7×42)(cm)",
+            "width": 263.652 ,
+            "height": 324.72
+        },
+        {
+            "id": "DefaultA2L",
+            "name": "A2横向(59.4×42)(cm)",
+            "width": 539.43,
+            "height": 345.316
+        },
+        {
+            "id": "DefaultA2P",
+            "name": "A2纵向(42×59.4)(cm)",
+            "width": 372.842 ,
+            "height": 459.2
+        },
+        {
+            "id": "DefaultA1L",
+            "name": "A1横向(84.1x59.4)(cm)",
+            "width": 762.911,
+            "height": 488.376
+        },
+        {
+            "id": "DefaultA1P",
+            "name": "A1纵向(59.4×84.1)(cm)",
+            "width": 527.305 ,
+            "height": 649.44
+        },
+        {
+            "id": "DefaultA0L",
+            "name": "A0横向(118.88x84.1)(cm)",
+            "width": 1080.147,
+            "height": 691.455
+        },
+        {
+            "id": "DefaultA0P",
+            "name": "A0纵向(84.1×118.88)(cm)",
+            "width": 746.571,
+            "height": 919.493 
+        }
+    ],
+    "baselayers": [
+        "terrain",
+        "raster"
+    ]
+}

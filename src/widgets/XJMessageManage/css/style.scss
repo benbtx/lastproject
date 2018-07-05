@@ -1,0 +1,137 @@
+.XJMessageManage {
+    #recieveMessage {
+        div.selcetMessage {
+            height: 20px;
+            margin-top: 0px;
+            input {
+                margin-left: 10px;
+            }
+        }
+        div.message {
+            border: 1px solid #dddddd;
+            height: 200px;
+            overflow-y: auto;
+            thead {
+                display: none;
+            }
+            tr.readed {
+                color: #9c9292;
+            }
+            tr.readed a{
+                color: #9c9292;
+            }
+        }
+        div.selcetMessage {
+            text-align: left;
+            height: 30px;
+            input {
+                position: relative;
+                top: 4px;
+            }
+        }
+        div.handleMessag {
+            margin-top: 10px;
+        }
+    }
+    #sendMessage {
+        div.message {
+            textarea {
+                height: 90px;
+                resize: none;
+            }
+        }
+        fieldset.worker {
+            /*多选下拉框插件，下拉条宽度*/
+            ul.dropdown-menu {
+                width: 290px;
+            }
+        }
+        div.filesUpload {
+            .file-preview {
+                height: 170px;
+                overflow-y: auto;
+                .kv-file-content {
+                    height: 60px;
+                }
+            }
+        }
+        button.sendfiles {
+            margin-top: 20px;
+        }
+       .file-caption-main{
+            z-index: 1;
+        }
+    }
+    #historyMessage {
+        div.message {
+            margin-top: 10px;
+            td,
+            th {
+                text-align: center;
+            }
+            td {
+                cursor: pointer;
+            }
+        }
+        .pagination {
+            margin: 10px 0;
+            div.go {
+                width: 40%;
+                float: right;
+                input {
+                    z-index: auto!important;
+                }
+            }
+            div.page {
+                margin-left: 0;
+            }
+            .goto {
+                z-index: auto !important
+            }
+            .pageturning {
+                z-index: auto !important
+            }
+        }
+    }
+}
+
+#messageDetail {
+    width: 100%;
+    height: 100%;
+    .tab-content {
+        padding: 20px 20px;
+        height: calc(100% - 45px)
+    }
+    span {
+        margin-left: 20px;
+    }
+    textarea {
+        height: 140px;
+        resize: none;
+    }
+    #message-audio {
+        height: 70px;
+        overflow-y: auto;
+    }
+    #message-files {
+        height: 100%;
+        overflow-y: auto;
+        .imgtemplate {
+            width: 100%;
+            height: 100%;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 0;
+            }
+            img {
+                width: 350px;
+                height: 300px;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            margin-left: 20px;
+        }
+    }
+}

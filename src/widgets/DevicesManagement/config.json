@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/DevicesManagement",
+    "tmplateUrl": "widgets/DevicesManagement/Widget.html",
+    "styleUrl": "widgets/DevicesManagement/css/style.css",
+    "mapDiv": "myMap",
+    "getDeviceList": "/device/list",
+    "getDeviceInfo": "/device/info/",
+    "addDevice": "/device/add",
+    "deleteDevice": "/device/delete/",
+    "updateDevice": "/device/update",
+    "getCompanyList": "/Device/Get_Company_List",
+    "pagenumber": 1,
+    "pagesize": 13
+}

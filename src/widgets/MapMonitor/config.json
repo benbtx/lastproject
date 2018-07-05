@@ -1,0 +1,15 @@
+{
+    "widgetUrl": "widgets/MapMonitor",
+    "tmplateUrl": "widgets/MapMonitor/Widget.html",
+    "styleUrl": "widgets/MapMonitor/css/style.css",
+    "gpsinfo": "/webapp/gps",
+    "userinfo": "/webapp/job/users",
+    "getUserList": "/user/list",
+    "getHiddenDangerList": "/Trouble/List",
+    "pagenumber": 1,
+    "pagesize": 10,
+    "MarkPictureSymbol": "./widgets/MapMonitor/images/people.png",
+    "hiddendangerMarkPictureSymbol": "./widgets/MapMonitor/images/point.png",
+    "TextbgSymbol": "./widgets/MapMonitor/images/textbg.png",
+    "refreshtime": 5
+}

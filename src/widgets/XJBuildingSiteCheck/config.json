@@ -1,0 +1,20 @@
+{
+    "widgetUrl": "widgets/XJBuildingSiteCheck",
+    "tmplateUrl": "widgets/XJBuildingSiteCheck/Widget.html",
+    "styleUrl": "widgets/XJBuildingSiteCheck/css/style.scss",
+
+
+    "requestCheckBuildSiteInfo": {
+        "URL_request": "/BuildHandle/List",
+        "MSG_error": "请求需审核的工地信息出错！",
+        "MSG_null": "请求需审核的工地信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize":15
+    },
+    "checkBuildSite": {
+        "URL_request": "/BuildManage/Check",
+        "MSG_error": "审核工地信息出错！",
+        "MSG_success": "审核成功！"
+    }
+
+}

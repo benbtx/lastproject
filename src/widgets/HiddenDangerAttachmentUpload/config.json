@@ -1,0 +1,21 @@
+{
+    "widgetUrl": "widgets/HiddenDangerAttachmentUpload",
+    "tmplateUrl": "widgets/HiddenDangerAttachmentUpload/Widget.html",
+    "styleUrl": "widgets/HiddenDangerAttachmentUpload/css/style.css",
+    "getDeviceList": "/device/list",
+    "getHiddenDangerTypeList": "/troubletype/list",
+    "getUserList": "/user/list",
+    "getHiddenDangerList": "/Trouble/List",
+    "getHiddenDangerInfo": "/Trouble/info/",
+    "handleHiddenDanger": "/Trouble/Handle_Trouble",
+    "getHandle_Picture": "/Trouble/Handle_Picture",
+    "getFiles": "/File/Files",
+    "addHandleRegistration": "/Trouble/Fill_Trouble_Info",
+    "getHandleRegistration": "/Trouble/Fill_Trouble_Info",
+    "pagenumber": 1,
+    "pagesize": 5,
+    "MarkPictureSymbol": "./widgets/HiddenDangerAttachmentUpload/images/point.png",
+    "YclPictureSymbol": "./widgets/HiddenDangerAttachmentUpload/images/point_ycl.png",
+    "TextbgSymbol": "./widgets/HiddenDangerAttachmentUpload/images/textbg.png",
+    "ZanWuTuPian": "./widgets/HiddenDangerAttachmentUpload/images/zanwutupian.png"
+}

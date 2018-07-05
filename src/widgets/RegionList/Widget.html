@@ -1,0 +1,30 @@
+<div class="widgets-region_list no-user-select">
+    <div class="widgets-region_list-list">
+        <div class="accordion">
+            <% data.items.forEach(function(group){ %>
+                <div class="widgets-region_list-item_header">
+                    <%= group.groupname %>
+                </div>
+                <div class="widgets-region_list-item_content">
+                    <table class="widgets-side_menu-table">
+                        <tbody>
+                            <% group.items.forEach(function(item){ %>
+                                <tr class="widgets-region_table_row" data-target=<%=item.xzqcode%>>
+                                    <td class="widgets-region_table_col-2">
+                                        <%=item.name%>
+                                    </td>
+                                    <td class="widgets-region_table_col-3">
+                                        <%= item.value.toFixed(2) + " " + group.unit%>
+                                    </td>
+                                    <td class="widgets-region_table_col-4">
+                                        <a href="javascript:void(0);" class="fire-on" data-target="<%=item.xzqcode%>" data-code="<%=item.code%>">查看</a>
+                                    </td>
+                                </tr>
+                                <%}); %>
+                        </tbody>
+                    </table>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+</div>

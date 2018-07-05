@@ -1,0 +1,55 @@
+.widget-detailpanel {
+    position: absolute; // top: 60px;
+    top: 55%;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    margin-bottom: 0px !important;
+    overflow: hidden;
+    border-radius: 1px;
+    .detailpanel-heading {
+        background-color: #337ab7;
+        padding: 7px 15px;
+        height: 40px;
+        width: 100%;
+        cursor: move;
+        border-radius: 1px;
+        .panelclose {
+            color: #fff;
+            cursor: pointer;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            img.fullhalfpanel {
+                width: 18px;
+                height: 17px;
+                margin-right: 10px;
+                margin-top: 2px;
+            }
+        }
+        .title {
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #fff;
+        }
+        font-size: 14px;
+        display: inline-block;
+    }
+    .detailpanel-body {
+        position: absolute;
+        top: 34px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 5px;
+        height: calc(100% - 40px)!important;
+        overflow: hidden; // overflow-y: auto;
+    }
+}
+
+#panelContainer {
+    width: 0;
+    height: 0;
+}

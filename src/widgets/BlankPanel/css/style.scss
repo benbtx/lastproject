@@ -1,0 +1,51 @@
+.widget-blankpanel {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    overflow: hidden;
+    margin-bottom: 0px !important;
+    border-radius: 1px;
+    .title {
+        margin-bottom: 0;
+    }
+    .panel-heading {
+        padding: 7px 15px;
+        cursor: move;
+        border-radius: 1px;
+        .fold {
+            cursor: pointer;
+        }
+        .tools {
+            -webkit-appearance: none;
+            padding: 0;
+            background: 0 0;
+            border: 0;
+            float: right;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            filter: alpha(opacity=20);
+            opacity: .2;
+            margin-right: 8px;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+    .panel-body {
+        position: absolute;
+        top: 34px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 5px;
+        overflow-y: auto;
+    }
+}
+
+#panelContainer {
+    width: 0;
+    height: 0;
+}

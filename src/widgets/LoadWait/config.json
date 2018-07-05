@@ -1,0 +1,5 @@
+{
+    "widgetUrl":"widgets/LoadWait",
+    "tmplateUrl":"widgets/LoadWait/Widget.html",
+    "styleUrl":"widgets/LoadWait/css/style.css"
+}

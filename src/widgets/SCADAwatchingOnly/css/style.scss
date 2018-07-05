@@ -1,0 +1,151 @@
+.SCADAwatchingOnly {
+    margin-bottom: -10px;
+    .name {
+        z-index: auto !important;
+    }
+    form thead {
+        font-weight: bold;
+    }
+    .go {
+        width: 40%;
+    }
+    .page {
+        width: 55%;
+    }
+    .bookmarkname {
+        z-index: auto !important
+    }
+    .currpage,
+    .goto {
+        z-index: auto !important
+    }
+    .pageturning {
+        z-index: auto !important
+    }
+    td {
+        vertical-align: middle;
+        text-align: center;
+        height: 30px;
+        min-width: 50px;
+    }
+    .showAll {
+        position: absolute;
+        margin-top: -1px;
+        padding-left: 5px;
+    }
+    input[type=checkbox] {
+        margin: 1px 0 0;
+    }
+    .station-list {
+        margin-bottom: 6px;
+    }
+    .station-list li {
+        padding: 5px;
+        margin-bottom: 2px;
+        .action-bar {
+            display: none;
+            float: right;
+            margin-right: 4px;
+        }
+        label {
+            margin-bottom: 0;
+            font-weight: initial;
+            cursor: pointer;
+        }
+        &:hover {
+            background-color: #F5F5F5;
+            .action-bar {
+                display: inline;
+            }
+        }
+        a{
+            cursor: pointer;
+        }
+    }
+    .tableContainer {
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+}
+
+.infoWindowx-anchor {
+    width: 0px;
+    height: 0px;
+    background-color: #00ff0c;
+    position: absolute;
+}
+
+.infoWindowx {
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    min-width: 160px;
+    p {
+        margin: 0 0 5px;
+    }
+    .infoWindowx-titlePane {
+        background-color: #444444;
+        color: #FFFFFF;
+        line-height: 20px;
+        padding-left: 6px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .infoWindowx-titleButton {
+        right: 3px;
+        background-position: 0 0;
+        width: 12px;
+        height: 17px;
+        position: absolute;
+        top: 2px;
+        background: url(./images/popup.png)
+    }
+    .infoWindowx-contentPane {
+        position: relative;
+        max-height: 300px;
+        overflow: auto;
+        padding: 10px 10px 6px 10px;
+        background-color: #F7F7F7;
+        z-index: auto;
+        color: #333333;
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .infoWindowx-pointer {
+        left: 4px;
+        bottom: -5px;
+        background: #F7F7F7;
+        display: block;
+        height: 12px;
+        position: absolute;
+        width: 12px;
+        z-index: auto;
+        transform: rotate(45deg); // box-shadow: rgb(119, 119, 119) 0px 0px 8px 0px;
+    }
+    .infoWindowx-PopupWrapper {
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        border-radius: 5px;
+        box-shadow: rgb(119, 119, 119) 0px 0px 8px 0px;
+        font-size: 12px;
+        position: relative;
+    }
+    a {
+        cursor: pointer;
+    }
+    td {
+        padding: 0px 1px 0px 1px !important;
+    }
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+}
+
+// .SCADAwatching-station {
+//     position: absolute;
+//     width: 95%;
+//     height: 90%;
+//     background-image: url(./images/station.png);
+//     background-size: 100% 100%;
+//     z-index: 1;
+//     border: blue solid 3px;
+// }

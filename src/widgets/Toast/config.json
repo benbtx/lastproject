@@ -1,0 +1,5 @@
+{
+    "widgetUrl":"widgets/Toast",
+    "tmplateUrl":"widgets/Toast/Widget.html",
+    "styleUrl":"widgets/Toast/css/style.css"
+}

@@ -1,0 +1,49 @@
+.widget-QuestionMark {
+	.sketchImg {
+		margin-left: 10px;
+		cursor: pointer;
+		width: 60;
+		margin-top: 5px;
+	}
+	.sketchImgContainer {
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.attrName {
+		width: 90px
+	}
+	.go {
+		width: 40%;
+	}
+	.prenextpage {
+		width: 55%;
+	}
+	.currpage,
+	.goto {
+		z-index: auto !important
+	}
+	td {
+		vertical-align: middle;
+		text-align: center;
+	}
+	.esriViewPopup .gallery .frame img {
+		max-height: "" !important;
+		max-width: "" !important;
+	}
+	.drawTool {
+		cursor: pointer;
+		border: 2px dashed #FFF;
+		&:hover {
+			border: 2px dashed #666 !important;
+		}
+		&.active {
+			border: 2px dashed #5cb85c !important;
+		}
+	}
+	.pageturning {
+		z-index: auto !important
+	}
+	.markconten {
+		resize: vertical;
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/912bbfc/jquery.dataTables/jquery.dataTables.d.ts",
+    "raw": "github:DefinitelyTyped/DefinitelyTyped/jquery.dataTables/jquery.dataTables.d.ts#912bbfc",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/912bbfc/jquery.dataTables/jquery.dataTables.d.ts"
+  }
+}

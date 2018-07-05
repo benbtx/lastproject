@@ -1,0 +1,24 @@
+.wideget-Printing {
+    .prog {
+        display: none;
+    }
+    .sheet {
+        // padding-left: 10px;
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 21px;
+        vertical-align: middle;
+        input{
+            margin-left: -15px !important;
+        }
+        label{
+            padding-left: 10px !important;
+        }
+    }
+    .clearresults {
+        display: none;
+    }
+    .printresults {
+        margin-top: 5px;
+    }
+}

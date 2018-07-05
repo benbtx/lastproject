@@ -1,0 +1,76 @@
+.widget-planpoint {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .planpoint_tit {
+        height: 30px;
+        .form-group{
+            float: left;
+            margin: 4px 0px 4px 4px;
+            input{
+                margin: 8px 0 0;
+            }
+        }
+    }
+    .planpointinfo {
+        width: 100%;
+        height: calc(100% - 70px);
+        margin: 4px;
+        table {
+            margin-bottom: 5px;
+            table-layout: fixed;
+            tbody {
+                border-top: 1px solid #ddd;
+            }
+            td {
+                padding: 3px !important;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                a:hover {
+                    cursor: pointer
+                }
+            }
+            .goto {
+                height: 26px;                
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+        }
+    }
+    .halfpaneltable {
+        overflow-y: auto;
+    }
+    .planpoint_bottom {
+        background-color: white;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        margin-left: 5px;
+    }   
+
+    .minwidth{
+        width: 150px;
+        height: 30px;
+    }   
+    .input-sm{
+        padding: 4px 4px;
+    } 
+    .dynamic_pagesize{
+        border-radius: 3px;
+    }
+}

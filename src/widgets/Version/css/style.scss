@@ -1,0 +1,15 @@
+.widget-version {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 456px;
+    padding-left: 8px;
+    padding-right: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    a {
+        background-color: transparent;
+        color: #0f89f5;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

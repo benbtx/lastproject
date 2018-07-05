@@ -1,0 +1,13 @@
+{
+    "widgetUrl": "widgets/PlanWeeklyStatistics",
+    "tmplateUrl": "widgets/PlanWeeklyStatistics/Widget.html",
+    "styleUrl": "widgets/PlanWeeklyStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getPlanWeeklyStatistics": "/Plan/Static_Plan",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000
+}

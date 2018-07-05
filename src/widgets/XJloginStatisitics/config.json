@@ -1,0 +1,12 @@
+{
+    "widgetUrl": "widgets/XJloginStatisitics",
+    "tmplateUrl": "widgets/XJloginStatisitics/Widget.html",
+    "styleUrl": "widgets/XJloginStatisitics/css/style.css",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroup":"/Groups/list",
+    "getUser":"/User/List",
+    "getUserLoginStatistics":"/Plan/Daily_Plan_Attended",
+    "getDeptLoginStatistics":"/Plan/Group_Attended",
+    "rangeall":"00",
+    "maxsize":100000
+}

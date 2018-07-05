@@ -1,0 +1,96 @@
+.widget-VehicleTypeManagement {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .vehicletypeinfo-tool {
+        margin: 0px;
+        .btn_search {
+            &:hover {
+                cursor: pointer
+            }
+        }
+        .toolbar {
+            margin-bottom: 0px;
+        }
+    }     
+    
+    .vehicletypeinfo {
+        float: left;
+        width: 100%;  
+        height: calc(100% - 44px);      
+        overflow-y: auto;
+        margin: 4px;        
+        
+         .vehicletypeinfo-pagecontrol {
+            position: absolute;
+            bottom: 4px;
+            width: 100%;
+            background-color:white;  
+            margin-left: 5px;      
+        } 
+        table {
+            margin-bottom: 5px;
+            padding: 2px 5px 2px 5px;  
+            table-layout: fixed;
+            tbody {
+                border-top: 1px solid #ddd;
+            }          
+            a {
+                cursor: pointer;
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                    overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; 
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }            
+
+            td,th{
+                text-align: center;
+                vertical-align:middle;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;                                
+            }
+
+            .checkwidth{
+                width: 40px;
+            }
+
+            .checkwidth2{
+                width: 80px;
+            }
+        }
+        .imgClass{
+            width: 64px;
+            height: 64px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+   
+}
+
+.widget-vehicletypemanagement_addpopup{
+     margin-top: 10px;
+     .must-span{
+        color: red;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .form-group{
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}

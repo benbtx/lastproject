@@ -1,0 +1,8 @@
+{
+    "widgetUrl":"widgets/Loading",
+    "tmplateUrl":"widgets/Loading/Widget.html",
+    "styleUrl":"widgets/Loading/css/style.css",
+    "logo":"widgets/Loading/images/logo.png",
+    "title":"重庆燃气巡检系统",
+    "prompt":["检查浏览器","加载中。。。","加载中。。。","加载中。。。","初始化即将完毕"]
+}

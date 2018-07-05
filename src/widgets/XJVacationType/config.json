@@ -1,0 +1,35 @@
+{
+    "widgetUrl": "widgets/XJVacationType",
+    "tmplateUrl": "widgets/XJVacationType/Widget.html",
+    "styleUrl": "widgets/XJVacationType/css/style.scss",
+
+
+    "requestVacationTypeInfo": {
+        "Keyconfig": "0002",
+        "URL_request": "/SysConfig/List",
+        "MSG_error": "查询假期类型信息出错！",
+        "MSG_null": "查询假期类型信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize":50
+    },
+    "addVacationType": {
+        "Keyconfig": "0002",
+        "URL_request": "/SysConfig/Add",
+        "MSG_confirm": "假期类型不能为空",
+        "MSG_error": "添加假期类型出错！",
+        "MSG_success": "添加假期类型成功!"
+    },
+    "deleteVacationType": {
+        "URL_request": "/SysConfig/Delete",
+        "MSG_error": "删除假期类型出错！",
+        "MSG_success": "删除假期类型成功!"
+    },
+    "modifyVacationType": {
+        "Keyconfig": "0002",
+        "URL_request": "/SysConfig/Update",
+        "MSG_confirm": "假期类型不能为空",
+        "MSG_error": "修改假期类型出错！",
+        "MSG_success": "修改假期类型成功!"
+    }
+
+}

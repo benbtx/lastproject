@@ -1,0 +1,6 @@
+{
+    "widgetUrl":"widgets/Footer",
+    "tmplateUrl":"widgets/Footer/Widget.html",
+    "styleUrl":"widgets/Footer/css/style.css",
+    "mapDiv": "myMap"  
+}

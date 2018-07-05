@@ -1,0 +1,27 @@
+<div class="guanjingQuery">
+    <fieldset>
+        <legend>
+            图层名称
+            <span class="glyphicon glyphicon-question-sign" title="选择查询图层。"></span>
+        </legend>
+        <div class="foldable">
+            <select class="form-control input-sm guanjingQuery-layerName">
+            </select>
+        </div>
+        <legend>
+            管径：
+            <span class="glyphicon glyphicon-question-sign" title="填入管径范围。"></span>
+        </legend>
+        <div class="foldable">
+            <div class='well'>
+                <div class="input-group guanjingQuery-DIAMETER-container">
+                    <input type="radio" name="logic" value="=" class="guanjingQuery-DIAMETER" checked="checked"> <span>=</span>
+                    <input type="radio" name="logic" value="<" class="guanjingQuery-DIAMETER"> <span>&lt;</span>
+                    <input type="radio" name="logic" value=">" class="guanjingQuery-DIAMETER"> <span>&gt;</span>
+                    <input type="text" class="form-control guanjingQuery-DIAMETER-input"/>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm btn-block guanjingQuery-queryBtn">查询</button>
+    </fieldset>
+</div>

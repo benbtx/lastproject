@@ -1,0 +1,8 @@
+{
+  "globalDependencies": {
+    "arcgis-js-api": "github:Esri/jsapi-resources/3.x/typescript/arcgis-js-api.d.ts#64abeb4",
+    "dojo": "registry:dt/dojo#1.9.0+20160907111543",
+    "jquery": "registry:dt/jquery#1.10.0+20160908203239",
+    "lodash": "registry:dt/lodash#4.14.0+20160919145112"
+  }
+}

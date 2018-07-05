@@ -1,0 +1,142 @@
+.widget-plantimestatistics {
+    height: 100%;
+    .go {
+        width: 200px;
+    }
+    .plantimestatistics-search {
+        float: left;
+        width: 100%;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    .plantimestatistics-list {
+        width: 100%;
+        height: calc(100% - 73px);
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+            tbody {
+                border-top: 1px solid #ddd !important;
+            }
+            table-layout: fixed;
+            margin-bottom: 0px;
+            width: calc(100% - 10px);
+        }
+        flex-direction: column;
+        .table-body {
+            padding-right: 4px;
+            height: calc(100% - 200px);
+            overflow-y: scroll;
+            overflow-x: hidden;
+            flex-grow: 1;
+        }
+        .table-head {
+            padding-right: 4px; // padding-right: 13px;
+        } // overflow-x: auto;
+    }
+    .toolbar {
+        margin-top: 6px;
+        margin-bottom: 9px;
+        margin-left: 6px;
+    }
+    .goto {
+        height: 37px;
+    }
+    a {
+        cursor: pointer;
+    }
+    label {
+        text-align: center;
+        vertical-align: middle !important;
+        padding: 5px!important;
+    }
+    th {
+        text-align: center;
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+    }
+    .thleft {
+        text-align: left;
+    }
+    td {
+        vertical-align: middle !important;
+        padding: 5px!important; //background-color: white;
+    }
+    .plantimestatistics td {
+        text-align: center;
+    }
+    .thright {
+        text-align: right;
+        margin-right: 5px;
+    }
+    .thspan {
+        color: red;
+        font-weight: bold;
+    }
+    .btn {
+        padding: 4px 8px;
+    }
+    .minwidth {
+        width: 120px;
+        height: 30px;
+    }
+    .reportname {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        margin: 5px;
+    }
+    /*.shenhe {
+        float: left !important;
+        text-align: center;
+    }
+    .zhibiao {
+        text-align: center; // margin-right: calc(25%) !important;
+    }
+    .shijian {
+        // float: right;
+        text-align: center;
+    }*/
+     ::-webkit-scrollbar {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .groupleft {
+        margin-left: 10px;
+    }
+    .btn_export {
+        color: #fff;
+        background-color: #ed4e2a;
+        border-color: #ED5A24;
+    }
+    table tr:nth-child(2n) {
+        background-color: #eeeeee !important;
+    }
+    .form-inline .multiselect-container li a label.checkbox input[type=checkbox],
+    .form-inline .multiselect-container li a label.radio input[type=radio] {
+        margin-left: 5px !important;
+    }
+    .caret {
+        display: block;
+        float: right;
+        padding-top: -10px;
+        margin-top: -10px;
+    }
+    .multiselect {
+        width: 150px;
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-break: keep-all;
+            width: 130px;
+            display: block;
+        }
+    }
+}

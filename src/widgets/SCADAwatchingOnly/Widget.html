@@ -1,0 +1,146 @@
+<div class="SCADAwatchingOnly">
+    <form role="form" onsubmit="return false">
+        <fieldset>
+            <legend>
+                查询站点
+                <span class="glyphicon glyphicon-question-sign" title="查询指定名称的站点。"></span>
+            </legend>
+            <div class="foldable">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            名称
+                        </div>
+                        <input class="form-control input-sm name" type="text" placeholder="请输入名称" id="worckspace-input-add" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-sm btn-success btn-block find">查询</button>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class='tableContainer'>
+            <legend>
+                监控列表
+                <span class="glyphicon glyphicon-question-sign" title="查看监控列表。"></span>
+            </legend>
+            <div class="foldable">
+                <div class="station-list">
+                </div>
+                <div class="btn-toolbar" role="toolbar">
+                    <div class=" btn-group btn-group-sm page">
+                        <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                        <button type="button" class="btn btn-primary disabled content">第1页共1页</button>
+                        <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                    </div>
+                    <div class="input-group input-group-sm go">
+                        <input type="number" min=1 class="form-control currpage">
+                        <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+					</span>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </fieldset>
+    </form>
+</div>
+$$
+<div class='action-bar'>
+    <a class='locate'>查看</a>
+    <a class='pic'>工艺图</a>
+    <!--<a class='detail'>详情</a>-->
+</div>
+$$
+<table class='scada-content'>
+    <tbody>
+        <% values.forEach(function(item) { %>
+            <tr>
+                <td title="<%=item.name%>">
+                    <%= item.description %>
+                </td>
+                <td data-name="<%=item.name%>">
+                    <%= item.value+item.unit %>
+                </td>
+            </tr>
+            <% }); %>
+    </tbody>
+</table>
+$$
+<!--<div style="width:100%;height:100%" data-ptid="<%=ptid%>">-->
+    <div class="parent" data-ptid="<%=ptid%>" style="height: 100%;overflow: hidden;position: relative;">
+        <div class="panzoom" style="transform: matrix(0.591716, 0, 0, 0.591716, -151.477, -166.323);">
+            <img src="<%=pic%>" width="1278" height="800">
+            <% values.forEach(function(item) { %>
+                <div class="scada-valueitem" style="position: absolute;color:greenyellow;left:<%=item.x%>px;top:<%=item.y%>px">
+                    <span title="<%=item.name%>" data-name="<%=item.name%>">
+                        <%= item.value+item.unit %>
+                    </span>
+                </div>
+                <% }); %>
+        </div>
+        <!--</div>-->
+    <!--</div>-->
+</div>
+$$
+<div class='infoWindowx-anchor'>
+    <div class="infoWindowx">
+        <div class="infoWindowx-PopupWrapper">
+            <div class="infoWindowx-sizer">
+                <div class="infoWindowx-titlePane">
+                    <div class="infoWindowx-title">
+                        <%=title%>
+                    </div>
+                    <div class="infoWindowx-titleButton close" title="关闭"></div>
+                </div>
+            </div>
+            <div class="infoWindowx-sizer content">
+                <div class="infoWindowx-contentPane">
+                    <p class="infoWindowx-enter">进站压力：90MP </p>
+                    <p class="infoWindowx-exist">出站压力：100Mp</p>
+                    <p class="infoWindowx-time"> 时间：</p>
+                    <p><a class="detail">更多信息</a></p>
+                </div>
+            </div>
+            <div class="infoWindowx-pointer bottomLeft"></div>
+        </div>
+    </div>
+</div>
+$$
+<div class="SCADAwatching-infoWindow">
+    <div class="SCADAwatching-PopupWrapper">
+        <div class="SCADAwatching-sizer">
+            <div class="SCADAwatching-titlePane">
+                <div class="SCADAwatching-title">站场信息</div>
+                <div class="SCADAwatching-titleButton close" title="关闭"></div>
+            </div>
+        </div>
+        <div class="SCADAwatching-sizer content">
+            <div class="SCADAwatching-contentPane">
+                <!--<span>压力图</span>-->
+                <p class="SCADAwatching-enter">进站压力：90MP </p>
+                <p class="SCADAwatching-exist">出站压力：100Mp</p>
+                <p class="SCADAwatching-time"> 时间：</p>
+                <p><a class="detail">更多信息</a></p>
+            </div>
+        </div>
+        <div class="SCADAwatching-pointer bottomLeft"></div>
+    </div>
+</div>
+$$
+<div class='SCADAwatching-station'>
+    <span style=" position: absolute;right: 60px;top: 70px;">压力：<span  class="stationData">1.68</span></span>
+    <span style="position: absolute;right: 255px;top: 45px;">瞬时流量：<span style="color: red" class="stationData">42436.37</span>M
+    <span style="vertical-align: super">3</span>/h</span>
+    <span style="position: absolute;right: 255px;top: 70px;">日累计流量：<span style="color: red; "  class="stationData">20808.53</span>M
+    <span style="vertical-align: super">3</span>
+    </span>
+    <span style="position: absolute;right: 355px; top: 135px;">月流量：<span style="color: red"  class="stationData">620675</span>M
+    <span style="vertical-align: super">3</span>
+    </span>
+</div>
+$$
+<div class='action-bar'>
+    <a>定位</a>
+    <a>工艺图</a>
+    <a>详情</a>
+</div>

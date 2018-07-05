@@ -1,0 +1,13 @@
+{
+    "widgetUrl": "widgets/PlanAnnualStatistics",
+    "tmplateUrl": "widgets/PlanAnnualStatistics/Widget.html",
+    "styleUrl": "widgets/PlanAnnualStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getAnnualStatistics": "/Plan/Static_Plan",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000
+}

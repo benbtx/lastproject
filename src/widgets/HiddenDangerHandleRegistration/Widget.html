@@ -1,0 +1,519 @@
+<div class="widget-hiddendangerhandleregistration">
+    <div class="hiddendangerhandleregistration_toolbar widget-hiddendangerhandleregistration-list">
+        <div id="toolbar" class=" pull-right btn-group btn-group-sm toolbar">
+                    <!--<button id="btn_add" type="button" class="btn btn-default btn_list">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>列表
+                        </button>
+                    <button id="btn_delete" type="button" class="btn btn-default btn_icon">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 图标
+                        </button>-->
+
+                <!--<div class="imgTool btn_icon">
+                    <img src="./widgets/HiddenDangerHandleRegistration/images/picture.png" width="20" height="20" alt="图标" />
+                    <span>图标</span>
+                </div>
+                <div class="imgTool btn_list">
+                    <img src="./widgets/HiddenDangerHandleRegistration/images/list.png" width="20" height="20" alt="列表" />
+                    <span>列表</span>
+                </div>-->
+         
+        </div>
+        <div id="toolbar" class="btn-group btn-group-sm toolbar">
+            <form class="form-inline">
+                <!-- <div class="form-group">
+                    <label for="pdaid">设备名称</label>
+                    <select class="input-sm form-control pdaid" id="pdaid"> 
+                            
+                    </select>
+                </div> -->
+                <div class="form-group">
+                    <label for="trouble_typeid">隐患类型</label>
+                    <select class="input-sm form-control trouble_typeid" id="trouble_typeid"> 
+                            
+                    </select>
+                </div>
+                <% if (depid=="") { %>
+                          <div class="form-group">
+                                <label for="dep">部门</label>
+                                <select class="input-sm form-control dep" id="dep"> 
+                                        
+                                </select>
+                            </div>  
+                    <% } else { %>
+
+                <% } %>
+                <div class="form-group">
+                    <label for="username">上报人员</label>
+                    <select class="input-sm form-control username" id="username"> 
+                            
+                    </select>
+                </div>
+                <!--<div class="form-group">
+                    <label for="handle_state">处理状态</label>
+                    <select class="form-control input-sm handle_state">
+                                <option></option>
+                            <option value="0">未处理</option>
+                            <option value="1">已处理</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="handle_trouble_clear">隐患是否清除</label>
+                    <select class="form-control input-sm handle_trouble_clear">
+                                <option></option>
+                                <option value="1">已清除</option>
+                                <option value="0">其他</option>
+                        </select>
+                </div>-->
+                <button type="button" class="btn btn-sm btn-default btn-primary btn-search"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+                <button type="button" class="btn btn-sm btn-default btn-success save2csv">
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                        导出
+                </button>
+                 <button type="button" class="btn btn-sm btn-default btn-success btn-search">
+                        <span class="glyphicon glyphicon-refresh"></span>
+                        刷新
+                </button>
+            </form>
+        </div>
+       
+    </div>
+
+     <div class="hiddendangerhandleregistration_content halfpaneltable">
+            <table class="table table-bordered  table-striped">
+                <thead>
+                    <tr>
+                        <!-- <th>设备名称</th> -->
+                        <!--<th>隐患设备名称</th>-->
+                        <th>隐患类型</th>
+                        <th>隐患说明</th>
+                        <th>上报人员</th>
+                        <th>地址</th>
+                        <th>上报时间</th>
+                        <!--<th>是否为隐患</th>
+                        <th>是否处理登记</th>
+                        <th>隐患是否清除 </th>-->
+                        <th>操作</th>
+                         <th>操作</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class="addhiddendanger">
+                
+                </tbody>
+            </table>
+            <!--<label class="pagecontrol">
+                总共条记录，每页默认显示条记录
+            </label>
+            <div class="pull-right input-group btn-toolbar " role="toolbar">
+                <div class=" btn-group btn-group-sm">
+                    <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                    <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                    <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                </div>
+                <div class="input-group input-group-sm go">
+                    <input type="number" min=1 value=1 class="form-control currpage">
+                    <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                            </span>
+                </div>
+            </div>-->
+     </div>
+
+    
+     <div class="hiddendangerhandleregistration_pagecontrol">
+           <label class="pagecontrol">
+                总共条记录，每页默认显示条记录
+            </label>
+            &nbsp;  &nbsp;
+             每页  
+                <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                     <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> 条
+            <!--<label>
+            </label>-->
+            <div class="pull-right input-group btn-toolbar " role="toolbar">
+            
+                        <div class=" btn-group btn-group-sm">
+                                <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                                <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                                <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                        </div>
+                        <div class="input-group input-group-sm go">
+                            <input type="number" min=1 value=1 class="form-control currpage">
+                            <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                        </span>
+                        </div>
+            </div>
+
+     </div>
+
+
+    $$
+    <div class="widget-hiddendangerhandleregistration-icon">
+
+        <div id="toolbar" class=" pull-right btn-group btn-group-sm toolbar">
+                    <!--<button id="btn_add" type="button" class="btn btn-default btn_list">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>列表
+                        </button>
+                    <button id="btn_delete" type="button" class="btn btn-default btn_icon">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 图标
+                        </button>-->
+
+                    <div class="imgTool btn_icon">
+                        <img src="./widgets/HiddenDangerHandleRegistration/images/picture.png" width="20" height="20" alt="图标" />
+                        <span>图标</span>
+                    </div>
+                    <div class="imgTool btn_list">
+                        <img src="./widgets/HiddenDangerHandleRegistration/images/list.png" width="20" height="20" alt="列表" />
+                        <span>列表</span>
+                    </div>
+         
+        </div>
+        <div id="toolbar" class="btn-group btn-group-sm toolbar">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="pdaid">设备名称</label>
+                    <select class="input-sm form-control pdaid" id="pdaid"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="trouble_typeid">隐患类型</label>
+                    <select class="input-sm form-control trouble_typeid" id="trouble_typeid"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">上报人员</label>
+                    <select class="input-sm form-control username" id="username"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="handle_state">处理状态</label>
+                    <select class="form-control input-sm handle_state">
+                                <option></option>
+                            <option value="0">未处理</option>
+                            <option value="1">已处理</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="handle_trouble_clear">隐患是否清除</label>
+                    <select class="form-control input-sm handle_trouble_clear">
+                                <option></option>
+                                <option value="0">未清除</option>
+                                <option value="1">已清除</option>
+                        </select>
+                </div>
+                <button type="button" class="btn btn-sm btn-default btn-primary btn-search"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+                <button type="button" class="btn btn-sm btn-default btn-success save2csv">
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                        导出
+                </button>
+
+
+
+
+
+                
+
+
+
+
+            </form>
+        </div>
+
+        <ul class="halfpaneltable imglist">
+            <!--<li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>标题内容 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-3.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+              <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>标题内容 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-3.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+              <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>标题内容 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-3.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>-->
+        </ul>
+
+    </div>
+     $$
+    <div class="widget-hiddendangerhandleregistration-pictureshow">
+
+
+      
+
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators hiddendanger_photo_tit">
+                <% photoData.forEach(function(value,i) { %>
+                        <% if (i==0) { %>
+                            <li data-target="#myCarousel" data-slide-to="0" class="active">
+
+                        <% } else { %>
+                            <li data-target="#myCarousel" data-slide-to="<%= i %>"></li>
+                        <% } %>
+                    
+                <% }); %>
+            </ol>   
+
+
+       
+            <div class="carousel-inner  hiddendanger_photo_con">
+                 <% photoData.forEach(function(value,i) { %>
+                        <% if (i==0) { %>
+                            <div class="item active">
+                                <img src="<%= value.src %>" alt="First slide">
+                                <div class="carousel-caption"></div>
+                            </div>
+                         <% } else { %>
+                            <div class="item">
+                                <img src="<%= value.src %>" alt="<%= value %> slide">
+                                <div class="carousel-caption"></div>
+                            </div>
+                        <% } %>
+                 <% }); %>
+            </div>
+
+
+        
+            <a class="carousel-control left" href="#myCarousel" 
+            data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" 
+            data-slide="next">&rsaquo;</a>
+        </div> 
+     
+    </div>
+     $$
+     <div class="loadingbg">
+        <div class="loading" ><img src="./widgets/HiddenDangerHandleRegistration/images/loading.gif" style="width: 35px; height: 35px">  正在查询数据，请等待...</div>
+    </div>
+
+    $$
+
+</div>
+||
+<div class="templateOfInfo-handleregistration">
+     <p class='detailinfo'><span>上报信息</span> </p>
+            <!-- <div class="handleregistration_left">
+                <p><span>地址：${address}</span> </p>
+                <p><span>隐患类型：${trouble_type_name}</span></p>
+                <p><span>上报人员：${username}</span> </p>
+                <p><span>描述：${notes}</span>  </p>
+                <p><span> 语音：<span>${yhqyp}</span></p>
+                <p><span>上报时间：${uploadtime}</span> </p>
+            </div>
+            <div class="handleregistration_right">
+                <span>隐患发现照片：</span></br>
+                <div class="picture-handleregistration">
+                    ${yhfx}
+                </div>
+            </div> -->
+            <table class="table yhxx">
+                <tr>
+                    <td>地址：${address}</td>
+                    <td>隐患发现照片：</td>      
+                </tr>
+                <tr>
+                    <td>隐患类型：${trouble_type_name}</td>
+                    <td rowspan="5">
+                         <div class="picture-handleregistration">
+                            ${yhfx}
+                        </div>
+                    </td>      
+                </tr>
+                 <tr>
+                     <td>设备类型：${device_type_name}</td>        
+                </tr>
+                <tr>
+                     <td>上报人员：${username}</td>        
+                </tr>
+                <tr>
+                     <td>描述：${notes}</td>        
+                </tr>
+                <tr>
+                     <td>语音：${yhqyp}</td>        
+                </tr>
+                <tr>
+                     <td>上报时间：${uploadtime}</td>        
+                </tr>
+            </table>
+
+           
+     <p class='detailinfo'><span>定级情况</span> </p>
+            <!-- <div>
+                <p><span>定级人员：${level_username}</span></p>
+                <p><span>安全隐患内容：  <text>${safety_content}</text></span></p>
+                <p><span>隐患级别：${level_name}</span> </p>
+                <p><span>审核人员：${level_check_username}</span></p>
+            </div> -->
+            <table class="table yhxx">
+                <tr>
+                   <td>定级人员：${level_username}
+                         
+                      &nbsp&nbsp
+                      定级时间：${level_time}
+                    </td> 
+                </tr>
+                <tr>
+                    <td>安全隐患内容：${safety_content}</td> 
+                </tr>
+                <tr>
+                     <td>隐患级别：${level_name}</td>        
+                </tr>
+                <tr>
+                     <td>定级审核人员：${level_check_username}
+                           &nbsp&nbsp
+                         定级审核时间：${level_check_time}</td>  
+                </tr>
+                <tr>
+                    <td>审核意见：${level_check_note}</td>        
+                </tr>
+            </table>
+</div>
+||
+<div class="templateOfInfo-basic">
+    <p><span>地址：${address}</span></p>
+    <p><span>隐患类型：${trouble_type_name}</span></P>
+    <p><span>上报人员：${username}</span></p>
+    <p><span>描述：${notes}</span></p>
+    <p><span><a class='arcgispopup_operation' id='arcgispopup_operation' data-id='${id}'> 详情</a></span></p>
+</div>
+||
+<div class="template-handleregistration">
+      <!--<div class="form-group">
+            资金<input type="number" class="form-control fund" placeholder="资金"> 万
+            责任人  <input type="text" class="form-control duty" placeholder="责任人">
+         
+            防控措施 <input type="text" class="form-control controlmeasure" placeholder="防控措施">
+
+            整改时限 <input type="number" class="form-control timelimit" placeholder="整改时限">天
+
+                  	
+            应急措施 <input type="text" class="form-control emergencymeasure" placeholder="应急措施">
+
+
+             区域 <select class="form-control handleregistration_region">
+                    <option value="1">人巡</option>
+                    <option value="2">车巡</option>
+                </select>
+
+
+
+                 
+              
+           
+      </div>-->
+
+
+        <form id="handleregistration_addpopup"  class="form-horizontal" >
+                
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">资金</label>
+                    <div class="col-lg-7">
+                        <input type="number" class="form-control fund" placeholder="资金" /> 
+                    </div>
+                     <label class="col-lg-1 control-label">万</label>
+                </div>
+               
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">责任人</label>
+                    <div class="col-lg-7">
+                            <input type="text" class="form-control duty" placeholder="责任人" pattern="^[0-9]*$" required  /> 
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">防控措施</label>
+                    <div class="col-lg-7">
+                         <!--<input type="text" class="form-control controlmeasure" placeholder="防控措施">-->
+                         <textarea class=" form-control controlmeasure" rows="3" placeholder="防控措施"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">整改时限</label>
+                    <div class="col-lg-7">
+                          <input type="number" class="form-control timelimit" placeholder="整改时限"/> 
+                    </div>
+
+                     <label class="col-lg-1 control-label">天</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">应急措施</label>
+                    <div class="col-lg-7">
+                              <!--<input type="text" class="form-control emergencymeasure" placeholder="应急措施">-->
+                              <textarea class=" form-control emergencymeasure" rows="3" placeholder="应急措施"></textarea>
+                    </div>
+                </div>
+
+                 <div class="form-group">
+                    <label class="col-lg-3 control-label">区域</label>
+                    <div class="col-lg-7">
+                              <select class="form-control handleregistration_region">
+                                   
+                                </select>
+                    </div>
+                </div>
+
+
+                
+        </form>
+
+   
+</div>
+||
+<div class="template-print">
+     <div class="toolbar">
+               <button id="btn_print" type="button" class="btn btn-default hiddendangersearch_btn_print" >
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>打印预览
+                </button>
+            <button id="btn_return" type="button" class="btn btn-default hiddendangersearch_btn_return">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>返回上一页
+                </button>
+     </div>
+    <div class="repairorder">
+        <div class="repairorder-tit"> <label>保修工单</label> </div>
+        <table class="table table-bordered print-table">
+            <caption class="repairorder-num"><%= repairorder_num %></caption> 
+        
+            <tbody class="repairorder-con">
+                <tr>
+                    <td >隐患地点</td> <td colspan="3" class='print_address'><%= print_address %></td>
+                </tr>
+                 <tr>
+                    <td >隐患描述</td> <td colspan="3" class='print_describe'><%= print_describe %></td>
+                 </tr>
+                 <tr>
+                    <td >照片</td> <td colspan="3" class='print_describe'><%= print_describe %></td>
+                 </tr>
+                <tr>
+                    <td >巡检人员</td> <td class='print_xjry'><%= print_xjry %></td><td >报修时间</td> <td class='print_uploadtime'><%= print_uploadtime %></td>
+                </tr>
+                <tr>
+                    <td >受理人</td> <td class='print_slr'></td><td >受理时间</td> <td class='print_slsj'></td>
+                 </tr>   
+                <tr class='print_tr_clqk'>
+                    <td rowspan="3">处理情况</td> <td  rowspan="3" colspan="3" class='print_clqk'></td>
+                </tr>      
+            </tbody>
+        </table>
+        <label class="zhibiao">制表：<%= print_zhibao %></label>  <label class="shijian">日期：<%= print_rq %></label> 
+    </div>
+</div>

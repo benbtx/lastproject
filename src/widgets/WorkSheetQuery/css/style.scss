@@ -1,0 +1,54 @@
+.WorkSheetQuery {
+    .go {
+        float: right;
+        width: 40%;
+    }
+    .currpage,
+    .goto {
+        z-index: auto !important
+    }
+    .pageturning {
+        z-index: auto !important
+    }
+    td {
+        vertical-align: middle;
+        text-align: center;
+        vertical-align: inherit !important;
+        height: 30px;
+        word-break: break-all; //解决英文字符不换行
+        max-width: 50px;
+    }
+    span.selectionChange {
+        border-right: 0px;
+        z-index: 0 !important;
+    }
+    //
+    div.caption {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    div.nextDate {
+        margin-top: 15px;
+    }
+    input.date {
+        width: 100%;
+        z-index: 0 !important;
+    }
+    //设置表格每项的悬停样式
+    tbody tr:hover {
+        cursor: pointer;
+        background-color: #dddddd;
+    }
+}
+
+.templateOfInfo {
+    padding: 5px;
+    textarea {
+        resize: none;
+        border-color: #dddddd;
+        width: 100%;
+    }
+    .picture {
+        overflow: hidden;
+    }
+}

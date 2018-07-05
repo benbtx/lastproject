@@ -1,0 +1,69 @@
+{
+    "widgetUrl": "widgets/VehicleDriverBaseInfoManagement",
+    "tmplateUrl": "widgets/VehicleDriverBaseInfoManagement/Widget.html",
+    "styleUrl": "widgets/VehicleDriverBaseInfoManagement/css/style.css",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList":"/groups/list",
+    "getUserList":"/user/list",
+    "getDriverList": "/CarDriver/List",   
+    "addDriver": "/CarDriver/Add",
+    "deleteDriver": "/CarDriver/Delete",
+    "updateDriver": "/CarDriver/Update",   
+    "pagenumber": 0,
+    "pagesize": 50,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000,
+    "key":"0010",
+    "popupsize":{
+        "height":500,
+        "width":660
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加司机信息成功！",
+        "delete":"删除司机信息成功！",
+        "update":"更新司机信息成功！",
+        "other":"服务端ajax出错，获取数据失败!"
+    },
+    "dictables":{
+        "sex":{
+            "key":"sex",
+            "datas":["男","女"],
+            "value":["男","女"]
+        },
+        "education":{
+            "key":"education",
+            "datas":["小学","初中","高中","大专","本科","硕士","博士"],
+            "value":["小学","初中","高中","大专","本科","硕士","博士"]
+        },
+        "driving_skill_level":{
+            "key":"driving_skill_level",
+            "datas":["初级","中级","高级"],
+            "value":["初级","中级","高级"]
+        },
+        "driving_license_type":{
+            "key":"driving_license_type",
+            "datas":["A1","A2","A3","B1","B2","C1","C2","C3","C4","C5","D","E","F","M","N","P"],
+            "value":["A1","A2","A3","B1","B2","C1","C2","C3","C4","C5","D","E","F","M","N","P"]
+        },
+        "is_part_time":{
+            "key":"is_part_time",
+            "datas":["是","否"],
+            "value":["1","0"]
+        },
+        "whether_external":{
+            "key":"whether_external",
+            "datas":["是","否"],
+            "value":["1","0"]
+        }
+    },
+    "isrun":{
+        "1":"是",
+        "0":"否"
+    }
+}

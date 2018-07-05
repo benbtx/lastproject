@@ -1,0 +1,22 @@
+{
+    "widgetUrl": "widgets/ConnectedAnalysis",
+    "tmplateUrl": "widgets/ConnectedAnalysis/Widget.html",
+    "styleUrl": "widgets/ConnectedAnalysis/css/style.css",
+    "pickPipeTips": "",
+    "baseMapContainerClass": "widgets-basemap",
+    "identifyParameters": {
+        "tolerance": 3
+    },
+    "simpleMarkerSymbol": {
+        "color": "#ff00ff",
+        "size": 10,
+        "outline": {
+            "color": "#00ff00",
+            "width": 1
+        }
+    },
+    "simpleLineSymbol": {
+        "color": "#00ffff",
+        "width": 3
+    }
+}

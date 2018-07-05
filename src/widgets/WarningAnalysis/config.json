@@ -1,0 +1,29 @@
+{
+    "widgetUrl": "widgets/WarningAnalysis",
+    "tmplateUrl": "widgets/WarningAnalysis/Widget.html",
+    "styleUrl": "widgets/WarningAnalysis/css/style.css",
+    "firstsublayerid": 1,
+    "shieldField": [
+        "OBJECTID"
+    ],
+    "tolerance": 3,
+    "LayerName": "/exts/TFExtentionSOE/getLayerInfor",
+    "queryAlias": "/exts/TFExtentionSOE/queryAlias",
+    "getWarningConfig": "/webapp/earlywarning",
+    "setWarningConfig": "/webapp/earlywarning/set",
+    "REPAIRNUM": "维护次数",
+    "FINISHDATE": "竣工日期",
+    "point": {
+        "type": "esriGeometryPoint",
+        "name": "SUBTYPE",
+        "alias": "特征"
+    },
+    "line": {
+        "type": "esriGeometryPolyline",
+        "name": "MATERIAL",
+        "alias": "材质"
+    },
+    "getuniquevalue": "/exts/TFExtentionSOE/getFieldUniqueValue",
+    "domianvalue":"000"
+
+}

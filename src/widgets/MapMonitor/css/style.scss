@@ -1,0 +1,159 @@
+.widget-map-monitor {
+    legend {
+        span {
+            font-size: 12px;
+            cursor: pointer;
+            color: #666;
+            &:hover {
+                color: #333;
+            }
+        }
+    }
+    .personrefresh,.hiddendangerrefresh {
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+        span {
+            font-size: 12px;
+        }
+        button {
+            -webkit-flex: 1;
+            flex: 1;
+        }
+        // .manual-refresh {
+        //     &:focus {
+        //         background-color: #fff;
+        //         border-color: #ccc;
+        //     }
+        //     &:hover {
+        //         background-color: #e6e6e6;
+        //         border-color: #adadad;
+        //     }
+        // }
+    }
+    .go {
+        width: 120px;
+    }
+    .currpage,
+    .goto {
+        z-index: auto !important
+    }
+    td {
+        vertical-align: middle;
+        text-align: center;
+    }
+    .pageturning {
+        z-index: auto !important
+    }
+}
+
+.RealtimeMonitor {
+    width: 230px;
+    height: 125px;
+    position: absolute;
+}
+
+.RealtimeMonitor-titlePane {
+    background-color: #444444;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding-left: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.RealtimeMonitor-titleButton {
+    right: 3px;
+    background-position: 0 0;
+    width: 12px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+    background: url(../images/popup.png)
+}
+
+.RealtimeMonitor-contentPane {
+    position: relative;
+    max-height: 300px;
+    overflow: auto;
+    padding: 10px 6px 6px 10px;
+    background-color: #F7F7F7;
+    z-index: 1;
+    color: #333333;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.RealtimeMonitor-pointer {
+    left: 2px;
+    bottom: -5px;
+    background: #F7F7F7;
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    z-index: 0;
+    transform: rotate(45deg);
+    box-shadow: rgb(119, 119, 119) 0px 0px 8px 0px;
+}
+
+.RealtimeMonitor-PopupWrapper {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    border-radius: 5px;
+    box-shadow: rgb(119, 119, 119) 0px 0px 8px 0px;
+    font-size: 12px;
+    position: relative;
+}
+
+.RealtimeMonitor-infoWindow .RealtimeMonitor-contentPane span {
+    float: right;
+    padding-right: 10px;
+    color: blue;
+}
+
+.mapmonitor-userdetail {
+    .left,
+    .middle,
+    .right {
+        position: absolute;
+        // float: left;
+        height: 100%;
+        width: calc(32%);
+        top: 1px;
+        bottom: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .left {
+        float: left;
+        left: 10px;
+        // background-color: gold;
+    }
+    .middle {
+        margin-left: calc(30% + 40px);
+        // background-color: blue;
+    }
+    .right {
+        float: right;
+        right: 10px;
+        // background-color: gold;
+    }
+    .jcxx,
+    .gjhf,
+    .rwxx {
+        height: 95%;
+        width: 100%;
+        bottom: 5px;
+        padding: 2px;
+        border: 1px solid #eee;
+    }
+    .jcxx-left {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+    .jcxx-right {
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+}

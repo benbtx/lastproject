@@ -1,0 +1,31 @@
+{
+    "widgetUrl": "widgets/VehicleSysConfigManagement",
+    "tmplateUrl": "widgets/VehicleSysConfigManagement/Widget.html",
+    "styleUrl": "widgets/VehicleSysConfigManagement/css/style.css",
+    "mapDiv": "myMap",
+    "getVehicleSysConfigList":"/SysConfig/List",  
+    "addVehicleSysConfig": "/SysConfig/Add",
+    "deleteVehicleSysConfig": "/SysConfig/Delete",
+    "updateVehicleSysConfig": "/SysConfig/Update",  
+    "getConfigList":"/Config/List",
+    "bindConfig":"",
+    "keys":["0004","0005","0006","0007","0009","0012","0013","0014","0015","0016"],
+    "pagenumber": 0,
+    "pagesize": 50,
+    "currentpage":1,
+    "maxsize":100000,
+    "popupsize":{
+        "height":350,
+        "width":500
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加类型成功！",
+        "delete":"删除类型成功！",
+        "update":"更新类型成功！",
+        "other":"服务端ajax出错，获取数据失败!"
+    }
+}

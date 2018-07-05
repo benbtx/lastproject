@@ -1,0 +1,30 @@
+{
+    "widgetUrl": "widgets/XJBuildingSiteType",
+    "tmplateUrl": "widgets/XJBuildingSiteType/Widget.html",
+    "styleUrl": "widgets/XJBuildingSiteType/css/style.scss",
+
+
+    "requestBuildSiteTypeInfo": {
+        "URL_request": "/BuildProjectType/List",
+        "MSG_error": "查询工地类型信息出错！",
+        "MSG_null": "查询工地类型信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize": 50
+    },
+    "addBuildSiteType": {
+        "URL_request": "/BuildProjectType/Add",
+        "MSG_error": "添加工地类型出错！",
+        "MSG_success": "添加工地类型成功!"
+    },
+    "deleteBuildSiteType": {
+        "URL_request": "/BuildProjectType/Delete",
+        "MSG_error": "删除工地类型出错！",
+        "MSG_success": "删除工地类型成功!"
+    },
+    "modifyBuildSiteType": {
+        "URL_request": "/BuildProjectType/Update",
+        "MSG_error": "修改工地类型出错！",
+        "MSG_success": "修改工地类型成功!"
+    }
+
+}

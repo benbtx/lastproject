@@ -1,0 +1,109 @@
+.widget-hiddendangertypeanalysis {
+     height: 100%;
+     .go{
+        width: 200px;
+    }
+    .hiddendangertypeinfo-search {
+        float: left;
+        width: 100%;       
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    .hiddendangertypeinfo {
+        width: 100%;
+        height: calc(100% - 73px);
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+            tbody {
+                border-top: 1px solid #ddd !important;
+            }
+        }
+        overflow-y: auto;
+    }
+    
+    .toolbar {
+        margin-top: 6px;
+        margin-bottom: 9px;
+        margin-left: 6px;
+    }
+    .goto {
+        height: 37px;
+    }
+    a {
+        cursor: pointer;
+    }
+    label,
+    th {
+        text-align: center;
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+    }
+    td {
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+    }
+    .hiddendangertypeinfo td {
+        text-align: center;
+    }
+    .thright{
+        text-align:right;    
+        margin-right: 5px;
+    }
+    .thleft{
+        text-align:left;    
+        margin-right: 5px;
+    }
+    .thspan {
+        color: red;
+        font-weight: bold;
+    }
+    .minwidth{
+        width: 120px;
+        height: 30px;
+    }  
+    .btn {
+        padding: 4px 8px;
+    }
+    .btn_export{
+        color: #fff;
+        background-color: #ed4e2a;
+        border-color: #ED5A24;
+    }
+    .groupleft{
+        margin-left: 10px;
+    }
+    table tr:nth-child(2n) {
+        background-color: #eeeeee !important;
+    }
+  
+.hiddendangertypeinfo-list{float: left;width: 100%;}
+    .reportname {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    /*.shenhe {
+        float: left !important;
+        text-align: center;
+    }
+    .zhibiao {
+        text-align: center;
+        // margin-right: calc(25%) !important;
+    }
+    .shijian {
+        // float: right;
+        text-align: center;
+    }*/
+    ::-webkit-scrollbar {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}

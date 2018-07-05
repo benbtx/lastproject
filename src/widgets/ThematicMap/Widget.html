@@ -1,0 +1,123 @@
+<div class="wideget-thematicMap">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#thematicsetting" data-toggle="tab">专题图设置</a>
+        </li>
+        <li>
+            <a href="#thematiclist" data-toggle="tab">专题图列表</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="thematicsetting">
+            <form role="form" onsubmit="return false;">
+                <div class="form-group">
+                    <fieldset>
+                        <legend>
+                            图层名称
+                            <span class="glyphicon glyphicon-question-sign" title="选择将要进行查询的图层。"></span>
+                        </legend>
+                        <div class="foldable">
+                            <select class="input-sm form-control layers"> 
+                        <% layers.forEach(function(item) { %>
+                        <option value="<%= item.id %>">
+                                <%= item.name %>
+                        </option>
+                        <% }); %>
+                    </select>
+                        </div>
+                        <legend >
+                            专题图名称：
+                            <span class="glyphicon glyphicon-question-sign" title="输入专题图名称。"></span>
+                        </legend>
+                        <div class="foldable thematicName">
+                            <input type="text" class="input-sm form-control title" maxlength="50">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>
+                            图层字段
+                            <span class="glyphicon glyphicon-question-sign" title="选择将要查询的字段。"></span>
+                        </legend>
+                        <div class="foldable">
+                            <ul class="list-group fields"></ul>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>
+                            构造查询语句
+                            <span class="glyphicon glyphicon-question-sign" title="所选属性对应的唯一值。"></span>
+                        </legend>
+                        <div class="foldable">
+                            <!--<select class="input-sm form-control uniquevalue"></select>-->
+                            <table class="table table-bordered" style=" margin-bottom:0px !important">
+                                <tr>
+                                    <td class="leftoperate">
+                                        <button type="button" class="btn btn-sm btn-default operator" value="=">=</button>
+                                        <button type="button" class="btn btn-sm btn-default operator" value="%">%</button>
+                                        <button type="button" class="btn btn-sm btn-default operator" value="<">&lt</button>
+                                        <button type="button" class="btn btn-sm btn-default operator" value=">">&gt</button>
+                                        <button type="button" class="btn btn-sm btn-default operator" value="Like">模糊</button>
+                                        <button type="button" class="btn btn-sm btn-default operator" value="<>">非</button>
+                                        <button type="button" class="btn btn-sm btn-default operator" value="And">并且</button>
+                                        <button type="button" class="btn btn-sm btn-default operator" value="Or">或者</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default btn-block getuniquevalue">获取唯一值</button>
+                                        <ul class="list-group uniquevalue"></ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>
+                            组合查询条件
+                            <span class="glyphicon glyphicon-question-sign" title="组合而成的查询语句。可手动输入查询语句。"></span>
+                        </legend>
+                        <div class="foldable">
+                            <textarea class="input-sm form-control filter" rows="3" placeholder="OBJECID &gt; 0"></textarea>
+                            <button type="button" class="btn btn-sm btn-danger clear">清除</button>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group ">
+                    <button type="button" class="btn btn-sm btn-primary btn-block search" data-analyze-text="显示中...">显示</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="thematiclist">
+            <div class="form-group">
+                <fieldset>
+                    <legend>
+                        专题图
+                        <span class="glyphicon glyphicon-question-sign" title="当前为你创建的专题图。"></span>
+                    </legend>
+                    <div class="foldable">
+                        <table class="table table-bordered table-hover worckspace-table-list">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>名称</td>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody class="thematicInfo">
+                               
+                            </tbody>
+                    </div>
+                </fieldset>
+                </table>
+                <div class="form-group">
+                    <button type="button" class="btn btn-danger btn-sm btn-block deletethematic" data-toggle="modal">删除选定的专题图</button>
+                </div>
+            </div>
+        </div>
+    </div>

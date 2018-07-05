@@ -1,0 +1,76 @@
+.widget-XJCarPathAnalysis {
+    .time input {
+        display: table-cell;
+        width: 40%;
+    }
+    .timeline {
+        display: inline-block;
+        border: 1px solid #dddddd;
+        width: 40px;
+        position: relative;
+        top: 15px;
+    }
+    .query {
+        margin-top: 15px;
+    }
+}
+
+
+/*结果表*/
+
+.XJPathAnalysis-result {
+    height: 100%;
+    .totalinfo {
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        div {
+            display: inline-flex;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    .detailresult {
+        table {
+            margin-bottom: 0;
+        }
+        height: calc(100% - 80px);
+        div.table-head {
+            padding-right: 4px;
+        }
+        .tablecontainer {
+            height: calc(100% - 36px);
+            overflow-y: scroll;
+        }
+        tr {
+            cursor: pointer;
+        }
+    }
+    .div-pagetool {
+        height: 40px;
+        button.next {
+            z-index: auto!important;
+        }
+        div.go {
+            input {
+                z-index: auto!important;
+            }
+            button {
+                z-index: auto!important;
+            }
+        }
+    }
+}
+
+
+/*panel样式修改*/
+
+.widget-detailpanel-xunjianguijifenxi {
+    .panel-heading {
+        background-color: #337ab7;
+        color: white;
+    }
+    .panel-body {
+        padding: 0px;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "widgetUrl": "widgets/HiddenDangerTypeAnalysis",
+    "tmplateUrl": "widgets/HiddenDangerTypeAnalysis/Widget.html",
+    "styleUrl": "widgets/HiddenDangerTypeAnalysis/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getHiddenDangerTypeAnalysis": "/trouble/Trouble_Trend_Analysis",
+    "getHiddenDangerTypeInfo": "/troubletype/info/",
+    "addHiddenDangerType": "/troubletype/add",
+    "deleteHiddenDangerType": "/troubletype/delete/",
+    "updateHiddenDangerType": "/troubletype/update",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000
+}

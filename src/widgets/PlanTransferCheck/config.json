@@ -1,0 +1,204 @@
+{
+    "widgetUrl": "widgets/PlanTransferCheck",
+    "tmplateUrl": "widgets/PlanTransferCheck/Widget.html",
+    "styleUrl": "widgets/PlanTransferCheck/css/style.css",
+    "getGroupList": "/groups/list",
+    "getPlanRegionList": "/GpsRegion/List",
+    "getRegionInfo": "/GpsRegion/Region_Info",
+    "getUserList": "/user/list",
+    "getPlanType": "/PlanPointType/List/",
+    "getPeriod": "/PeriodType/List",
+    "getAllpersonPlan": "/Plan/Plan_Date_Range",
+
+    "getPlanDetail": "/Plan/Plan_Detail/",
+    "getPlanTransferCheckList": "/Plan/List",
+    "addPlanTransferCheckInfo": "/Plan/Add",
+    "updatePlanTransferCheck": "/Plan/Update",
+    "deletePlanTransferCheck": "/Plan/Delete/",
+    "transferPlanTransferCheck": "/Plan/Transfer_Plan_Apply",
+    "addPlanRegionInfo": "/GpsRegion/Add",
+    "addPlanPointInfo": "/PlanPoint/Add",
+    "updatePlanPoint": "/PlanPoint/Handle_Point",
+    "deletePlanPoint": "/PlanPoint/Delete/",
+    "rejectPlan": "/Plan/Reject_Plan/",
+
+
+    "checkPlan": "/Plan/Check_Plan",
+
+    "pagenumber": 1,
+    "pagesize": 5,
+    "MarkPictureSymbol": "./widgets/PlanTransferCheck/images/planpoint.png",
+    "MarkPictureSymbol_tyx": "./widgets/PlanTransferCheck/images/surgetank.png",
+    "MarkPictureSymbol_tyg": "./widgets/PlanTransferCheck/images/pressurecabinet.png",
+    "MarkPictureSymbol_fj": "./widgets/PlanTransferCheck/images/valvedonburi.png",
+    "TextbgSymbol": "./widgets/PlanTransferCheck/images/textbg.png",
+    "color": "blue",
+    "device": [{
+        "devicetype": 1,
+        "name": "",
+        "layerid": -1
+    }, {
+        "devicetype": [2, 3],
+        "name": "调压设备",
+        "layerid": 8
+    }, {
+        "devicetype": 4,
+        "name": "阀丼",
+        "layerid": 12
+    }],
+
+
+    "deviceForLayer": [{
+            "device_type_id": 2,
+            "layerid": 7,
+            "where": "SUBTYPE = '调压箱'",
+            "layername": "booster",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["CODE", "SID", "DRAWNAME", "PRESSURELEVEL", "LANE_WAY"],
+            "showfieldnames": ["设备编码", "唯一编号", "工程名称", "压力级制", "所属道路"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 3,
+            "layerid": 7,
+            "where": "SUBTYPE = '调压柜'",
+            "layername": "booster",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["CODE", "SID", "DRAWNAME", "PRESSURELEVEL", "LANE_WAY"],
+            "showfieldnames": ["设备编码", "唯一编号", "工程名称", "压力级制", "所属道路"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 4,
+            "layerid": 11,
+            "where": "1=1",
+            "layername": "valve",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["CODE", "SID", "DRAWNAME", "PRESSURELEVEL", "LANE_WAY"],
+            "showfieldnames": ["设备编码", "唯一编号", "工程名称", "压力级制", "所属道路"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 7,
+            "layerid": 41,
+            "where": "1=1",
+            "layername": "fswall",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["CODE", "OLDNO", "NAME", "SUBTYPE"],
+            "showfieldnames": ["设备编码", "设施点号", "设施名称", "特征"],
+            "selectshowfields": ["OLDNO"],
+            "selectshowfieldnames": ["设施点号"],
+            "searchfields": ["OLDNO"],
+            "searchnamefields": "设施点号"
+        },
+        {
+            "device_type_id": 8,
+            "layerid": 13,
+            "where": "1=1",
+            "layername": "yjbh",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["OLDNO", "DRAWNAME", "SUBTYPE", "LOCATION"],
+            "showfieldnames": ["点号", "工程名称", "特征", "位置"],
+            "selectshowfields": ["OLDNO"],
+            "selectshowfieldnames": ["点号"],
+            "searchfields": ["OLDNO"],
+            "searchnamefields": "点号"
+
+        },
+        {
+            "device_type_id": 9,
+            "layerid": 17,
+            "where": "1=1",
+            "layername": "pipesectionip",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["SID", "DRAWNAME", "PRESSURELEVEL", "LANE_WAY"],
+            "showfieldnames": ["唯一编号", "工程名称", "压力级制", "所属道路"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 10,
+            "layerid": 18,
+            "where": "1=1",
+            "layername": "pipesectionmp",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["SID", "DRAWNAME", "PRESSURELEVEL", "LANE_WAY"],
+            "showfieldnames": ["唯一编号", "工程名称", "压力级制", "所属道路"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 11,
+            "layerid": 19,
+            "where": "1=1",
+            "layername": "pipesectionlp",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["SID", "DRAWNAME", "PRESSURELEVEL", "LANE_WAY"],
+            "showfieldnames": ["唯一编号", "工程名称", "压力级制", "所属道路"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 12,
+            "layerid": 16,
+            "where": "1=1",
+            "layername": "pipesectionhp",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["SID", "DRAWNAME", "PRESSURELEVEL", "LANE_WAY"],
+            "showfieldnames": ["唯一编号", "工程名称", "压力级制", "所属道路"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 5,
+            "layerid": 16,
+            "where": "1=1",
+            "layername": "pipesectionhp",
+            "outfields": "*",
+            "keyfield": "SID",
+            "showfields": ["troubletype", "trouble_notes", "trouble_username", "trouble_findtime"],
+            "showfieldnames": ["隐患类型", "说明", "上报人", "发现时间"],
+            "selectshowfields": ["SID"],
+            "selectshowfieldnames": ["唯一编号"],
+            "searchfields": ["SID"],
+            "searchnamefields": "唯一编号"
+        },
+        {
+            "device_type_id": 1,
+            "showfields": ["create_time"],
+            "showfieldnames": ["创建时间"]
+        },
+        {
+            "device_type_id": 6,
+            "showfields": ["create_time"],
+            "showfieldnames": ["创建时间"]
+        }
+    ]
+
+}

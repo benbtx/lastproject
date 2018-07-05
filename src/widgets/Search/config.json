@@ -1,0 +1,33 @@
+{
+    "title": "地图搜索",
+    "filterOptions": [
+        {
+            "label": "地名 ",
+            "value": "poi",
+            "queryurl": "poi",
+            "layerids":[1,2,3],
+            "queryFields": ["TEXT","ADDRESS"],
+            "tip":"输入地名"
+        },
+        {
+            "label": "地理坐标",
+            "value": "coordinate",
+            "tip":"输入经度 纬度"
+        },
+        {
+            "label": "平面坐标",
+            "value": "prjcoordinate",
+            "tip":"输入带号X Y"
+        },
+        {
+            "label": "图幅",
+            "value": "gridid",
+            "queryurl": "grid",
+            "layerids":[0,1],
+            "queryFields": ["ENAME"],
+            "tip":"输入图幅号"
+        }
+    ],
+    "maxoptions":10,
+    "zoomscale":2000
+}

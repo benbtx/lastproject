@@ -1,0 +1,243 @@
+<div class="XJCarWatching">
+    <!-- <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#worker" data-toggle="tab" class="worker">人员<span>(0/0)</span></a>
+        </li>
+        <li>
+            <a href="#hidedanger" data-toggle="tab" class="danger">隐患<span>(0)</span></a>
+        </li>
+        <li>
+            <a href="#xunjianlayer" data-toggle="tab">图层</a>
+        </li>
+    </ul> -->
+    <div class="tab-content">
+        <div class="tab-pane in active" id="worker">
+            <div class="selector">
+                <div class="form-inline">
+                    <div class="form-group companySelect">
+                        <label for="name">公司</label>
+                        <select class="form-control company">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">部门</label>
+                        <select class="form-control department">
+                            <script type="text/template" id="departmenttemplate">
+                              <option value="%data">%data</option>
+                            </script>
+                        </select>
+                        <label for="name" class="state">状态</label>
+                        <select class="form-control userstate">>
+                              <option value="allState">所有</option>
+                              <option value="noWork">未上班</option>
+                                <option value="workNormal">车巡开启</option>
+                                <option value="offWork">车巡关闭</option>
+                               
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="workerlist ">
+
+
+                <!--人员显示模板-->
+                <script type="text/template" id="workeritemtemplate">
+                    <div class="item" departmentid="%data" userstate="%data">
+                        <div class="maininfo">
+                            <div class="img "><img class="avatar" oraginal="%data" src="%data" />
+                                <div class="avatar-state"></div>
+                            </div>
+                            <div class="content">
+                                <div class="head" userid="%data">
+                                    <span class="title"><a  userstate="%data" title="%data" longitude="%data" latitude="%data" class="workername">%data</a></span>
+                                    <span class="tool">
+                                     <a  class="detail thumbnail collapse" title="轨迹" data-toggle="collapse" data-target="#%datapath" data-parent="#historyCollapseContainer" requesttype="path"><img src="widgets/MapWatching/css/img/path.png" width=20 height=20/></a>
+                                    <a  class="detail thumbnail collapse nocar" title="日志" data-toggle="collapse" data-target="#%datalog" data-parent="#historyCollapseContainer"  requesttype="log"><img src="widgets/MapWatching/css/img/journal.png" width=20 height=20/></a>
+                                    <a  class="detail thumbnail collapse nocar" title="巡检计划" data-toggle="collapse" data-target="#%datacheckpoint" data-parent="#historyCollapseContainer" requesttype="checkpoint"><img src="widgets/MapWatching/css/img/checkpoint.png" width=20 height=20/></a> 
+                                     </span>
+                                    <span class="right">%data</span>
+                                </div>
+                                <div class="foot">
+                                    <span>&nbsp&nbsp</span><span class="right">&nbsp&nbsp</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="%datapath" class="collapse relativeinfo " requesttype="path">
+
+                        </div>
+                        <div id="%datalog" class="collapse relativeinfo " requesttype="log">
+
+                        </div>
+                        <div id="%datacheckpoint" class="collapse relativeinfo " requesttype="checkpoint">
+
+                        </div>
+                    </div>
+                </script>
+                <!--巡检日志模板-->
+                <script type="text/template" id="workerlog">
+                    <div id="workerlog">
+                        <p>
+                            <span><img src="%data" width=25 height=25/>
+                        </span><span class="text">%data</span>
+                            <span class="time">%data</span>
+                        </p>
+                    </div>
+                </script>
+                <!--巡检计划模板-->
+                <script type="text/template" id="workercheckpointTemplate">
+                    <div id="workercheckpoint" class="%data">
+                        <div class="accordion-group">
+                            <div class="accordion-heading  checkplan">
+                                <a class="accordion-toggle" data-toggle="collapse" data-target="#%data" title="%data">  %data</a>
+                                <div class="progress">
+                                    <div class="progress-bar  progress-bar-info" role="progressbar " aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: %data;">
+                                        %data
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="%data" class="panel-collapse collapse in">
+                                <div class="panel-body checkpoints">
+                                    <!-- <item>
+                                             <p class="checkpointitem"> 
+                                                <img src="widgets/MapWatching/css/img/%data" width="30" height="30" alt="轨迹" />
+                                                <span class="checkpointname" title="%data">%data</span>
+                                                <span class="checktime">%data</span>
+                                             </p>
+                                         <item>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </script>
+                <!--巡检轨迹模板-->
+                <script type="text/template" id="workerpathetemplate">
+                    <div id="workerpath">
+                        <p><img src="widgets/MapWatching/css/img/player.png" width=20 height=20 userid="%data" section="%data"
+                                playstate="stop" />
+                            <span class="pathname"><a>%data</a></span><span class="timespan">%data</span></p>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+$$
+<div class="checkPointInfoWindow">
+    <p><span>地址：重庆花卉园</span></p>
+    <p><span>巡检人员：张三</span></p>
+    <p><span>状态：已检</span></p>
+    <p><span>巡检时间：2016/7/2 4:00:67</span></p>
+</div>
+$$
+<div class="hideDangerDetail">
+    <p><span>地址：${address}</span></P>
+    <p><span>隐患类型：${type}</span></p>
+    <p><span>上报人员：${person}</span></p>
+    <p><span>描述：${description}</span></p>
+    <p><a class="MapWatching-hidedangerdetail" index="${index}">详情</a></p>
+</div>
+$$
+<div class="workerInfoWindow">
+    <p><span>车牌号：${Name}</span></p>
+    <p><span>所属部门：${DepartmentName}</span></p>
+    <p><span>当前状态：${State}</span></p>
+</div>
+$$
+<div class="widget-MapWatching-pictureshow">
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators hiddendanger_photo_tit">
+            <% photoData.forEach(function(value,i) { %>
+                <% if (i==0) { %>
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">
+
+                        <% } else { %>
+                            <li data-target="#myCarousel" data-slide-to="<%= i %>"></li>
+                            <% } %>
+
+                                <% }); %>
+        </ol>
+        <div class="carousel-inner  hiddendanger_photo_con">
+            <% photoData.forEach(function(value,i) { %>
+                <% if (i==0) { %>
+                    <div class="item active">
+                        <img src="<%= value.src %>" alt="First slide">
+                        <div class="carousel-caption">
+                            <%= value.alt %>
+                        </div>
+                    </div>
+                    <% } else { %>
+                        <div class="item">
+                            <img src="<%= value.src %>" alt="<%= value %> slide">
+                            <div class="carousel-caption">
+                                <%= value.alt %>
+                            </div>
+                        </div>
+                        <% } %>
+                            <% }); %>
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+</div>
+$$
+<div class="hidedangerdetail">
+    <p class='detailinfo'><span>上报信息</span> </p>
+    <table class="table yhxx">
+        <tr>
+            <td>地址：%data</td>
+            <td>隐患发现照片：</td>
+        </tr>
+        <tr>
+            <td>隐患类型：%data</td>
+            <td rowspan="5">
+                <div class="picture-search">
+                    <ul>
+                        %data
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>上报人员：%data</td>
+        </tr>
+        <tr>
+            <td>描述：
+                <div class="bz">%data</div>
+            </td>
+        </tr>
+        <tr>
+            <td>语音：
+                <div class="yy">%data</div>
+            </td>
+        </tr>
+        <tr>
+            <td>上报时间：%data</td>
+        </tr>
+    </table>
+</div>
+$$
+<div class="hidedangertemplate_6">
+    <!--隐患列表模板-->
+    <div class="item" departmentid="%data" userid="%data">
+        <div class="img">
+            <ul class="findimg">
+                <% _.forEach(photoData,function(data){
+                                     %>
+                    <li><img src="<%- data.minPitcure%>" maxpicture="<%- data.picture%>" /></li>
+                    <%
+                                 }) %>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="head">
+                <span><a longitude="%data" latitude="%data" title="%data">%data</a></span><span class="right">%data</span>
+            </div>
+            <div class="foot">
+                <span title="%data">%data</span><span class="right">%data</span>
+            </div>
+        </div>
+    </div>
+</div>

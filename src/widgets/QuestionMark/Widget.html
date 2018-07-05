@@ -1,0 +1,107 @@
+<div class="widget-QuestionMark">
+    <fieldset>
+        <legend>添加疑问标识
+            <span class="glyphicon glyphicon-question-sign" title="将当前地图显示区域保存为一个疑问标识。"></span>
+        </legend>
+        <div class="foldable">
+            <div class="form-group">
+                <div class="sketchImgContainer">
+                    绘制工具：</br>
+                    <img id="sketchExtent" class="drawTool sketchImg" src="./widgets/QuestionMark/images/sketchExtent.png" alt="矩形" title="矩形">
+                    <img id="sketchEllipse" class="drawTool sketchImg" src="./widgets/QuestionMark/images/sketchEllipse.png" alt="椭圆" title="椭圆">
+                    <img id="sketchArrow" class="drawTool sketchImg" src="./widgets/QuestionMark/images/sketchArrow.png" alt="箭头" title="箭头">
+                    <img id="sketch" class="drawTool sketchImg" src="./widgets/QuestionMark/images/sketch.png" alt="曲线" title="曲线">
+                    <img id="sketchText" class="drawTool sketchImg" src="./widgets/QuestionMark/images/sketchText.png" alt="文本" title="文本">
+                    <img id="sketchClearAll" class="drawTool sketchImg" src="./widgets/QuestionMark/images/sketchClearAll.png" alt="清空" title="清空">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="divmark">
+                    标识名称：</br>
+                    <input type="text" class="input-sm form-control markname " placeholder="请输入当前标识名称">
+                </div>
+                <div class="divmark">
+                    标识内容：</br>
+                    <textarea class="input-sm form-control markconten" rows="3" placeholder=""></textarea>
+                </div>
+                <!--<div class="input-group">
+                    <div class="input-group-addon">
+                        标注名称：
+                    </div>
+                    <input class="form-control markname" type="text" placeholder="请输入当前标注名称" id="worckspace-input-add" />
+                </div>
+
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                        标注内容：
+                    </div>
+                    <input class="form-control markconten" type="text" placeholder="" id="worckspace-input-add" />
+                </div>-->
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success btn-sm btn-block saveQuestionMark" data-analyze-text="保存中...">保存疑问标识</button>
+            </div>
+        </div>
+    </fieldset>
+    <!--<img class="mycanvas">-->
+    <fieldset>
+        <legend>我的疑问标识
+            <span class="glyphicon glyphicon-question-sign" title="查看所有已保存的疑问标识。双击可切换至此疑问标识。"></span>
+        </legend>
+        <div class="foldable">
+            <div class="form-group">
+                <table class="table table-bordered table-hover worckspace-table-list">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>名称</td>
+                            <td>创建日期</td>
+                            <td>状态</td>
+                        </tr>
+                    </thead>
+                    <tbody class="pick-pipe-tbody">
+                        <!--<tr class="">
+                            <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                            <td>主页</td>
+                            <td>2012.05.12</td>
+                            <td>未处理</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                            <td>主页</td>
+                            <td>2012.05.12</td>
+                        </tr>
+                        <tr class="active">
+                            <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                            <td>我的工作空间名称</td>
+                            <td>2012.05.12</td>
+                            <td>未处理</td>
+                        </tr>
+                        <tr class="">
+                            <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                            <td>主页</td>
+                            <td>2012.05.12</td>
+                            <td>未处理</td>
+                        </tr>-->
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-toolbar" role="toolbar">
+                <div class=" btn-group btn-group-sm prenextpage">
+                    <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                    <button type="button" class="btn btn-primary disabled content">第1页共1页</button>
+                    <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                </div>
+                <div class="input-group input-group-sm go">
+                    <input type="number" min=1 class="form-control currpage">
+                    <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+					</span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="button" class="btn btn-danger btn-sm btn-block deleteQuestionMark" data-toggle="modal">删除选定的疑问标识</button>
+            </div>
+        </div>
+    </fieldset>
+</div>

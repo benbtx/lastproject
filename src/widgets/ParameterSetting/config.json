@@ -1,0 +1,9 @@
+{
+    "widgetUrl": "widgets/ParameterSetting",
+    "tmplateUrl": "widgets/ParameterSetting/Widget.html",
+    "styleUrl": "widgets/ParameterSetting/css/style.scss",
+    "getSysSetting": "/SysSetting/Info",
+    "updateSysSetting": "/SysSetting/update",
+    "getHiddenDangerInfo": "/SysSetting/Update"
+
+}

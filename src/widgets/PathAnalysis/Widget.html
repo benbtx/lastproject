@@ -1,0 +1,64 @@
+<div class="widget-PathAnalysis">
+    <form role="form" onsubmit="return false;">
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    选取管线
+                    <span class="glyphicon glyphicon-question-sign" title="点击下方按钮，然后在地图上依次选取两条管线。"></span>
+                </legend>
+                <div class="">
+                    <label class="pick-pipe-tips text-warning"><%= pickPipeTips %></label>
+                    <button type="button" class="btn btn-sm btn-default btn-block pick-pipe" id="btn-pick-pipe">点击并依次选取两条管线</button>
+                    <h5>所选管线数据概览</h5>
+                    <table class="table table-bordered pipe-info">
+                        <thead>
+                            <tr>
+                                <th>管线类型</th>
+                                <th>管线编号</th>
+                            </tr>
+                        </thead>
+                        <tbody class="pick-pipe-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    执行分析
+                    <span class="glyphicon glyphicon-question-sign" title="根据选择的管线进行分析操作。此操作耗时较多，请耐心等待。"></span>
+                </legend>
+                <div class="">
+                    <button type="button" class="btn btn-sm btn-primary btn-block start-analyse disabled" data-analyze-text="分析中...">开始分析</button>
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>
+                    分析结果
+                    <span class="glyphicon glyphicon-question-sign" title="分析的结果。"></span>
+                </legend>
+                <h5>
+                    分析结果概览
+                    <span class="glyphicon pull-right view-map glyphicon-unchecked">
+                        <span>地图显示</span>
+                    </span>
+                </h5>
+                <table class="table table-bordered analyse-info">
+                    <thead>
+                        <tr>
+                            <th>图层名称</th>
+                            <th>管线数量</th>
+                            <th>管线长度</th>
+                        </tr>
+                    </thead>
+                    <tbody class="analyse-info-tbody">
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+        <button type="button" class="btn btn-sm btn-danger btn-block clean-all">清除所有</button>
+    </form>
+</div>

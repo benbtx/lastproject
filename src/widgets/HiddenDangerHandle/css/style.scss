@@ -1,0 +1,66 @@
+.widget-hiddendangerhandle {
+    // width: 105px;
+    // height: 30px;
+    // cursor: pointer;
+    // bottom: 20px;
+    // left: 20px;
+    // position: absolute;
+    // .hiddendangersearch-img{
+    //     width: 100%;
+    //     height: 100%;
+    //     padding-left: 5px;
+    // }
+    // overflow-y: scroll;
+    .toolbar {
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+    td {
+        padding: 3px !important;
+        a:hover {
+            cursor: pointer
+        }
+    }
+    tr.active {
+        color: #FFF;
+        td {
+            background-color: #337ab7 !important;
+        }
+    }
+    .goto {
+        height: 25.6px;
+    }
+}
+
+
+/*infowindow模板样式*/
+
+.templateOfInfo {
+    // padding: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    textarea {
+        resize: none;
+        border-color: #dddddd;
+        width: 100%;
+        height: 55px;
+    }
+    .picture {
+        overflow: hidden;
+    }
+    .HiddenDangerHandle {
+        border: 1px solid #ccc;
+    }
+    .HiddenDangerHandle-countryclass {
+        margin-left: 22px;
+    }
+    .HiddenDangerHandle-cityclass {
+        margin-left: 11px;
+    }
+    .HiddenDangerHandle-handletrouble {
+        width: 228px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

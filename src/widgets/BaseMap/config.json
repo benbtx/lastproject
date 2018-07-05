@@ -1,0 +1,10 @@
+{
+    "widgetUrl":"widgets/BaseMap",
+    "tmplateUrl":"widgets/BaseMap/Widget.html",
+    "styleUrl":"widgets/BaseMap/css/style.css",
+    "mapDiv": "myMap",
+    "mapService": [
+        "pipe","fswmap","poi","terrain"
+    ],
+    "baselayers":["privateterrain","terrain","raster"]
+}

@@ -1,0 +1,34 @@
+{
+    "widgetUrl": "widgets/XJFestivalManager",
+    "tmplateUrl": "widgets/XJFestivalManager/Widget.html",
+    "styleUrl": "widgets/XJFestivalManager/css/style.scss",
+
+
+    "requestVacationTypeInfo": {
+        "Keyconfig": "0002",
+        "URL_request": "/VacationConfig/List",
+        "MSG_error": "查询节日信息出错！",
+        "MSG_null": "查询节日信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize": 10
+    },
+    "addVacationType": {
+        "URL_request": "/VacationConfig/Add",
+        "MSG_confirm": "必填项未填！",
+        "MSG_error": "添加节日出错！",
+        "MSG_success": "添加节日成功!"
+    },
+    "deleteVacationType": {
+        "URL_request": "/VacationConfig/Delete",
+        "MSG_error": "删除节日出错！",
+        "MSG_success": "删除节日成功!"
+    },
+    "modifyVacationType": {
+        "Keyconfig": "0002",
+        "URL_request": "/VacationConfig/Update",
+        "MSG_confirm": "必填项未填！",
+        "MSG_error": "修改节日出错！",
+        "MSG_success": "修改节日成功!"
+    }
+
+}

@@ -1,0 +1,25 @@
+{
+    "widgetUrl": "widgets/XJTerminalStatistics",
+    "tmplateUrl": "widgets/XJTerminalStatistics/Widget.html",
+    "styleUrl": "widgets/XJTerminalStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroup":"/Groups/list",
+    "getUser":"/User/List",
+    "getTerminalStatistics":"/DeviceUpload/SearchDeviceUploadTable",
+    "rangeall":"00",
+    "maxsize":100000,
+    "workStateColor":{
+        "0":"#9797e6",
+        "1":"#8acc8a",
+        "2":"white",
+        "3":"#8acc8a"
+    },
+    "workStateName":{
+        "0":"开机",
+        "1":"上班",
+        "2":"正在工作中",
+        "3":"下班",
+        "4":"异常"
+    }
+}

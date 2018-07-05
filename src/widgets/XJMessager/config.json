@@ -1,0 +1,15 @@
+{
+    "widgetname": "xiaoxitongzhiguanli",
+    "getMessageAlert": {
+        "URL_Request": "/SysMsg/Search_Recive_Msg",
+        "MSG_Error": "获取通知消息失败！"
+    },
+    "requestAdminMessage": {
+        "URL_Request": "/SysMsg/Search_Recive_Msg",
+        "Data_pageindex": 1,
+        "Data_pagesize": 1000,
+        "Data_sendusertype": "管理员",
+        "Data_isread": "0",
+        "MSG_Error": "获取通知消息失败！"
+    }
+}

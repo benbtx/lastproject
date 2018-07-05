@@ -1,0 +1,21 @@
+.BufferAnalysis {
+    .light-well {
+        padding: 10px 42px;
+    }
+}
+
+.BufferAnalysis-type {
+    border: 1px solid #ddd;
+    height: 100%;
+    width: 100%;
+}
+
+.BufferAnalysis-type-radio {
+    position: relative;
+    left: 10px;
+    margin-right: 10px;
+}
+
+input.BufferAnalysis-distance {
+    z-index: 0!important;
+}

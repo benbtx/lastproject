@@ -1,0 +1,5 @@
+{
+    "widgetUrl":"widgets/Coordinate",
+    "tmplateUrl":"widgets/Coordinate/Widget.html",
+    "styleUrl":"widgets/Coordinate/css/style.css"
+}

@@ -1,0 +1,108 @@
+    .widget-XJBuildingSiteType {
+        height: 100%;
+        .XJBuildingSiteType-tool {
+            margin: 4px;
+            .btn_search {
+                &:hover {
+                    cursor: pointer
+                }
+            }
+            .toolbar {
+                // margin-top: 6px;
+                margin-bottom: 9px; // margin-left: 6px;
+            }
+            span.searchbutton {
+                cursor: pointer;
+            }
+            #toolbar {
+                padding-left: 5px;
+            }
+        }
+        #maincontent {
+            padding: 10px 5px;
+            height: calc(100% - 80px);
+            input[type="checkbox"] {
+                cursor: pointer;
+            }
+            table {
+                margin-bottom: 0px;
+                tr {
+                    cursor: pointer;
+                }
+            }
+            div.dataloader {
+                position: absolute;
+                left: 40%;
+                top: 50%;
+            }
+            .table-head {
+                padding-right: 4px;
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast:none) {
+                    padding-right: 17px;
+                }
+            }
+            .buildsitecontent {
+                height: calc(100% - 41px);
+                overflow-y: scroll;
+            }
+        }
+        .div-pagetool {
+            height: 40px;
+            div.go {
+                width: 200px;
+            }
+        }
+    }
+
+    #addbuildsitetype,
+    #modifybuildsitetype {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #eeeeee;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: lighter;
+        form {
+            text-align: right;
+            textarea {
+                height: 150px;
+                resize: none;
+            }
+        }
+        .item {
+            margin-bottom: 10px;
+            div {
+                display: inline-flex;
+                width: 110px;
+            }
+            input {
+                display: inline-flex;
+                width: 350px;
+            }
+            textarea {
+                width: 350px;
+                height: 150px;
+                margin-left: 110px;
+                resize: none;
+            }
+        }
+    }
+
+    .tableWrap {
+        .tablebody {
+            height: 150px;
+            overflow-y: scroll;
+        }
+        .table-head {
+            padding-right: 5px;
+        }
+        table {
+            margin-bottom: 0px;
+        }
+        th {
+            border: 1px solid #ddd;
+        }
+        td {
+            border: 1px solid #ddd;
+        }
+    }

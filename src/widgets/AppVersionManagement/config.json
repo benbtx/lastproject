@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/AppVersionManagement",
+    "tmplateUrl": "widgets/AppVersionManagement/Widget.html",
+    "styleUrl": "widgets/AppVersionManagement/css/style.css",
+    "mapDiv": "myMap",
+    "getAppVersionList": "/AppVersion/list",
+    "getAppVersionInfo": "/AppVersion/info/",
+    "addAppVersion": "/AppVersion/add",
+    "deleteAppVersion": "/AppVersion/delete/",
+    "updateAppVersion": "/AppVersion/update",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "xjapiroot": "http://192.98.151.40/xjapi/api"
+}

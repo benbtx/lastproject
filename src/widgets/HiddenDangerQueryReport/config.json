@@ -1,0 +1,15 @@
+{
+    "widgetUrl": "widgets/HiddenDangerQueryReport",
+    "tmplateUrl": "widgets/HiddenDangerQueryReport/Widget.html",
+    "styleUrl": "widgets/HiddenDangerQueryReport/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getDeviceList": "/PlanPointType/List",
+    "getHiddenDangerTypeList": "/troubletype/list",
+    "getHiddenDangerQueryReport": "/Trouble/List",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":1000000
+}

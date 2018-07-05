@@ -1,0 +1,5 @@
+{
+    "widgetUrl": "widgets/DataPanel",
+    "tmplateUrl": "widgets/DataPanel/Widget.html",
+    "styleUrl": "widgets/DataPanel/css/style.css"
+}

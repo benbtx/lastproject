@@ -1,0 +1,16 @@
+{
+    "widgetUrl": "widgets/DeviceHiddenDangerTable",
+    "tmplateUrl": "widgets/DeviceHiddenDangerTable/Widget.html",
+    "styleUrl": "widgets/DeviceHiddenDangerTable/css/style.scss",
+    "mapDiv": "myMap",
+    "getDeviceHiddenDangerTableList": "/troublecategory/list",
+    "getDeviceHiddenDangerTableInfo": "/troubletype/info/",
+    "addDeviceHiddenDangerTable": "/troublecategory/add",
+    "deleteDeviceHiddenDangerTable": "/troublecategory/delete/",
+    "updateDeviceHiddenDangerTable": "/troublecategory/update",
+    "getHiddenDangerLevelList": "/level/list",
+    "getHiddenDangerTypeList": "/troubletype/list",
+    "getDeviceTypeList": "/SysDeviceType/list",
+    "pagenumber": 1,
+    "pagesize": 100
+}

@@ -1,0 +1,31 @@
+$box_width:300px;
+$box_height:120px;
+.widget-loadmask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.widget-loadmask_box {
+    width: $box_width;
+    height: $box_height;
+    position: absolute;
+    top: calc(50% - #{$box_height/2});
+    left: calc(50% - #{$box_width/2});
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    .heading {
+        height: $box_height/2 - 31;
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+}
+
+.widget-loadmark_progress {
+    padding: 20px 20px 0;
+}

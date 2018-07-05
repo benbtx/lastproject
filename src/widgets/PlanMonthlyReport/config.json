@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/PlanMonthlyReport",
+    "tmplateUrl": "widgets/PlanMonthlyReport/Widget.html",
+    "styleUrl": "widgets/PlanMonthlyReport/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getUserList": "/user/list",    
+    "getMonthlyReport": "/Plan/Monthly_Plan_Statics",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000
+}

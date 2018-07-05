@@ -1,0 +1,60 @@
+{
+    "widgetUrl": "widgets/VehicleSendManagement",
+    "tmplateUrl": "widgets/VehicleSendManagement/Widget.html",
+    "styleUrl": "widgets/VehicleSendManagement/css/style.css",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList":"/groups/list",
+    "getUserList":"/user/list",
+    "getCarPlanList": "/CarPlan/List",   
+    "addCarPlan": "/CarPlan/Add",
+    "deleteCarPlan": "/CarPlan/Delete",
+    "updateCarPlan": "/CarPlan/Update",
+    "updateCarState":"/Car/UpdateState",
+    "getConfigList":"/SysConfig/List", 
+    "getDriverList": "/CarDriver/List",
+    "getVehicleList": "/Car/List",
+    "stopVehicle":"/Car/AddCarStopRecord",
+    "cancelVehicle":"/Car/DeleteCarStopRecord",   
+    "pagenumber": 0,
+    "pagesize": 50,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000,
+    "plantypekey":"0004",
+    "cartypekey":"0014",
+    "popupsize":{
+        "height":500,
+        "width":650
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加派车计划信息成功！",
+        "delete":"删除派车计划信息成功！",
+        "update":"更新派车计划信息成功！",
+        "other":"服务端ajax出错，获取数据失败!"
+    },
+    "dictables":{       
+        "weeklyday":{
+            "key":"weeklyday",
+            "value":["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+            "datas":["星期一","星期二","星期三","星期四","星期五","星期六","星期日"]
+        }
+    },
+    "weekly_dic":{       
+        "monday":"星期一",
+        "tuesday":"星期二",
+        "wednesday":"星期三",
+        "thursday":"星期四",
+        "friday":"星期五",
+        "saturday":"星期六",
+        "sunday":"星期日"
+    },
+    "isrun":{
+        "1":"启用",
+        "0":"禁用"
+    }
+}

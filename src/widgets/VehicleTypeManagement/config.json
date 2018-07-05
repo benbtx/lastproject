@@ -1,0 +1,29 @@
+{
+    "widgetUrl": "widgets/VehicleTypeManagement",
+    "tmplateUrl": "widgets/VehicleTypeManagement/Widget.html",
+    "styleUrl": "widgets/VehicleTypeManagement/css/style.css",
+    "mapDiv": "myMap",
+    "getVehicleTypeList":"/SysConfig/List",  
+    "addVehicleType": "/SysConfig/Add_Icon",
+    "deleteVehicleType": "/SysConfig/Delete",
+    "updateVehicleType": "/SysConfig/Update_Icon",
+    "nodatapic":"./widgets/VehicleTypeManagement/images/nopic.png",
+    "key":"0010",
+    "pagenumber": 0,
+    "pagesize": 50,
+    "currentpage":1,
+    "popupsize":{
+        "height":380,
+        "width":500
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加类型成功！",
+        "delete":"删除类型成功！",
+        "update":"更新类型成功！",
+        "other":"服务端ajax出错，获取数据失败!"
+    }
+}

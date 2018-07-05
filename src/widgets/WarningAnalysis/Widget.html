@@ -1,0 +1,86 @@
+<div class="widget-warning-analysis">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#warning" data-toggle="tab">预警分析</a>
+        </li>
+        <li><a href="#warningsetting" data-toggle="tab">设置</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="warning">
+            <div class="form-group">
+                <fieldset>
+                    <legend>图层选择 <span class="glyphicon glyphicon-question-sign" title="选择一个设备图层。"></span></legend>
+                    <div class="foldable">
+                        <ul class="list-group warninglayers">
+                            <% layers.forEach(function(item) { %>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                               <input type=checkbox  value="<%= item.layerid %>" urlindex="<%= item.urlindex %>"  title="<%= item.layername %>"  name="<%= item.layerdbname %>"  class=perlayer >
+                                                <%= item.layername%>
+                                           </label>
+                                    </div>
+                                </li>
+                                <% }); %>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>区域
+                        <span class="glyphicon glyphicon-question-sign" title="选择一个区域。"></span>
+                    </legend>
+                    <div class="">
+                        <div>
+                            <label class="radio-inline">
+                                <input type="radio" name="range" class="figureOutRange" value="1" >当前视图
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="range" class="figureOutRange" value="2" checked>指定区域
+                            </label>
+                            <button type="button" class="btn btn-default drawRange">绘制范围</button>
+                        </div>
+                    </div>
+                    </br>
+                </fieldset>
+                <button type="button" class="btn btn-primary btn-sm btn-block warninganlysis" data-analyze-text="分析中...">预警分析</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="warningsetting">
+            <fieldset>
+                <legend>设备名称 <span class="glyphicon glyphicon-question-sign" title="选择一个区域。"></span></legend>
+                <div class="">
+                    <select class="input-sm form-control layers"> 
+                            <% layers.forEach(function(item) { %>
+                                    <option value="<%= item.layerid %>" urlindex="<%= item.urlindex %>" name="<%= item.layerdbname %>">
+                                        <%= item.layername%>
+                                    </option>
+                            <% }); %>
+                        </select>
+                </div>
+                <legend>图层属性 <span class="glyphicon glyphicon-question-sign" title="选择属性。"></span></legend>
+                <div class="">
+                    <select class="input-sm form-control attribution"> 
+                    </select>
+                </div>
+                <legend>节点列表 <span class="glyphicon glyphicon-question-sign" title="选择节点。"></span></legend>
+                <div class="foldable">
+                    <ul class="list-group domianvalue">
+                    </ul>
+                </div>
+                <legend>参数 <span class="glyphicon glyphicon-question-sign" title="设置参数。"></span></legend>
+                <div class="foldable">
+                    维修次数：
+                    <input type="number" min=0 class="input-xs repairnumber" value=0>
+                    </br>
+                    服务年限：
+                    <input type="number" min=0 max=100 class="input-xs year" value=0> 年
+                    <input type="number" min=0 max=12 class="input-xs month" value=0> 月
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary btn-sm btn-block btnsave">保存</button>
+            </div>
+        </div>
+    </div>
+</div>

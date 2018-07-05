@@ -1,0 +1,9 @@
+{
+    "widgetUrl":"widgets/PanelDemo",
+    "tmplateUrl":"widgets/PanelDemo/Widget.html",
+    "styleUrl":"widgets/PanelDemo/css/style.css",
+    "hello":"Hello ",
+    "getFieldUniqueValueUrl":"/exts/TFExtentionSOE/getFieldUniqueValue",
+    "removeLayers":["气源","极性保护","监测点","燃气桩","套管"],
+    "materials":["PE管","PE","钢管","铸铁"]
+}

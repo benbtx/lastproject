@@ -1,0 +1,36 @@
+{
+    "widgetUrl": "widgets/VehicleRefuelingRecordInfo",
+    "tmplateUrl": "widgets/VehicleRefuelingRecordInfo/Widget.html",
+    "styleUrl": "widgets/VehicleRefuelingRecordInfo/css/style.css",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList":"/groups/list",
+    "getUserList": "/user/list",
+    "getVehicleList":"/Car/List",
+    "getCarFuelChargingList": "/CarFuelCharging/List",   
+    "addCarFuelCharging": "/CarFuelCharging/Add",
+    "deleteCarFuelCharging": "/CarFuelCharging/Delete",
+    "updateCarFuelCharging": "/CarFuelCharging/Update",
+    "getConfigList":"/SysConfig/List",
+    "fueltypekey":"0006",
+    "paytypekey":"0013",   
+    "pagenumber": 0,
+    "pagesize": 50,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000,
+    "popupsize":{
+        "height":500,
+        "width":650
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加加油信息成功！",
+        "delete":"删除加油信息成功！",
+        "update":"更新加油信息成功！",
+        "other":"服务端ajax出错，获取数据失败!"
+    }
+}

@@ -1,0 +1,34 @@
+.widget-zoombar {
+    position: absolute !important;
+    top: auto;
+    left: auto;
+    right: 10px !important;
+    bottom: 124px !important;
+    z-index: 0 !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    .zoomin , .zoomout {
+        width:30px;
+        height:30px;
+        background-color: #FFF !important;
+        border-radius: 0;
+        background-image: none;
+        color: #686868;
+        font-size: 18px;
+        /* 定位 */
+        text-align: center !important;
+        line-height: 30px !important;
+        vertical-align: middle !important;
+        position: relative;
+        top: 1px;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        &:hover {
+            background-color: #EEE !important;
+        }
+    }
+}

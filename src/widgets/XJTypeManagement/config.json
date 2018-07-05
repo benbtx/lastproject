@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/XJTypeManagement",
+    "tmplateUrl": "widgets/XJTypeManagement/Widget.html",
+    "styleUrl": "widgets/XJTypeManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getXJTypeList": "/SysPointType/list",
+    "getXJTypeInfo": "/SysPointType/info/",
+    "addXJType": "/SysPointType/add",
+    "deleteXJType": "/SysPointType/delete/",
+    "updateXJType": "/SysPointType/update",
+
+    "pagenumber": 1,
+    "pagesize": 13
+}

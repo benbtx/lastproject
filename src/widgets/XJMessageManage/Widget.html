@@ -1,0 +1,215 @@
+<div class="XJMessageManage">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#recieveMessage" data-toggle="tab">我的消息</a>
+        </li>
+        <li>
+            <a href="#sendMessage" data-toggle="tab">发送消息</a>
+        </li>
+        <li>
+            <a href="#historyMessage" data-toggle="tab">已发消息</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="recieveMessage">
+            <div class="btn-group typeMessage">
+                <button type="button" class="btn btn-link" choosetype="all"> 全部</button>
+                <button type="button" class="btn btn-link" choosetype="reading">未读</button>
+                <button type="button" class="btn btn-link" choosetype="readed">已读</button>
+            </div>
+            <div class="message">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>内容</th>
+                            <th>发送人/时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <script type="text/template" id="readedMessageTemplate">
+                            <tr class="readed" index="%data" messageid=%data readstate="%data">
+                                <td><input type="checkbox" state="0" /></td>
+                                <td class="detail"><a>%data</a></td>
+                                <td class="detail">%data</td>
+                            </tr>
+                        </script>
+                        <script type="text/template" id="readingMessageTemplate">
+                            <tr index="%data" messageid=%data readstate="%data">
+                                <td><input type="checkbox" state="0" /></td>
+                                <td class="detail"><a>%data<a></td>
+                                <td class="detail">%data</td>
+                            </tr>
+                        </script>
+                    </tbody>
+                </table>
+            </div>
+            <div class="selcetMessage">
+                <input type="checkbox" /><button type="button" class="btn btn-link" choosed="no"> 全选</button>
+            </div>
+            <div class="btn-group handleMessag">
+                <button type="button" class="btn btn-primary" handletype="check">标记已读</button>
+                <button type="button" class="btn  btn-primary" handletype="del">删除</button>
+            </div>
+        </div>
+        <div class="tab-pane fade " id="sendMessage">
+            <form role="form">
+                <fieldset class="worker">
+                    <label>
+                        接收人员
+                        <span class="glyphicon glyphicon-question-sign" title="选择查询的人员。"></span>
+                    </label>
+                    <div class="foldable">
+                        <select id="receviceuser" multiple="multiple" class="form-control input-sm receviceuser">
+                             <script type="text/departmentList" id="userList">
+                             <optgroup label="%data" class="%data"></optgroup>
+                             <item>
+                             <option value="%data">%data</option>
+                             </script>
+                            <!--<optgroup label="巡检一组" class="group-1">
+                                <option value="穆国庆">穆国庆</option>
+                                <option value="张智霖" >张智霖</option>
+                                <option value="曾宪伟" >曾宪伟</option>
+                            </optgroup>-->
+                        </select>
+                    </div>
+
+                </fieldset>
+                <div class="form-group message">
+                    <label for="name">消息内容：</label>
+                    <textarea class="form-control message content" rows="3"></textarea>
+                </div>
+                <div class="form-group filesUpload">
+                    <label for="name">附件：</label>
+                    <label class="sr-only" for="inputfile">图片</label>
+                    <!--<input type="file" id="inputfile" multiple>-->
+                    <input id="input-fileupload" accept="image/bmp,image/jpeg,image/jpg,image/png" type="file" class="file" data-preview-file-type="text" multiple>
+                </div>
+            </form>
+
+            <!--<input id="input-id" type="file" class="file" data-preview-file-type="text">-->
+            <button type="button" class="btn btn-sm btn-primary btn-block  sendfiles">发送</button>
+        </div>
+        <div class="tab-pane fade" id="historyMessage">
+            <div class="message">
+                <div class="tablebody">
+                    <table class="table table-bordered  table-hover">
+                        <colgroup>
+                            <col width="100">
+                            <col width="70">
+                            <col width="140">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>内容</th>
+                                <th>收件人</th>
+                                <th>阅读情况</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <script type="text/template" id="messageTemplate">
+                                <tr index="%data">
+                                    <td>%data </td>
+                                    <td> %data </td>
+                                    <td>%data </td>
+                                </tr>
+                            </script>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="btn-toolbar pagination" role="toolbar">
+                <div class=" btn-group btn-group-sm page">
+                    <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                    <button type="button" class="btn btn-primary disabled content">第<span class="currentpagenumber">1</span>页共<span class="allpagenumber">1</span>页</button>
+                    <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                </div>
+                <div class="input-group input-group-sm go">
+                    <input type="number" min=1 class="form-control gopage" maxlength=10 size=3>
+                    <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+					</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+$$
+<div id="messageDetail">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#message-content" data-toggle="tab">内容</a></li>
+                                    <li><a href="#message-files" data-toggle="tab">附件</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="message-content">
+                                            <div class="">
+                                                <p>发送时间:<span>%data</span></p>
+                                            </div>
+                                            <div>
+                                                <p>接收人: <span>%data</span></p>
+                                            </div>
+                                            <div class="">
+                                                <p>是否查看: <span>%data</span></p>
+                                            </div>
+                                            <div>
+                                                <p>查看时间: <span>%data</span></p>
+                                            </div>
+                                            <div class="">
+                                                <p>内容:</p>
+                                                <textarea class="form-control" readonly>%data</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="message-files">
+                                            <p>无</p>
+                                        </div>
+                                    </div>
+            </div>
+            $$
+            <div class="imgtemplate">
+                <ul>
+                    <% _.forEach(photoData,function(data){
+                %>
+                        <li><img src="<%- data%>" width="100" height="100" /></li>
+                        <%
+            }) %>
+                </ul>
+            </div>
+            $$
+            <div id="messageDetail">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#message-content" data-toggle="tab">内容</a></li>
+                    <li><a href="#message-files" data-toggle="tab">附件</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="message-content">
+                        <div>
+                            <p>发送人: <span>%data</span></p>
+                        </div>
+                        <div class="">
+                            <p>发送时间:<span>%data</span></p>
+                        </div>
+                        <div class="">
+                            <p>内容:</p>
+                            <textarea class="form-control" readonly>%data</textarea>
+                        </div>
+                        <div>
+                            <p>音频:</p>
+                            <div id="message-audio">
+                                <p>无</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="message-files">
+                        <p>无</p>
+                    </div>
+                </div>
+            </div>
+            $$
+            <div class="audiotemplate">
+                <% _.forEach(audioData,function(data){
+                %>
+                    <audio controls='controls'>
+                        <source src='<%- data%>' type='audio/mp3'>
+                    </audio>
+                    <%
+            }) %>
+            </div>

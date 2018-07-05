@@ -1,0 +1,21 @@
+.wideget-measure-tool {
+    .no-padding {
+        padding: 0;
+        text-align: center;
+    }
+    .measureImg {
+        width: 34px;
+        height: 34px;
+        margin: 0 calc(50% - 17px);
+    }
+    .measureTool {
+        cursor: pointer;
+        border: 2px dashed #FFF;
+        &:hover {
+            border: 2px dashed #666 !important;
+        }
+        &.active {
+            border: 2px dashed #5cb85c;
+        }
+    }
+}

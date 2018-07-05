@@ -1,0 +1,35 @@
+{
+  "name": "AppX",
+  "version": "1.0.0",
+  "description": "基于 Dojo、JQuery、Lodash、Typescript、Gulp 等构建的模块化 Web App 框架。",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp serve:watch",
+    "postinstall": "gulp",
+    "build": "gulp product"
+  },
+  "author": "Aiello Chan",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "browser-sync": "^2.16.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-batch-replace": "^0.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if-else": "^1.0.3",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-typescript": "^3.0.1",
+    "run-sequence": "^1.2.2",
+    "typescript": "^2.1.4",
+    "typings": "^1.4.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.9",
+    "lodash": "^4.16.2",
+    "lodash-amd": "^4.16.2",
+    "minimatch": "^3.0.3"
+  }
+}

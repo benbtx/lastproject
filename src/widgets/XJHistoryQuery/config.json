@@ -1,0 +1,180 @@
+{
+    "widgetUrl": "widgets/XJHistoryQuery",
+    "tmplateUrl": "widgets/XJHistoryQuery/Widget.html",
+    "styleUrl": "widgets/XJHistoryQuery/css/style.css",
+
+    "relativeLayerIds": ["worker_historyAllPathGraphicLayer", "worker_historyPathShowGraphicLayer", "worker_historyPathMoveGraphicLayer", "worker_historyCheckPointGraphicLayer", "worker_historyActiveGraphicLayer"],
+    "baseLayerIds": ["historyGraphicLayer_xjregion", "historyGraphicLayer_buildsite", "historyGraphicLayer_xjpoint", "historyGraphicLayer_xjline", "historyGraphicLayer_hidedanger"],
+    "requestHideDangerInfo": {
+        "URL_Query": "/Trouble/List",
+        "MSG_Error": "查询隐患信息出错！",
+        "MSG_Null": "查询隐患信息为空！"
+    },
+    "setSymbol": {
+        "PNGPATH_WorkerPng": {
+            "onWork": "/widgets/XJHistoryQuery/css/img/onWork.png",
+            "offWork": "/widgets/XJHistoryQuery/css/img/offWork.png",
+            "noWork": "/widgets/XJHistoryQuery/css/img/noWork.png",
+            "gpsError": "/widgets/XJHistoryQuery/css/img/gpsError.png",
+            "netError": "/widgets/XJHistoryQuery/css/img/netError.png",
+            "gpsErrorActive": "/widgets/XJHistoryQuery/css/img/gpsErrorActive.png",
+            "netErrorActive": "/widgets/XJHistoryQuery/css/img/netErrorActive.png",
+            "offActive": "/widgets/XJHistoryQuery/css/img/offActive.png",
+            "onActive": "/widgets/XJHistoryQuery/css/img/onActive.png",
+            "noActive": "/widgets/XJHistoryQuery/css/img/noWorkActive.png"
+        },
+        "PNGPATH_CheckPointPng": {
+            "checked": "/widgets/XJHistoryQuery/css/img/handledPoint.png",
+            "checking": "/widgets/XJHistoryQuery/css/img/handlingPoint.png",
+            "active": "/widgets/XJHistoryQuery/css/img/active.png"
+        },
+        "PNGPATH_HideDangerPng": {
+            "handled": "/widgets/XJHistoryQuery/css/img/handledDanger.png",
+            "handling": "/widgets/XJHistoryQuery/css/img/handlingDanger.png",
+            "active": "/widgets/XJHistoryQuery/css/img/dangerActive.png"
+        },
+        "PNGPATH_PathPlayerPng": "/widgets/XJHistoryQuery/css/img/pathplayer.png"
+    },
+    "requestCompanyInfo": {
+        "URL_request": "/Device/Get_Company_List",
+        "MSG_error": "查询公司信息出错！",
+        "MSG_null": "查询公司信息为空！"
+    },
+    "requestWatchingSetting": {
+        "URL_request": "/SysSetting/Info"
+
+    },
+    "requestAllWorkerInfo": {
+        "URL_Query": "/DeviceUpload/List",
+        "MSG_Error": "查询巡检人员信息出错！",
+        "MSG_Null": "查询巡检人员信息为空！"
+    },
+    "initWorkerList": {
+        "IMG_nowork": "widgets/XJHistoryQuery/css/img/noWork.png",
+        "IMG_offwork": "widgets/XJHistoryQuery/css/img/offWork.png",
+        "IMG_onwork": "widgets/XJHistoryQuery/css/img/onWork.png",
+        "IMG_gpsandnet": "widgets/XJHistoryQuery/css/img/netAndGps.png",
+        "IMG_gpserror": "widgets/XJHistoryQuery/css/img/gpsError.png",
+        "IMG_neterror": "widgets/XJHistoryQuery/css/img/netError.png",
+        "IMG_avatarOn": "widgets/XJHistoryQuery/css/img/avatarOn.png",
+        "IMG_avatarOff": "widgets/XJHistoryQuery/css/img/avatarOff.png"
+    },
+    "workerDetailLinkClick": {
+        "PNGPATH_OnActive": "widgets/XJHistoryQuery/css/img/onActive.png",
+        "PNGPATH_OffActive": "widgets/XJHistoryQuery/css/img/offActive.png",
+        "PNGPATH_ErrorActive": "widgets/XJHistoryQuery/css/img/errorActive.png"
+    },
+    "requestWorkerLog": {
+        "URL_request": "/DeviceUpload/RunLog_List",
+        "MSG_error": "查询巡检人员工作日志出错！",
+        "MSG_null": "查询巡检人员工作日志为空！"
+    },
+    "initWorkerLog": {
+        "IMG_gpsnormal": "widgets/XJHistoryQuery/css/img/loggpsnormal.png",
+        "IMG_gpserror": "widgets/XJHistoryQuery/css/img/loggpserror.png",
+        "IMG_onwork": "widgets/XJHistoryQuery/css/img/logonwork.png",
+        "IMG_offwork": "widgets/XJHistoryQuery/css/img/logoffwork.png"
+
+    },
+    "requestWorkerAllPlanId": {
+        "URL_request": "/Plan/list",
+        "MSG_error": "查询巡检人员巡检计划出错！",
+        "MSG_null": "查询巡检人员巡检计划为空！"
+    },
+    "requestCheckedPoint": {
+        "URL_request": "/Plan/Plan_List_Point_Current",
+        "MSG_error": "查询巡检人员巡检点出错！",
+        "MSG_null": "查询巡检人员巡检点为空！"
+    },
+    "requestDepartmentInfo": {
+        "URL_Request": "/Groups/list",
+        "MSG_Error": "获取部门列表出错!",
+        "MSG_Null": "获取部门列表为空！"
+    },
+    "requestUserInfo": {
+        "URL_Request": "/User/List",
+        "MSG_Error": "获取巡检人员列表出错!",
+        "MSG_Null": "获取部门列表为空！"
+    },
+    "requestWorkerSectionPathIndex": {
+        "URL_request": "/Gps/Get_Section",
+        "MSG_Error": "获取分段轨迹索引出错",
+        "MSG_Null": "当前用户无轨迹"
+    },
+    "requestWorkerPath": {
+        "URL_request": "/Gps/List",
+        "MSG_Error": "查询巡检轨迹出错！",
+        "MSG_Null": "查询巡检轨迹为空"
+    },
+    "addWorkerAllPathToMap": {
+        "IMG_startpoint": "/widgets/XJHistoryQuery/css/img/go.png",
+        "IMG_endpoint": "/widgets/XJHistoryQuery/css/img/end.png"
+    },
+    "requestWorkerSectionPath": {
+        "URL_request": "/Gps/Get_Gps_Section",
+        "MSG_error": "查询轨迹信息出错！",
+        "MSG_null": "查询轨迹信息为空！"
+    },
+    "addPathPointToMap": {
+        "PNGPATH_Start": "/widgets/XJHistoryQuery/css/img/startPoint.png",
+        "PNGPATH_End": "/widgets/XJHistoryQuery/css/img/endPoint.png"
+    },
+
+    "locateWorkerItem": {
+        "MSG_locateerror": "无定位信息！"
+
+    },
+    "initBaseLayer": {
+        "URL_buildsite": "/BuildManage/List",
+        "URL_xjpoint": "/PlanPoint/List",
+        "URL_xjline": "/PlanPoint/List",
+        "URL_region": "/GpsRegion/List",
+        "buildsite_layerid": "historyGraphiclayer_buildsite",
+        "xjpoint_layerid": "historyGraphiclayer_xjpoint",
+        "xjline_layerid": "historyGraphiclayer_xjline",
+        "xjregion_layerid": "historyGraphiclayer_xjregion"
+    },
+    "requestBuildSiteInfoCallback": {
+        "Str_layerid": "historyGraphiclayer_buildsite",
+        "URL_symbol": "/widgets/XJHistoryQuery/css/img/buildsite.png"
+    },
+    "requestXJpointInfoCallback": {
+        "URL_symbol": "/widgets/XJHistoryQuery/css/img/planpoint.png"
+    },
+    "requestXJLineInfoCallback": {
+        "Str_layerid": "historyGraphiclayer_xjline"
+
+    },
+    "requestXJRegionInfoCallback": {
+        "Str_layerid": "historyGraphiclayer_xjregion"
+
+    },
+    "switchLayerData": {
+        "URL_buildsite": "/BuildManage/List"
+    },
+    "layerControl": {
+        "URL_hidedanger": "/Trouble/List",
+        "URL_worker": "/DeviceUpload/List",
+        "URL_buildsite": "/BuildManage/List",
+        "URL_xjpoint": "/PlanPoint/List",
+        "URL_xjline": "/PlanPoint/List",
+        "URL_region": "/GpsRegion/List",
+        "URL_car": "/DeviceUpload/ListCar",
+        "buildsite_layerid": "historyGraphiclayer_buildsite",
+        "xjpoint_layerid": "historyGraphiclayer_xjpoint",
+        "xjline_layerid": "historyGraphiclayer_xjline",
+        "xjregion_layerid": "historyGraphiclayer_xjregion"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

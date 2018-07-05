@@ -1,0 +1,88 @@
+<div class="widget-workspace">
+    <form role="form" onsubmit="return false;">
+        <fieldset>
+            <legend>
+                添加工作空间
+                <span class="glyphicon glyphicon-question-sign" title="将当前地图显示区域保存为一个工作空间。"></span>
+            </legend>
+            <div class="foldable">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            名称
+                        </div>
+                        <input class="form-control input-sm bookmarkname" type="text" placeholder="请输入当前工作空间的名称" id="worckspace-input-add" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-success btn-sm btn-block addbookmark">增加工作空间</button>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                我的工作空间
+                <span class="glyphicon glyphicon-question-sign" title="查看所有已保存的工作空间。双击可切换至此工作空间。"></span>
+            </legend>
+            <div class="foldable">
+                <div class="form-group">
+                    <table class="table table-bordered table-hover worckspace-table-list">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>名称</td>
+                                <td>创建日期</td>
+                            </tr>
+                        </thead>
+                        <tbody class="pick-pipe-tbody">
+                            <!--<tr class="">
+                                <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                                <td>主页</td>
+                                <td>2012.05.12</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                                <td>主页</td>
+                                <td>2012.05.12</td>
+                            </tr>
+                            <tr class="active">
+                                <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                                <td>我的自定义工作空间名称</td>
+                                <td>2012.05.12</td>
+                            </tr>
+                            <tr class="">
+                                <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                                <td>主页</td>
+                                <td>2012.05.12</td>
+                            </tr>
+                            <tr class="">
+                                <td><input type="checkbox" name="vehicle" value="Car" checked="checked" /> </td>
+                                <td>主页</td>
+                                <td>2012.05.12</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-toolbar" role="toolbar">
+                    <div class=" btn-group btn-group-sm">
+                        <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                        <button type="button" class="btn btn-primary disabled content">第1页共1页</button>
+                        <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                    </div>
+                    <div class="input-group input-group-sm go">
+                        <input type="number" min=1 class="form-control currpage">
+                        <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+					</span>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="button" class="btn btn-danger btn-sm btn-block deletebookmark" data-toggle="modal" >删除选定的工作空间</button>
+                </div>
+
+             
+
+            </div>
+        </fieldset>
+    </form>
+</div>

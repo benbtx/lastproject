@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/VehicleOysterSauceStatistics",
+    "tmplateUrl": "widgets/VehicleOysterSauceStatistics/Widget.html",
+    "styleUrl": "widgets/VehicleOysterSauceStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getReportCarFuelConsume": "/CarReport/ReportCarFuelConsume",
+    "pagenumber": 0,
+    "pagesize": 15,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000
+}

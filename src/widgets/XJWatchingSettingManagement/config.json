@@ -1,0 +1,29 @@
+{
+    "widgetUrl": "widgets/XJWatchingSettingManagement",
+    "tmplateUrl": "widgets/XJWatchingSettingManagement/Widget.html",
+    "styleUrl": "widgets/XJWatchingSettingManagement/css/style.scss",
+    "mapDiv": "myMap",
+
+    "page": {
+        "count_pagesize": 10,
+        "count_pageindex": 1
+    },
+    "requestWatchingSettingInfo": {
+        "URL_request": "/MonitorParam/List"
+
+    },
+    "addWatchingSetting": {
+        "URL_request": "/MonitorParam/Add",
+        "MSG_success": "添加成功！",
+        "MSG_error": "添加出错！"
+    },
+    "deleteWatchingSetting": {
+        "URL_request": "/MonitorParam/Delete",
+        "MSG_success": "删除成功！"
+    },
+    "assignWatchingSetting": {
+        "URL_request": "/MonitorParam/Open",
+        "MSG_success": "启用成功！",
+        "MSG_error": "启用出错！"
+    }
+}

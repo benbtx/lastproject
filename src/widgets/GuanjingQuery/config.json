@@ -1,0 +1,9 @@
+{
+    "widgetUrl": "widgets/PanelDemo",
+    "tmplateUrl": "widgets/PanelDemo/Widget.html",
+    "styleUrl": "widgets/PanelDemo/css/style.css",
+    "hello": "Hello ",
+    "getFieldUniqueValueUrl": "/exts/TFExtentionSOE/getFieldUniqueValue",
+    "removeLayers": ["气源", "极性保护", "监测点", "燃气桩", "套管","气源(管维)", "极性保护(管维)", "监测点(管维)", "燃气桩(管维)", "套管(管维)"]
+
+}

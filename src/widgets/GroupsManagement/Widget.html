@@ -1,0 +1,226 @@
+<div class="widget-groupsmanagement ">
+   
+    <div>
+
+        <div id="toolbar" class="btn-group btn-group-sm toolbar">
+
+                <% if (range==00) { %>
+
+
+                    <button id="btn_add" type="button" class="btn btn-default btn-primary btn_add">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+                        </button>
+                    <button id="btn_edit" type="button" class="btn btn-default btn-primary btn_edit">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+                        </button>
+
+                    <button id="btn_delete" type="button" class="btn btn-primary  btn_bind">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>绑定用户
+                    </button>
+
+                    <button id="btn_delete" type="button" class="btn btn-primary btn_unbind">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>解除用户绑定
+                    </button>
+                    
+                    <button id="btn_delete" type="button" class="btn btn-default btn-danger btn_delete">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                        </button>
+
+               
+                     <% } else { %>
+
+                <% } %>
+
+              
+        </div>
+     
+    </div>
+
+    <div class="groupinfo">
+
+       <ul id="treeDemo" class="ztree ztree-group"></ul>
+
+
+    </div>
+
+    <div class="userinfo">
+
+        <div  class="users">
+            当前部门bs端用户：
+
+               <ul class="list-group users_li">
+                          
+               </ul>
+                         
+        </div>
+
+
+    </div>
+   $$
+    <!--<div class="widget-groupsmanagement_addpopup">
+           <div class="groupsmanagement">
+                      <div class="form-group">
+                        部门名称\分组<input type="text" class="form-control name" placeholder="部门名称\分组">
+                        联系人<input type="text" class="form-control contact" placeholder="联系人">
+                        地址<input type="text" class="form-control address" placeholder="地址">
+                        电话 <input type="text" class="form-control phone" placeholder="电话">
+                    </div>
+                   
+        </div>
+    </div>-->
+    <div >
+            <form id="groupsmanagement_addpopup"  class="form-horizontal" 
+                    data-bv-message="This value is not valid"
+                    data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                    data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                    data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+                
+                    <div class="form-group">
+                    <label class="col-lg-3 control-label">部门名称\分组</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control name" name="name" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The name is not valid"
+                                required data-bv-notempty-message="不能为空"
+                                
+                                     data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="字段长度不得超过20 "
+                                />
+                    </div>
+                </div>
+               
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label"> 联系人</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control contact" name="contact"  
+                                data-bv-trigger="blur"
+                                data-bv-message="The contact is not valid"
+
+                                
+                                     data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="字段长度不得超过20 "
+                              
+                                />
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">电话</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control phone" name="phone" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The phone is not valid"
+                                pattern="^1(3|4|5|7|8)\d{9}$" data-bv-regexp-message="手机号码验证不通过"
+                               
+                                />
+                    </div>
+                </div>
+
+                
+            </form>
+    </div>
+   $$
+    <!--<div class="widget-groupsmanagement_updatepopup">
+           <div class="groupsmanagement">
+                 <div class="form-group">
+                        部门名称\分组<input type="text" class="form-control name" placeholder="部门名称\分组">
+                        联系人<input type="text" class="form-control contact" placeholder="联系人">
+                        地址 <input type="text" class="form-control address" placeholder="地址">
+                        电话 <input type="text" class="form-control phone" placeholder="电话">
+                </div>   
+                   
+          </div>
+    </div>-->
+     <div >
+            <form id="groupsmanagement_updatepopup"  class="form-horizontal" 
+                    data-bv-message="This value is not valid"
+                    data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                    data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                    data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+                
+                    <div class="form-group">
+                    <label class="col-lg-3 control-label">部门名称\分组</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control name" name="name" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The name is not valid"
+                                required data-bv-notempty-message="不能为空"
+                                
+                                     data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="字段长度不得超过20 "
+                                />
+                    </div>
+                </div>
+               
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label"> 联系人</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control contact" name="contact"  
+                                data-bv-trigger="blur"
+                                data-bv-message="The contact is not valid"
+
+                                
+                                     data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="字段长度不得超过20 "
+                               
+                                />
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">电话</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control phone" name="phone" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The phone is not valid"
+
+                                  pattern="^1(3|4|5|7|8)\d{9}$" data-bv-regexp-message="手机号码验证不通过"
+                               
+                             
+                                />
+                    </div>
+                </div>
+
+                
+            </form>
+    </div>
+   $$
+
+    <div class="widget-groupsmanagement_deletepopup">
+        <div class="groupsmanagement">
+            <div class="form-group">
+                确认是否删除？
+
+            </div>
+
+        </div>
+    </div>
+    $$
+  
+    <div class="widget-groupsmanagement_bindpopup">
+        <div class="groupsmanagement">
+            <div class="form-group">
+
+             
+               可绑定用户信息：
+               <!-- <select class="form-control users"></select> -->
+
+                <div class="groupsmanagement_bindpopup">
+                    <ul class="list-group users">
+                           <%=content %>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    $$
+      
+</div>
+
+

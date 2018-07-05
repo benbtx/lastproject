@@ -1,0 +1,47 @@
+<div class="WorkSheetDelivery">
+    <fieldset>
+        <legend>
+            标题
+            <span class="glyphicon glyphicon-question-sign" title="填入工单标题。"></span>
+        </legend>
+        <div class="foldable">
+            <input type="text" class="input-sm form-control title" maxlength="50" placeholder="工单标题">
+        </div>
+        <legend>
+            接单人员
+            <span class="glyphicon glyphicon-question-sign" title="选择接单人员。"></span>
+        </legend>
+        <div class="foldable">
+            <select class="form-control input-sm ">
+            </select>
+        </div>
+        <legend>
+            完工日期
+            <span class="glyphicon glyphicon-question-sign" title="填入完工日期。"></span>
+        </legend>
+        <div class="foldable">
+            <input type="text" class="input-sm form-control title finishDate" placeholder="年-月-日" readonly>
+        </div>
+        <legend>
+            地址
+            <span class="glyphicon glyphicon-question-sign" title="单击地图定位，然后输入工单地址"></span>
+        </legend>
+        <div class="foldable">
+            <input type="text" class="input-sm form-control title address" disabled="disabled" placeholder="单击地图定位，然后输入工单地址">
+        </div>
+        <legend>
+            工单内容
+            <span class="glyphicon glyphicon-question-sign" title="填写工单内容。"></span>
+        </legend>
+        <div class="WorkSheetDelivery-content">
+            <textarea></textarea>
+        </div>
+    </fieldset>
+    <div class="form-group ">
+        <button type="button" class="btn btn-danger btn-sm col-xs-2   clear">清除</button>
+        <button type="button" class="btn btn-primary btn-sm btn-block save">发送</button>
+         <!--<button type="button" class="btn btn-primary btn-sm btn-block send">发送</button>-->
+        <!--<button type="button" class="btn btn-primary btn-sm col-xs-2 save">保存</button>-->
+        <!--<button type="button" class="btn btn-primary btn-sm col-xs-2  col-xs-offset-3 send">发送</button>-->
+    </div>
+</div>

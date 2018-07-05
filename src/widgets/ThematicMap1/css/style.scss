@@ -1,0 +1,49 @@
+.ThematicMap {
+    .ThematicMap-showbtn {
+        margin-top: 10px
+    }
+    .ThematicMap-container {
+        position: relative;
+        height: 100px;
+        height: 40px;
+    }
+    .ThematicMap-input {
+        position: absolute;
+        width: 60%;
+        right: 0px;
+        top: 3px;
+    }
+    .ThematicMap-text {
+        position: absolute;
+        margin-top: 10px;
+    }
+    .ThematicMap-textarea {
+        width: 100%;
+        height: 75px;
+        border: none;
+        resize: none;
+    }
+    .ThematicMap-textareaContainer {
+        width: 100%;
+        height: 100%;
+    }
+    .ThematicMap-AddClearbtnContainer {
+        display: -webkit-flex;
+        display: flex;
+        button {
+            -webkit-flex: 1;
+            flex: 1;
+        }
+    }
+    .ThematicMap-AddClearbtn {
+        margin: 0 20px;
+    }
+    .ThematicMap-select {
+        margin-left: 12px;
+    }
+    .light-well {
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}

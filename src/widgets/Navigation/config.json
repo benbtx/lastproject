@@ -1,0 +1,6 @@
+{
+    "widgetUrl": "widgets/Navigation",
+    "tmplateUrl": "widgets/Navigation/Widget.html",
+    "styleUrl": "widgets/Navigation/css/style.css",
+    "mapDiv": "myMap"
+}

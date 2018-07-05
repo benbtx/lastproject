@@ -1,0 +1,103 @@
+.wideget-LengthStatistics {
+    li {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    ;
+    .inline {
+        display: inline-block
+    }
+    .drection {
+        margin-left: 5px;
+    }
+    .length_layers {
+        li {
+            padding: 0 3px;
+        }
+        .checkbox {
+            margin: 4px 0;
+        }
+        width:100%;
+        height: 200px;
+        overflow-y:auto;
+        position: relative
+    }
+    .length_attribution {
+        width: 100%;
+        height: 200px;
+        overflow-y: auto;
+        position: relative
+    }
+    table {
+        ul {
+            width: 100%;
+            position: relative;
+            margin-bottom: 0;
+            li {
+                list-style: none;
+            }
+        }
+    }
+    .lengthstatisticfields {
+        margin-bottom: 0px;
+        padding: 2px;
+        border: 1px solid #CCC;
+        .checkbox {
+            margin: 2px 0;
+            &:hover {
+                color: #FFF;
+                background-color: #1e90ff;
+                label {
+                    font-weight: bold;
+                }
+            }
+        }
+        width:100%;
+        height: 80px;
+        overflow-y:auto;
+        position: relative;
+    }
+    .lengthstatisticuniquevalue {
+        margin-bottom: 0px;
+        padding: 2px;
+        border: 1px solid #CCC;
+        .checkbox {
+            margin: 2px 0;
+            &:hover {
+                color: #FFF;
+                background-color: #1e90ff;
+                label {
+                    font-weight: bold;
+                }
+            }
+        }
+        width:100%;
+        height: 80px;
+        overflow-y:auto;
+        position: relative;
+    }
+    .lengthstatisticleftoperate {
+        width: 36%;
+        padding: 1px !important
+    }
+    .lengthstatisticoperator {
+        display: inline-block;
+        width: 40px;
+    }
+    .uniquevaluelist {
+        height: 100%;
+    }
+    .on {
+        color: #FFF;
+        background-color: #1e90ff;
+        label {
+            font-weight: bold;
+        }
+    }
+    .length_filter {
+        margin-bottom: 2px;
+    }
+    .lengthstatisticuniquefieldvalue {
+        padding-left: 2px!important
+    }
+}

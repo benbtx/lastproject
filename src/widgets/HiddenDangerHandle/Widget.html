@@ -1,0 +1,77 @@
+<div class="widget-hiddendangerhandle">
+    <table class="table table-bordered  table-striped">
+        <thead>
+            <tr>
+                <th>隐患类型</th>
+                <th>隐患设备名称</th>
+                <th>隐患备注</th>
+                <th>上报人员</th>
+                <th>是否处理</th>
+                <th>隐患状态</th>
+                <th>地址</th>
+                <th>发现时间</th>
+                 <th>处理</th>
+            </tr>
+        </thead>
+        <tbody class="addhiddendanger">
+           
+        </tbody>
+    </table>
+    <label class="pagecontrol">
+            总共条记录，每页默认显示条记录
+            </label>
+    <div class="pull-right input-group btn-toolbar " role="toolbar">
+        <div class=" btn-group btn-group-sm">
+            <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+            <button type="button" class="btn btn-primary disabled content">第页共页</button>
+            <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+        </div>
+        <div class="input-group input-group-sm go">
+            <input type="number" min=1 value=1 class="form-control currpage">
+            <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                        </span>
+        </div>
+    </div>
+</div>
+$$
+<div class="templateOfInfo">
+    <p><span>地址：${address}</span> </p>
+    <p><span>隐患类型：${trouble_typeid}</span></p>
+    <p><span>上报人员：${username}</span> </p>
+    <p><span>备注：${notes}</span> </p>
+    <p><span>创建时间：${uploadtime}</span> </p>
+    <p><span>处理状态：${handle_state}</span> </p>
+    <div>
+        <span>隐患发现照片：</span></br>
+        <div class="well picture">
+            ${yhfx}
+        </div>
+    </div>
+    <div>
+        <!--<span>处理意见：</span></br>
+        <textarea></textarea>-->
+    </div>
+    <p><span>隐患级别:</span></p>
+    <div class="well">
+        <h6> 国家标准：
+            <select class='HiddenDangerHandle HiddenDangerHandle-countryclass'>
+            <option value="11">重大隐患 </option>
+             <option value="12">较大隐患 </option>
+            <option value="13">一般隐患 </option>
+            </select>
+        </h6>
+        <h6>重庆市标准：
+            <select class='HiddenDangerHandle HiddenDangerHandle-cityclass '>
+            <option value="21">重大隐患 </option>
+             <option value="22">较大隐患 </option>
+             <option value="23">一般隐患 </option> </select>
+        </h6>
+        <h6>燃气集团标准：
+            <select class='HiddenDangerHandle HiddenDangerHandle-companyclass'>
+            <option value="31"> 一级</option>
+             <option value="32">二级 </option>
+              </select>
+        </h6>
+    </div>
+    <button type="button" class="btn btn-primary btn-xs btn-block HiddenDangerHandle-handletrouble ">提交</button>
+</div>

@@ -1,0 +1,234 @@
+.widget-XJCarState {
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .toolbar {
+        width: 100%;
+        input.date,
+        select {
+            width: 120px;
+        }
+        select.company {
+            width: 150px;
+        }
+        .state {
+            .imgTool {
+                padding: 3px 3px;
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+        .tool {
+            float: right;
+            .imgTool {
+                padding: 3px 3px;
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+        /*点击的样式*/
+        .active {
+            background-color: #d9f0f9;
+            border: solid 1px #d9f0f9;
+            border-radius: 3px;
+        }
+    }
+    .mainContent {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: calc(100% - 70px);
+        div.dataloaderleft {
+            position: absolute;
+            left: calc(40% - 35px);
+            top: 50%;
+            display: none;
+        }
+        div.dataloaderright {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            display: none;
+        }
+        .mainBox {
+            width: 100%;
+            height: 100%;
+            float: left;
+            border: 1px solid #dddddd;
+            border-right: 1px solid white;
+            div.tablecontainer {
+                height: 100%;
+            }
+            /*如果为列表形式*/
+            table {
+                margin-bottom: 0px;
+                table-layout: fixed;
+                padding-right: 5px;
+            }
+            td,
+            th {
+                text-align: center;
+            }
+            td {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                -webkit-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+            }
+            .tableContent {
+                overflow-y: auto;
+                height: calc(100% - 35px);
+                thead {
+                    display: none
+                }
+                tbody tr {
+                    cursor: pointer;
+                }
+                tbody tr[userstate="offWork"] {
+                    td {
+                        color: #a5a3a3 !important;
+                    }
+                }
+            }
+            /*如果为图片形式*/
+            .workState {
+                display: inline-block;
+                div.item {
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    border: 1px solid #d6cccc;
+                    cursor: pointer;
+                    div.headPictureContainer {
+                        width: 70px;
+                        height: 70px;
+                        img {
+                            display: block;
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50px;
+                        }
+                    }
+                    p {
+                        text-align: center;
+                        margin: 0 0 0px;
+                    }
+                }
+                /*图标选中时的样式*/
+                div.success {
+                    border: 2px solid red;
+                }
+                /*人员状态叠加*/
+                div.state[state="noWork"] {
+                    img[oraginal="no"] {
+                        opacity: 0.4;
+                    }
+                }
+                div.state[state="offWork"] {
+                    img[oraginal="no"] {
+                        opacity: 0.4;
+                    }
+                }
+                div.state[state="onWork"] {
+                    div.headPictureContainer:after {
+                        content: url("img/onWorkState.png");
+                        position: relative;
+                        left: 37px;
+                        bottom: 30px;
+                        z-index: 1;
+                        padding: 17px 3px 0px 3px;
+                        border-radius: 50px;
+                    }
+                }
+                div.state[state="gpsError"] {
+                    div.headPictureContainer:after {
+                        content: url("img/gpsErrorState.png");
+                        position: relative;
+                        left: 37px;
+                        bottom: 30px;
+                        z-index: 1;
+                        padding: 17px 3px 0px 3px;
+                        border-radius: 50px;
+                    }
+                }
+                div.state[state="noGps"] {
+                    div.headPictureContainer:after {
+                        content: url("img/noGpsState.png");
+                        position: relative;
+                        left: 37px;
+                        bottom: 30px;
+                        z-index: 1;
+                        padding: 17px 3px 0px 3px;
+                        border-radius: 50px;
+                    }
+                }
+                div.state[state="netError"] {
+                    div.headPictureContainer:after {
+                        content: url("img/netErrorState.png");
+                        position: relative;
+                        left: 37px;
+                        bottom: 30px;
+                        z-index: 1;
+                        padding: 17px 3px 0px 3px;
+                        border-radius: 50px;
+                    }
+                }
+                div.state[state="offWork"] {
+                    div.headPictureContainer:after {
+                        content: url("img/offWorkstate.png");
+                        position: relative;
+                        left: 37px;
+                        bottom: 30px;
+                        z-index: 1;
+                        padding: 17px 3px 0px 3px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+        .sideBox {
+            width: 23%;
+            height: 100%;
+            float: right;
+            border: 1px solid #dddddd;
+            div.talblecontainer {
+                height: calc(100% - 35px);
+                td,
+                th {
+                    min-width: 40px;
+                }
+                table {
+                    margin-bottom: 0px;
+                }
+                .tableContent {
+                    overflow-y: auto;
+                    height: calc(100% - 35px);
+                }
+            }
+            div.pageontainer {
+                border-top: 1px solid #ddd;
+                ul {
+                    margin: 0;
+                    width: 100%;
+                    li.pre {
+                        float: left
+                    }
+                    li.total {
+                        display: inline-block;
+                        width: calc(100% - 70px);
+                        padding-left: calc(50% - 60px);
+                    }
+                    li.next {
+                        float: right;
+                    }
+                }
+            }
+            /*异常数据样式*/
+            div.talblecontainer {
+                tbody tr.error {
+                    background: red;
+                }
+            }
+        }
+    }
+}

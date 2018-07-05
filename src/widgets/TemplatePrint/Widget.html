@@ -1,0 +1,130 @@
+<div class="wideget-templateprint">
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                标题
+                <span class="glyphicon glyphicon-question-sign" title="设置打印结果中的标题。"></span>
+            </legend>
+            <div class="foldable">
+                <input type="text" class="input-sm form-control title" placeholder="输入图名">
+            </div>
+        </fieldset>
+    </div>
+    <!--<div class="form-group">
+        <fieldset>
+            <legend>
+                布局
+                <span class="glyphicon glyphicon-question-sign" title="设置打印结果的纸张大小。"></span>
+            </legend>
+            <div class="foldable">
+                <select class="input-sm form-control layout"> 
+                    <option value="DefaultA4L">A4横向(29.7x21)(cm)</option>
+                    <option value="DefaultA4P">A4纵向(21×29.7)(cm</option>
+                    <option value="DefaultA0L">A0横向(118.88x84.1)(cm)</option>
+                    <option value="DefaultA0P">A0纵向(84.1×118.88)(cm)</option>
+                    <option value="DefaultA1L">A1横向(84.1x59.4)(cm)</option>
+                    <option value="DefaultA1P">A1纵向(59.4×84.1)(cm)</option>
+                    <option value="DefaultA2L">A2横向(59.4×42)(cm)</option>
+                    <option value="DefaultA2P">A2纵向(42×59.4)(cm)</option>
+                    <option value="DefaultA3L">A3横向(42×29.7)(cm)</option>
+                    <option value="DefaultA3P">A3纵向(29.7×42)(cm)</option>  
+                </select>
+            </div>
+        </fieldset>
+    </div>-->
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                格式
+                <span class="glyphicon glyphicon-question-sign" title="设定打印结果的格式。"></span>
+            </legend>
+            <div class="foldable">
+                <select class="form-control format"> 
+                    <option>PDF</option>
+                    <option>PNG</option>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                模板
+                <span class="glyphicon glyphicon-question-sign" title="设定图纸尺寸。"></span>
+            </legend>
+            <div class="foldable">
+                <select class="form-control input-sm templates"> 
+                            <% templates.forEach(function(item) { %>
+                                    <option value="<%= item.id %>">
+                                    <a href="#" class="<%= item.name %>" >
+                                        <%= item.name %>
+                                    </a>
+                                    </option>
+                            <% }); %>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                比例尺
+                <span class="glyphicon glyphicon-question-sign" title="设置打印比例尺。"></span>
+            </legend>
+            <div class="foldable">
+                <input type="text" class="input-sm form-control scale" placeholder="输入比例尺">
+            </div>
+        </fieldset>
+    </div>
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                选取范围
+                <span class="glyphicon glyphicon-question-sign" title="点击按钮，然后到地图上点击确定打印范围。"></span>
+            </legend>
+            <div class="">
+                <button type="button" class="btn btn-sm btn-default btn-block pick-extent">点击生成范围</button>
+            </div>
+        </fieldset>
+    </div>
+    <div class="form-group content">
+        <fieldset>
+            <legend>
+                高级设置
+                <span class="glyphicon glyphicon-question-sign" title="设定打印的详细参数。单击可打开选项。"></span>
+            </legend>
+            <div class="foldable advanced-setting" style="display: none;">
+                <div class="form-group btn-group-sm">
+                    <strong>布局参数</strong>
+                    <div>出图人员
+                        <input type="text" class="input-sm form-control authorText" placeholder="重庆燃气">
+                    </div>
+                    <div>出图单位
+                        <input type="text" class="input-sm form-control copyrightText" placeholder="重庆燃气">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary btnprint">
+        <span class="glyphicon glyphicon-print"></span>
+        打印 
+        </button>
+    </div>
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                打印结果
+                <span class="glyphicon glyphicon-question-sign" title="打印结果显示。"></span>
+            </legend>
+            <div class="printresults"></div>
+        </fieldset>
+    </div>
+    <div class="clearresults">
+        <button type="button" class="btn btn-danger btntrash">
+            <span class="glyphicon glyphicon-trash"></span>
+            清理列表 
+        </button>
+    </div>
+</div>

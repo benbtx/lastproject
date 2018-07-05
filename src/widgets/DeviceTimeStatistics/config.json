@@ -1,0 +1,24 @@
+{
+    "widgetUrl": "widgets/DeviceTimeStatistics",
+    "tmplateUrl": "widgets/DeviceTimeStatistics/Widget.html",
+    "styleUrl": "widgets/DeviceTimeStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getUserList": "/user/list",
+    "getPlanType": "/PlanPointType/List/",
+    "getPeriod": "/PeriodType/List",
+    "getAnnualStatistics": "/PatrolReport/ReportPatrolRealtime",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000,
+    "device_type_selects":["2","3","4","7","8"],
+    "device_name_selects":{
+        "2":"调压箱",
+        "3":"调压柜",
+        "4":"阀门",
+        "7":"阀室",
+        "8":"阴保站（恒电位仪）"
+    }
+}

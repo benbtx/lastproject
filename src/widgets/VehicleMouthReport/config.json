@@ -1,0 +1,13 @@
+{
+    "widgetUrl": "widgets/VehicleMouthReport",
+    "tmplateUrl": "widgets/VehicleMouthReport/Widget.html",
+    "styleUrl": "widgets/VehicleMouthReport/css/style.scss",
+    "mapDiv": "myMap",
+    "getGroupList": "/groups/list",
+    "getVehicleList":"/Car/List",
+    "getVehicleMouthReport": "/CarReport/ReportCarMileage",
+    "pagenumber": 0,
+    "pagesize": 15,
+    "currentpage":1,
+    "maxsize":10000
+}

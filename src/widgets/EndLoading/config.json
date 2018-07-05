@@ -1,0 +1,6 @@
+{
+    "widgetUrl":"widgets/EndLoading",
+    "tmplateUrl":"widgets/EndLoading/Widget.html",
+    "styleUrl":"widgets/EndLoading/css/style.css",
+    "prompt":["检查浏览器","拉取配置信息","初始化地图","加载模块","初始化即将完毕"]
+}

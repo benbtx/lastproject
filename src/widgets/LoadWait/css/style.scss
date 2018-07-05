@@ -1,0 +1,24 @@
+.widget-loadwait {
+    .loading{
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        top: 30%;     
+        position: relative !important;
+        position: fixed;
+    }
+    .loadingbg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: rgba(240, 237, 229, 0.43);
+        font-size: 15px;
+        font-weight: 600;
+    }
+}

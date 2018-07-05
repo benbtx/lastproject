@@ -1,0 +1,23 @@
+<div class="widgets-menu-bar no-user-select">
+    <div class="btn-group">
+        <% menuListData.forEach(function(section) { %>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <img src="<%= root + section.icon %>">
+                    <%= section.label %>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <% section.data.forEach(function(item) { %>
+                        <li data-id="<%= item.id %>" data-widget="<%= item.widget %>" data-main="<%= item.main %>" data-label="<%= item.label %>"
+                            data-in-panel="<%= item.inPanel %>">
+                            <a href="javascript:void(0);">
+                                <img src="<%= root + item.icon %>">
+                                <%= item.label %>
+                            </a>
+                        </li>
+                        <% }); %>
+                </ul>
+            </div>
+            <% }); %>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+{
+    "panelContainerID": "fullpanelContainer",
+    "loadingDelay": "500",
+    "pageIcon": "./widgets/FullPanel/images/page.png"
+}

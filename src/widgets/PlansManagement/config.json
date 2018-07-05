@@ -1,0 +1,16 @@
+{
+    "widgetUrl": "widgets/PlansManagement",
+    "tmplateUrl": "widgets/PlansManagement/Widget.html",
+    "styleUrl": "widgets/PlansManagement/css/style.css",
+    "getPlanRegionList": "/GpsRegion/List",
+    "getUserList": "/user/list",
+    "getPeriod": "/PeriodType/List",
+    "getPlansManagementList": "/Plan/List",
+    "addPlansManagementInfo": "/Plan/Add",
+    "updatePlansManagement": "/Plan/Update",
+    "deletePlansManagement": "/Plan/Delete/",
+    "pagenumber": 1,
+    "pagesize": 5,
+    "MarkPictureSymbol": "./widgets/PlansManagement/images/people.png",
+    "TextbgSymbol": "./widgets/PlansManagement/images/textbg.png"
+}

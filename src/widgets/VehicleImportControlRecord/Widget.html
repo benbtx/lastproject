@@ -1,0 +1,286 @@
+<div class="widget-VehicleImportControlRecord ">
+    <div class="form-inline importcontrolinfo-tool">
+         <div class="form-group company_serch" style="display: none;">
+            公司
+            <select class="input-sm form-control company minwidth" ></select>
+        </div>
+         <div class="form-group department_btn">
+            部门
+            <select class="input-sm form-control department minwidth"></select>                                                                
+         </div>
+          <div class="form-group" style="margin-left: 2px;">
+            车辆
+            <select class="input-sm form-control minwidth carids" ></select>                                                   
+         </div>
+         <div class="form-group" style="margin-left: 2px;">
+            零件名称
+            <select class="input-sm form-control minwidth partnameids" ></select>                                                   
+        </div>
+
+        <div class="form-group" style="margin-left: 2px;">
+            保修厂
+            <input type="text" class="form-control repair_factory minwidth">
+         </div>
+         <div class="form-group">
+            安装日期
+            <input type="text" class="form-control start_date minwidth" placeholder="年-月-日" readonly="readonly">       
+            ~
+            <input type="text" class="form-control end_date minwidth" placeholder="年-月-日" readonly="readonly"> 
+             <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+            </button>
+         </div>
+         </br>
+        <div id="toolbar" class="btn-group btn-group toolbar  pull-left" style="margin-top: 5px;">
+            <button id="btn_add" type="button" class="btn btn-default btn-primary btn_add" >
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+            </button>
+            <button id="btn_edit" type="button" class="btn btn-default btn-primary btn_edit">
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+            </button>
+            <button id="btn_delete" type="button" class="btn btn-default btn-danger btn_delete">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+            </button>
+            <button id="btn_refresh" type="button" class="btn btn-default btn-primary btn_refresh toolbar" handletype="refresh">
+                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>刷新
+            </button>
+        </div>
+    </div>
+    <div class="importcontrolinfo">
+        <table class="table table-bordered  table-striped">
+            <tbody>
+                <tr>
+                    <th class="checkwidth"><input type="checkbox" class="select_importcontrolinfo_all_list"/></th>
+                    <th title="车辆">车辆</th>
+                    <th title="零件名称">零件名称</th>
+                    <th title="金额(元)">金额(元)</th>
+                    <th title="安装日期">安装日期</th>                                  
+                    <th title="质保日期">质保日期</th>
+                    <th title="额定日期">额定日期</th>
+                    <th title="质保里程(km)">质保里程(km)</th>
+                    <th title="额定里程(km)">额定里程(km)</th>
+                    <th title="车辆码表里程数">车辆码表里程数</th>
+                    <th title="保修厂">保修厂</th>
+                    <th title="备注">备注</th>
+                </tr>
+            </tbody>
+            <tbody  class="importcontrolinfolist">            
+                
+            </tbody>
+        </table>
+        <div class="form-inline importcontrolinfo-tool importcontrolinfo-pagecontrol">
+            <div class="input-group  col-md-3">
+                <label  class="pagecontrol">总共-条，每页</label>
+                <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                       
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                    </select><label>条</label>
+                <label class="selectpagecontrol"> ，当前选中-条</label>
+            </div>            
+            <div class="pull-right input-group btn-toolbar" role="toolbar">
+                <div class=" btn-group btn-group-sm">
+                    <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                    <button type="button" class="btn btn-primary disabled content">第-页共-页</button>
+                    <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                </div>
+                <div class="input-group input-group-sm go">
+                    <input type="number" min=1 value=1 class="form-control currpage">
+                    <span class="input-group-btn "> 
+                        <button class="btn btn-default btn-primary pageturning" type="button">跳转</button>
+                    </span>
+                </div>
+            </div>
+    </div>
+    $$
+    <div class="widget-VehicleImportControlRecord_addpopup">
+        <div class="VehicleImportControlRecord">
+             
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>车辆</label></div>                 
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width carid"></select>
+                </div>                         
+            </div> 
+
+             <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>零件名称</label></div>                 
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width partname_id"></select>
+                </div>                         
+            </div>
+
+             <div class="form-group partname_childs" style="display: none;">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>零件种类</label></div>                 
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width partname_child_id"></select>
+                </div>                         
+            </div>
+           <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>金额(元)</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control amount must-width"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>安装日期</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control install_date must-width" name="install_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The install_date is not valid"
+                                required data-bv-notempty-message="不能为空" readonly="readonly"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>质保日期</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control quality_guarantee_date must-width" name="quality_guarantee_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The quality_guarantee_date is not valid"
+                                required data-bv-notempty-message="不能为空" readonly="readonly"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>额定日期</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control rated_date must-width" name="rated_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The maintain_date is not valid"
+                                required data-bv-notempty-message="不能为空" readonly="readonly"/>
+                </div>                        
+            </div>
+           
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>质保里程(km)</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control quality_guarantee_mileage must-width"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>额定里程(km)</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control rated_mileage must-width"/>
+                </div>                        
+            </div>
+
+             <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>车辆码表里程数</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control table_mileage must-width"/>
+                </div>                        
+            </div>
+
+             <div class="form-group">
+                  <div class="col-lg-3 control-label"><span class="must-span">*</span><label>保修厂</label></div>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control repair_factory must-width"/>
+                </div>                         
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-3 control-label">备注</label> 
+                <div class="col-lg-8">
+                    <textarea type="text" class="form-control notes must-width"/>
+                </div>                         
+            </div>
+        </div>
+    </div>
+    $$
+
+    <div class="widget-VehicleImportControlRecord_addpopup">
+        <div class="VehicleImportControlRecord">
+             
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>车辆</label></div>                 
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width carid" disabled='true'></select>
+                </div>                         
+            </div> 
+
+             <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>零件名称</label></div>                 
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width partname_id"></select>
+                </div>                         
+            </div>
+
+             <div class="form-group partname_childs" style="display: none;">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>零件种类</label></div>                 
+                <div class="col-lg-8">
+                   <select class="input-sm form-control must-width partname_child_id"></select>
+                </div>                         
+            </div>
+           <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>金额(元)</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control amount must-width"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>安装日期</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control install_date must-width" name="install_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The install_date is not valid"
+                                required data-bv-notempty-message="不能为空" readonly="readonly"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>质保日期</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control quality_guarantee_date must-width" name="quality_guarantee_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The quality_guarantee_date is not valid"
+                                required data-bv-notempty-message="不能为空" readonly="readonly"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>额定日期</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control rated_date must-width" name="rated_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The maintain_date is not valid"
+                                required data-bv-notempty-message="不能为空" readonly="readonly"/>
+                </div>                        
+            </div>
+           
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>质保里程(km)</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control quality_guarantee_mileage must-width"/>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>额定里程(km)</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control rated_mileage must-width"/>
+                </div>                        
+            </div>
+
+             <div class="form-group">
+                <div class="col-lg-3 control-label"><span class="must-span">*</span><label>车辆码表里程数</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control table_mileage must-width"/>
+                </div>                        
+            </div>
+
+             <div class="form-group">
+                  <div class="col-lg-3 control-label"><span class="must-span">*</span><label>保修厂</label></div>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control repair_factory must-width"/>
+                </div>                         
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-3 control-label">备注</label> 
+                <div class="col-lg-8">
+                    <textarea type="text" class="form-control notes must-width"/>
+                </div>                         
+            </div>
+        </div>
+    </div>
+    $$
+</div>
+
+

@@ -1,0 +1,141 @@
+.widget-VehicleMilegeInfoStatistics {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .vehiclemilegeinfostatistics-search {
+        float: left;
+        width: 100%;        
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    .milegeinfostatistics-list {
+        float: left;
+        width: 100%;
+        height: calc(100% - 73px);
+        margin: 4px;
+        overflow-y: auto;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+             tbody {
+                border-top: 1px solid #ddd;
+            }
+        }
+    }
+    th {
+        text-align: center;
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+        
+    }
+    label,
+    td { 
+        text-align: center;               
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+        min-width: 100px;
+        min-height: 25px;
+    }
+    .tdcontent{
+        text-align: center;
+        vertical-align: middle;
+    }
+    .thright{
+        text-align:right;
+        max-width: 30px;
+        margin-right: 5px;
+    }
+    .tdtitcenter{
+        text-align:center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+    .titcenter{
+        text-align:center;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .thspan {
+        color: red;
+        font-weight: bold;
+    }
+
+    .tdtitspit{
+        text-align:center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    .tit {
+        th {
+            text-align: center;
+            vertical-align: middle;
+            padding: 1px!important;
+        }
+    }  
+    .minwidth{
+        width: 120px;
+        height: 30px;
+    }
+    .toolbar {
+        margin-top: 6px;
+        margin-bottom: 9px;
+        margin-left: 6px;
+    }
+    .goto {
+        height: 37px;
+    }
+    a {
+        cursor: pointer;
+    }
+    .btn {
+        padding: 4px 8px;
+    }
+    .reportname {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    .shenhe {
+        float: left;
+        text-align: center;
+    }
+    .zhibiao {
+        text-align: center;
+          margin-left: calc(30%);
+    }
+    .shijian {
+        float: right;
+        text-align: center;
+    }
+    .dailyReportCaption{
+            padding-left: 5px;
+            font-weight: bold;
+    }
+    .trspit{
+        background-color:grey;
+    }
+    ::-webkit-scrollbar {
+        width: 5px !important;
+        height: 5px !important;
+    }
+    .btn_export{
+        color: #fff;
+        background-color: #ed4e2a;
+        border-color: #ED5A24;
+    }
+
+    .groupleft{
+        margin-left: 10px;
+    }
+}

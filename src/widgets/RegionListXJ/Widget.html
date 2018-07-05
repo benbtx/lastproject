@@ -1,0 +1,38 @@
+<div class="widgets-region_list no-user-select">
+    <div class="widgets-region_list-list">
+        <div class="accordion">
+            <div class="widgets-region_list-item_header">
+                <%= data.title %>
+            </div>
+            <div class="widgets-region_list-item_content">
+                <table class="widgets-side_menu-table">
+                    <tbody>
+                        <% data.items.forEach(function(item){ %>
+                            <tr class="widgets-region_table_row" data-target=<%=item.code%>>
+                                <td class="widgets-region_table_col-2">
+                                    <%=item.name%>
+                                </td>
+                                <% if (item.value == 1) { %>
+                                    <td class="widgets-region_table_col-3">
+                                        在线
+                                    </td>
+                                    <% } else if(item.value == 0) { %>
+                                        <td class="widgets-region_table_col-3">
+                                            离线
+                                        </td>
+                                        <% } else{%>
+                                            <td class="widgets-region_table_col-3">
+                                                <%=item.value%>
+                                            </td>
+                                            <% }%>
+                                                <td class="widgets-region_table_col-4">
+                                                    <a href="javascript:void(0);" class="fire-on" data-target="<%=item.code%>" data-code="<%=item.code%>">查看</a>
+                                                </td>
+                            </tr>
+                            <%}); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+{
+    "widgetUrl": "widgets/PanelDemo",
+    "tmplateUrl": "widgets/PanelDemo/Widget.html",
+    "styleUrl": "widgets/PanelDemo/css/style.css",
+    "hello": "Hello ",
+    "url": "/exts/SpatialAnlysisSOE/HorizentalSectionAnalysis",
+
+
+    "dataPanel": {
+        "width": 700,
+        "height": 426
+    },
+    "findTaskUrl": "http://192.168.1.101:6080/arcgis/rest/services/chongqing/TFGIS_PIPE/MapServer",
+    "getLayerInfoUrl": "/exts/TFExtentionSOE/getLayerInfor",
+    "baseLayerUrl": "http://192.168.1.101:6080/arcgis/rest/services/chongqing/TFGIS_PIPE/MapServer"
+
+}

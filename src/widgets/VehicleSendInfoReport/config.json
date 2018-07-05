@@ -1,0 +1,16 @@
+{
+    "widgetUrl": "widgets/VehicleSendInfoReport",
+    "tmplateUrl": "widgets/VehicleSendInfoReport/Widget.html",
+    "styleUrl": "widgets/VehicleSendInfoReport/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getVehicleList":"/Car/List",
+    "getVehicleSendInfoReport": "/CarReport/ReportCarPlan",
+    "pagenumber": 0,
+    "pagesize": 15,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000
+    
+}

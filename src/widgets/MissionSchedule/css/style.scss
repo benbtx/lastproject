@@ -1,0 +1,241 @@
+.widget-missionschedule {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .form-control{
+        padding: 4px 8px;
+    }    
+
+    .missionschedule_toolbar {
+        height: 30px;
+        .toolbar,.form-group{
+            float: left;
+            margin: 4px;
+        }        
+    }  
+    .radio{
+        padding: 4px 8px;
+        vertical-align: middle;
+        margin: 0;
+    } 
+    .dynamic_pagesize{
+        border-radius: 3px;
+    }    
+
+    .missionschedule_toolbar2 {
+        height: 30px;
+        margin: 4px;     
+    }
+    .missionschedule_content {
+        width: 100%;
+        height: calc(100% - 70px);
+        margin: 4px;
+        table {   
+            margin-bottom: 5px;   
+            table-layout: fixed;
+            tbody {
+                border-top: 1px solid #ddd;
+            }     
+            tr{
+                text-align: center;
+                vertical-align: middle;
+            }
+            th {
+                text-align: center;
+                vertical-align: middle;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            td {
+                padding: 3px !important;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                a:hover {
+                    cursor: pointer
+                }
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+            .goto {
+                min-height: 26px;
+            }
+        }
+    }
+     .halfpaneltable {
+        overflow-y: auto; 
+    }
+    
+    .missionschedule_pagecontrol {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: white;
+        margin-left: 4px;
+    }
+    
+    .hidden {
+        display: none
+    }
+    .missionschedule,.widget-missionschedule_planadd {
+        height: calc(100% - 10px);
+        .toolbar{
+            height: 30px;       
+            margin: 4px;
+        }
+    }
+    .widget-planregion_pointselect,.widget-planregion_deviceselect{
+        height: 100%;
+    }
+    .deviceslist-table{
+        width: calc(70%);
+        float: left;
+    }
+    .deviceslist-select-table{
+         width: calc(30% - 5px);
+         float: right;
+    }
+    .pointlist-table,.deviceslist-table,.deviceslist-select-table,.planregionslist-table {
+        height: calc(100% - 70px);        
+        overflow-y: auto;
+         table {   
+            margin-bottom: 5px;
+            table-layout: fixed;   
+            tbody {
+                border-top: 1px solid #ddd;
+            }     
+            tr{
+                text-align: center;
+                vertical-align: middle;
+            }
+            th {
+                text-align: center;
+                vertical-align: middle;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            td{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .goto {
+                min-height: 26px;
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    background-color: #337ab7 !important;
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+        }       
+    }
+     
+    .deviceslist-pagecontrol{
+        position: absolute;
+        bottom: 0px;
+        background-color: white;
+        margin-left: 4px;
+        width: 100%;
+    }
+    .toolbar2 {
+        display: inline-block;
+        width: 100%;        
+        margin: 4px;
+    }
+    .point_add {
+        float: left;
+        width: 70%;
+        height: 100%;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+        }
+    }
+    .point_add_info {
+        float: left;
+        width: 25%;
+        margin: 4px;
+        height: 250px;
+        overflow-y: auto;
+    }
+    .tianshu {
+        display: none;
+        width: 100px;
+    }
+
+     .minwidth{
+        width: 100px;
+        height: 30px;
+    }
+    .unsubmit{
+        color: red;
+    }
+}
+
+.SY,
+.SM,
+.SD {
+    width: 100px;
+}
+
+.timecal {
+    margin: 9px;
+}
+
+.copyplanslist-table {
+        height: calc(100% - 44px);            
+        .goto {
+            height: 26px;
+        }
+        .minwidth{
+            width: 100px;
+        }
+        .form-control{
+            padding: 4px 8px;
+        }
+        tr th{
+            text-align: center !important;
+            vertical-align: middle !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; 
+        }
+        td{
+            text-align: center !important;
+            vertical-align: middle !important;
+            padding: 2px !important;  
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;          
+        }
+    }
+.esriPopup{
+    z-index: 1;
+}
+
+.checkwidth{
+    width: 40px;
+}

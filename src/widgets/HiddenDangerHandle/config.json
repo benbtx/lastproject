@@ -1,0 +1,15 @@
+{
+    "widgetUrl": "widgets/HiddenDangerHandle",
+    "tmplateUrl": "widgets/HiddenDangerHandle/Widget.html",
+    "styleUrl": "widgets/HiddenDangerHandle/css/style.css",
+    "getHiddenDangerTypeList": "/troubletype/list",
+    "getHiddenDangerList": "/Trouble/List",
+    "getHiddenDangerInfo": "/Trouble/info/",
+    "handleHiddenDanger": "/Trouble/Handle_Trouble",
+    "getHandle_Picture": "/Trouble/Handle_Picture",
+    "getFiles": "/File/Files",
+    "pagenumber": 1,
+    "pagesize": 5,
+    "MarkPictureSymbol": "./widgets/HiddenDangerHandle/images/point.png",
+    "TextbgSymbol": "./widgets/HiddenDangerHandle/images/textbg.png"
+}

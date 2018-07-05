@@ -1,0 +1,11 @@
+{
+    "widgetUrl": "widgets/RightPanel",
+    "tmplateUrl": "widgets/RightPanel/Widget.html",
+    "styleUrl": "widgets/RightPanel/css/style.css",
+    "panelWidgetPath": "widgets/Panel",
+    "fullpanelWidgetPath": "widgets/FullPanel",
+    "halfpanelWidgetPath": "widgets/HalfPanel",
+    "terminalWidgetPath":"widgets/TerminalPanel",
+    "panelWidgetMain": "Widget",
+    "menuListData": null
+}

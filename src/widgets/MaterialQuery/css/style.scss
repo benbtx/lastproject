@@ -1,0 +1,18 @@
+.materialQuery {
+    legend {
+        margin-top: 10px; //标题与上面元素的距离
+    }
+    button {
+        margin-top: 40px; //查询按钮与上面元素的距离
+    }
+    .materialQuery-attribute-value {
+        height: 115px;
+        border: 1px solid #ddd;
+        overflow: auto;
+    }
+     .materialQuery-attribute-container{
+             padding-right: 0 !important;
+             padding-left: 0 !important;
+    }
+   
+}

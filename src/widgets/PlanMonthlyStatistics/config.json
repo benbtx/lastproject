@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/PlanMonthlyStatistics",
+    "tmplateUrl": "widgets/PlanMonthlyStatistics/Widget.html",
+    "styleUrl": "widgets/PlanMonthlyStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getUserList": "/user/list",
+    "getMonthlyStatistics": "/Plan/Static_Plan",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000
+}

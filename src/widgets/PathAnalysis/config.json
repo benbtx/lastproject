@@ -1,0 +1,37 @@
+{
+    "widgetUrl": "widgets/PathAnalysis",
+    "tmplateUrl": "widgets/PathAnalysis/Widget.html",
+    "styleUrl": "widgets/PathAnalysis/css/style.css",
+    "pickPipeTips": "",
+    "baseMapContainerClass": "widgets-basemap",
+    "serviceUrl": {
+        "LayerName": "/exts/TFExtentionSOE/getLayerInfor"
+    },
+    "identifyParameters": {
+        "tolerance": 3
+    },
+    "firstSimpleMarkerSymbol": {
+        "color": "#00ffff",
+        "size": 10,
+        "outline": {
+            "color": "#ff00ff",
+            "width": 1
+        }
+    },
+    "lastSimpleMarkerSymbol": {
+        "color": "#00ffff",
+        "size": 10,
+        "outline": {
+            "color": "#ff00ff",
+            "width": 1
+        }
+    },
+    "firstSimpleLineSymbol": {
+        "color": "#00ffff",
+        "width": 3
+    },
+    "lastSimpleLineSymbol": {
+        "color": "#00ffff",
+        "width": 3
+    }
+}

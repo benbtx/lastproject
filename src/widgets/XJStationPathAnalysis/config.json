@@ -1,0 +1,48 @@
+{
+    "widgetUrl": "widgets/XJPathAnalysis",
+    "tmplateUrl": "widgets/XJPathAnalysis/Widget.html",
+    "styleUrl": "widgets/XJPathAnalysis/css/style.css",
+
+
+    "requestCompanyInfo": {
+        "URL_request": "/Device/Get_Company_List",
+        "MSG_error": "查询公司信息出错！",
+        "MSG_null": "查询公司信息为空！"
+    },
+    "requestDepartmentInfo": {
+        "URL_request": "/Groups/list",
+        "MSG_error": "获取部门列表出错!",
+        "MSG_null": "获取部门列表为空！"
+    },
+    "requestUserInfo": {
+        "URL_Request": "/User/List",
+        "MSG_Error": "获取人员列表出错!"
+    },
+    "requestWatchingSetting": {
+        "URL_request": "/SysSetting/Info"
+
+    },
+    "setSymbol": {
+        "IMG_startpoint": "/widgets/XJPathAnalysis/css/img/go.png",
+        "IMG_endpoint": "/widgets/XJPathAnalysis/css/img/end.png",
+        "IMG_checkpoint": "/widgets/XJPathAnalysis/css/img/checkedpoint.png",
+        "PNGPATH_CheckedPointPng": "/widgets/XJPathAnalysis/css/img/checkedpoint.png",
+        "PNGPATH_CheckingPointPng": "/widgets/XJPathAnalysis/css/img/checkingpoint.png"
+    },
+    "requestPathAnalysisResult": {
+        "URL_request": "/Gps/list",
+        "MSG_error": "基站轨迹分析出错!",
+        "MSG_null": "基站轨迹分析结果为空！"
+    },
+    "requestWorkerAllPlanId": {
+        "URL_request": "/Plan/list",
+        "MSG_error": "查询巡检人员巡检计划出错！",
+        "MSG_null": "查询巡检人员巡检计划为空！"
+    },
+    "requestCheckedPoint": {
+        "URL_request": "/Plan/Plan_List_Point_Current",
+        "MSG_error": "查询巡检人员巡检计划出错！",
+        "MSG_null": "查询巡检人员巡检计划为空！"
+    }
+
+}

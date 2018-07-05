@@ -1,0 +1,107 @@
+.widget-VehicleCoverRecord {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .cover-tool {
+        margin: 4px;
+        .btn_search {
+            &:hover {
+                cursor: pointer
+            }
+        }        
+    }
+    .minwidth{
+       width: 120px;
+       height: 30px;
+    }
+    .btn {
+        padding: 4px 8px;
+    }  
+    .vehiclecoverrecordinfo {
+        float: left;
+        width: 100%;
+        height: calc(100% - 51px);
+        overflow-y: auto;
+        margin: 4px;
+         .cover-pagecontrol{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            margin-left: 5px;
+                background-color: white;
+        }
+        table {
+            margin-bottom: 5px;
+            padding: 2px 5px 2px 5px;
+            table-layout: fixed;
+             tbody {
+                border-top: 1px solid #ddd;
+            }
+            a {
+                cursor: pointer;
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                    overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+
+            td,th{
+                text-align: center;
+                vertical-align:middle; 
+                min-width: 60px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;               
+            }
+            .checkwidth{
+                width: 40px;
+            }
+        }
+    }
+}
+
+
+.must-span{
+    color:red;
+    text-align: center;
+    vertical-align: middle;
+}
+.must-width{
+    min-width: 120px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.widget-VehicleCoverRecord_addpopup{
+    float: left;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    margin: 5px;  
+    .form-group{
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .col-lg-3{
+        text-align: right !important;
+        padding-right: 0px;
+        width: 27%;
+    }
+    .col-lg-8{
+        width: 65%;
+    }
+}
+
+

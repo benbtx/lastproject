@@ -1,0 +1,18 @@
+.guanjingQuery {
+    legend {
+        margin-top: 10px; //标题与上面元素的距离
+    }
+    button {
+        margin-top: 40px; //查询按钮与上面元素的距离
+    }
+    .guanjingQuery-DIAMETER-input {
+        float: left !important;
+        width: 250px !important;
+        top: 10px;
+        margin-bottom: 20px;
+        z-index: 0 !important;
+    }
+    input.guanjingQuery-DIAMETER {
+        margin-left: 40px;
+    }
+}

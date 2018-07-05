@@ -1,0 +1,424 @@
+<div class='widget-plantransfercheck'>
+    <div class="plantransfercheck_toolbar"> 
+        <form class="form-inline"> 
+            <!-- <div class="form-group">
+                <label for="department">部门</label>
+                <select class="input-sm form-control department" id="department">      
+                </select>
+            </div> -->
+            <div class="form-group">
+                <label for="region_name">巡检片区</label>
+                <select class="input-sm form-control region_name" id="region_name"> 
+                        
+                    </select>
+            </div>
+                 <% if (depid=="") { %>
+                          <div class="form-group">
+                                <label for="department">部门</label>
+                                <select class="input-sm form-control department" id="department"> 
+                                        
+                                </select>
+                            </div>  
+                    <% } else { %>
+
+                <% } %>
+            <div class="form-group">
+                <label for="users">安排人员</label>
+                    <select class="input-sm form-control users" id="users"> 
+                        
+                    </select>
+            </div> 
+            <!-- <div class="form-group">
+                <label for="plan_begindate">巡检日期</label>
+                <input type="date" class="form-control plan_begindate" id="plan_begindate"  placeholder="巡检开始时间">
+                <label for="plan_enddate">至</label>
+                <input type="date" class="form-control plan_enddate" id="plan_enddate"  placeholder="巡检结束时间">
+            </div>  -->
+            <button type="button" class="btn btn-sm btn-default  btn-primary btn-search"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+        
+
+              <button id="btn_auditplans" type="button" class="btn btn-sm btn-default btn_auditplans">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>审核
+              </button>
+
+            <button id="btn_transferplans" type="button" class="btn btn-sm btn-default btn_transferplans">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>计划转移
+            </button>  
+            
+            <!--<div class="form-group">
+                <label for="region_name">巡检片区</label>
+                <select class="input-sm form-control region_name" id="region_name">      
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="users">安排人员</label>
+                <select class="input-sm form-control users" id="users"> 
+                </select>
+            </div> 
+            <div class="form-group">
+                <label for="period">巡检周期</label>
+                <select class="input-sm form-control period" id="period">     
+                </select>
+            </div> 
+            <div class="form-group">
+                <label for="description">描述</label>
+                <input type="text" class="form-control description" id="description"  placeholder="描述">
+            </div> 
+            <div class="form-group">
+            <label for="plan_begindate">开始时间</label>
+                <input type="date" class="form-control plan_begindate" id="plan_begindate"  placeholder="巡检开始时间">
+            </div> 
+            <div class="form-group">
+            <label for="plan_enddate">结束时间</label>
+                <input type="date" class="form-control plan_enddate" id="plan_enddate"  placeholder="巡检结束时间">
+            </div> -->
+        </form>
+    </div>
+    
+    <div class="plantransfercheck_content halfpaneltable ">
+                <!-- <table class="table table-bordered  table-striped">
+                    <thead>
+                        <tr>
+                       
+                            <th>姓名</th>
+                            <th>部门</th>
+                            <th>计划周期</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody class="planslist">
+                    
+                    </tbody>
+                </table> -->
+
+                  <table class="table table-bordered  table-striped">
+                        <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>巡检类型</th>
+                                <th>部门</th>
+                                <th>类型</th>
+                                <th>片区</th>
+                                 <th>状态</th>
+                                <th>计划开始时间</th>
+                                <th>计划结束时间</th>
+                                <th>创建人</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                                <!-- <th>下发前审核</th>
+                                <th>状态</th> -->
+                            
+                            </tr>
+                        </thead>
+                        <tbody class="planslist">
+                        
+                        </tbody>
+                    </table>
+
+
+               
+    </div>
+
+
+    <div class="plantransfercheck_pagecontrol">
+
+        <label class="pagecontrol">
+            总共条记录，每页默认显示条记录
+
+            
+        </label>
+        &nbsp;  &nbsp;
+            每页  
+            <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                    <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select> 条
+        <!--<label>
+        </label>-->
+        <div class="pull-right input-group btn-toolbar " role="toolbar">
+        
+                    <div class=" btn-group btn-group-sm">
+                            <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                            <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                            <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                    </div>
+                    <div class="input-group input-group-sm go">
+                        <input type="number" min=1 value=1 class="form-control currpage">
+                        <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                    </span>
+                    </div>
+        </div>
+
+    </div>
+    $$
+ 
+    <div class="widget-plantransfercheck_plandetail">
+
+        <!-- <div id="toolbar" class=" btn-group btn-group-sm toolbar"> -->
+        <div class="plantransfercheck_toolbar">               
+
+                    <!-- <button id="btn_auditplans" type="button" class="btn btn-sm btn-default btn_auditplans">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>审核
+                        </button> -->
+
+                    <!-- <button id="btn_transferplans" type="button" class="btn btn-sm btn-default btn_transferplans">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>计划转移
+                    </button>  -->
+                    
+                    <button id="btn_return" type="button" class="btn btn-sm btn-default btn_return">
+                            <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>返回
+                        </button>
+        
+        </div>
+        
+        <div class="halfpaneltable plantransfercheck">
+                    <table class="table table-bordered  table-striped">
+                        <thead>
+                            <tr>
+                                <th>巡检类型</th>
+                                <th>名称</th>
+                                <th>地址</th>
+                                <th>片区名称</th>
+                                   <% fields.forEach(function(field) { %>
+                                   <th>  <%= field %></th>
+                                  <% }); %>
+                            
+                            </tr>
+                        </thead>
+                        <tbody class="planslist">
+                        
+                        </tbody>
+                    </table>
+                    <!--<label class="pagecontrol">
+                    总共条记录，每页默认显示条记录
+                    </label>
+                    <div class="pull-right input-group btn-toolbar " role="toolbar">
+                    
+                                <div class=" btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                                        <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                                        <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                                </div>
+                                <div class="input-group input-group-sm go">
+                                    <input type="number" min=1 value=1 class="form-control currpage">
+                                    <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                                </span>
+                                </div>
+                    </div>-->
+        </div>
+        
+
+    </div>
+
+    <div class="bottom_pagecontrol">
+
+        <label class="pagecontrol">
+            总共条记录，每页默认显示条记录
+
+            
+        </label>
+        <!--&nbsp;  &nbsp;
+            每页  
+            <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                    <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select> 条
+    
+        <div class="pull-right input-group btn-toolbar " role="toolbar">
+        
+                    <div class=" btn-group btn-group-sm">
+                            <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                            <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                            <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                    </div>
+                    <div class="input-group input-group-sm go">
+                        <input type="number" min=1 value=1 class="form-control currpage">
+                        <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                    </span>
+                    </div>
+        </div>-->
+
+    </div>
+     $$
+
+    <div class="plantransfercheck_toolbar">
+
+        <div class="plantransfercheck_toolbar"> 
+                        <!--<button id="btn_addplans" type="button" class="btn btn-default btn_addplans" data-toggle="modal" data-target="#HiddenDangerLevelsManagement_AddModal">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+                            </button>-->
+                        <!--<button id="btn_editplans" type="button" class="btn btn-default btn_editplans">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+                            </button>-->
+                        <button id="btn_auditplans" type="button" class="btn btn-default btn_auditplans">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>审核
+                            </button>
+                        <!--<button id="btn_rejectplans" type="button" class="btn btn-default btn_rejectplans">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>驳回
+                            </button>
+                        <button id="btn_voidplans" type="button" class="btn btn-default btn_voidplans">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>作废
+                            </button>
+                        <button id="btn_deleteplans" type="button" class="btn btn-default btn_deleteplans">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                            </button>-->
+                         <!-- <button id="btn_transferplans" type="button" class="btn btn-default btn_transferplans">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>计划转移
+                            </button> -->
+                        <button id="btn_return" type="button" class="btn btn-default btn_return">
+                                <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>返回
+                            </button>
+            
+        </div>
+        
+     
+
+    </div>
+
+    <div class="plantransfercheck_content halfpaneltable">
+                    <table class="table table-bordered  table-striped">
+                        <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>巡检类型</th>
+                                <th>部门</th>
+                                <th>类型</th>
+                                <th>片区</th>
+                                <th>计划开始时间</th>
+                                <th>计划结束时间</th>
+                                <th>详情</th>
+                                <th>下发前审核</th>
+                                <th>状态</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody class="planslist">
+                        
+                        </tbody>
+                    </table>
+                   
+    </div>
+
+
+    <div class="plantransfercheck_pagecontrol">
+
+        <label class="pagecontrol">
+            总共条记录，每页默认显示条记录
+
+            
+        </label>
+        &nbsp;  &nbsp;
+            每页  
+            <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                    <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select> 条
+        <!--<label>
+        </label>-->
+        <div class="pull-right input-group btn-toolbar " role="toolbar">
+        
+                    <div class=" btn-group btn-group-sm">
+                            <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                            <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                            <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                    </div>
+                    <div class="input-group input-group-sm go">
+                        <input type="number" min=1 value=1 class="form-control currpage">
+                        <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                    </span>
+                    </div>
+        </div>
+
+    </div>
+  
+    $$
+ 
+     <div class="widget-plantransfercheck_plancheckinfowindow">
+           <div class="plantransfercheck">
+
+                 <div class="form-group">
+                        <select class='form-control ispass'>
+                        <option value="1">通过 </option>
+                        <option value="2">不通过</option>
+                        </select>
+
+                    意见 <textarea class="form-control checknotes" rows="2" cols="20"></textarea>
+                </div> 
+                   
+        </div>
+    </div>
+
+     $$
+    <div class="widget-plantransfercheck_plantransfer">
+        <div class="plantransfercheck_toolbar">
+                    <button id="btn_add" type="button" class="btn btn-sm btn-default btn_confirm" >
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>确认
+                        </button>
+                   
+                    <button id="btn_delete" type="button" class="btn btn-sm btn-default btn_cancel">
+                            <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>取消
+                        </button>   
+        </div>
+
+
+        <div class="plantransfercheck">
+                    <table class="table table-bordered  table-striped">
+                            <tr>
+                                <th>选择巡检员</th>
+                                <th>
+                                      <div class="form-group">
+                                            <label for="users">巡检员</label>
+                                            <select class="input-sm form-control users" id="periodid">     
+                                            </select>
+                                      </div> 
+                                </th>
+                            </tr>
+                             <!-- <tr>
+                                <th>是否即时生效</th>
+                                <th>  
+                                     <form class="form-inline">
+                                        <div class="form-group">
+                                            <input type="checkbox">
+                                            <label for="plan_begindate">即时生效</label>
+                                               
+                                        </div>
+                                    </form> 
+                                     
+                                </th>
+                            </tr> -->
+                        <tbody class="planslist">
+                        
+                        </tbody>
+                    </table>
+                   
+        </div>
+
+       
+            
+    </div>
+   
+   
+     $$
+
+    <div class="loadingbg">
+        <div class="loading" ><img src="./widgets/HiddenDangerGrading/images/loading.gif" style="width: 35px; height: 35px">  正在查询数据，请等待...</div>
+    </div>
+
+    $$
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,50 @@
+{
+    "widgetUrl": "widgets/XJWorkerVacationManagement",
+    "tmplateUrl": "widgets/XJWorkerVacationManagement/Widget.html",
+    "styleUrl": "widgets/XJWorkerVacationManagement/css/style.scss",
+
+
+    "requestWorkerVacationInfo": {
+        "Keyconfig": "0002",
+        "URL_request": "/VacationManage/List",
+        "MSG_error": "查询员工请假信息出错！",
+        "MSG_null": "查询员工请假信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize": 50
+    },
+    "requestDepartmentInfo": {
+        "URL_Request": "/Groups/list",
+        "MSG_Error": "获取部门列表出错!",
+        "MSG_Null": "获取部门列表为空！"
+    },
+    "requestUserInfo": {
+        "URL_Request": "/User/List",
+        "MSG_Error": "获取巡检人员列表出错!",
+        "MSG_Null": "获取部门列表为空！"
+    },
+    "requestVacationTypeList": {
+        "URL_Request": "/SysConfig/List",
+        "Keyconfig":"0002",
+        "MSG_Error": "获取请假类型出错!",
+        "MSG_Null": "获取请假类型为空！"
+    },
+    "addVacationType": {
+        "URL_request": "/VacationManage/Add",
+        "MSG_confirm": "必填项未填！",
+        "MSG_error": "添加员工请假出错！",
+        "MSG_success": "添加员工请假成功!"
+    },
+    "deleteVacationType": {
+        "URL_request": "/VacationManage/Delete",
+        "MSG_error": "删除假期类型出错！",
+        "MSG_success": "删除假期类型成功!"
+    },
+    "modifyVacationType": {
+        "Keyconfig": "0002",
+        "URL_request": "/VacationManage/Update",
+        "MSG_confirm": "必填项未填！",
+        "MSG_error": "修改员工请假出错！",
+        "MSG_success": "修改员工请假成功!"
+    }
+
+}

@@ -1,0 +1,6 @@
+{
+    "widgetUrl":"widgets/TerminalStateMonitoring",
+    "tmplateUrl":"widgets/TerminalStateMonitoring/Widget.html",
+    "styleUrl":"widgets/TerminalStateMonitoring/css/style.css",
+    "mapDiv": "myMap"  
+}

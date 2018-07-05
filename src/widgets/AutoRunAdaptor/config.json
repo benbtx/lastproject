@@ -1,0 +1,7 @@
+{
+    "panelWidgetPath": "widgets/Panel",
+    "fullpanelWidgetPath": "widgets/FullPanel",
+    "halfpanelWidgetPath": "widgets/HalfPanel",
+    "terminalWidgetPath": "widgets/TerminalPanel",
+    "panelWidgetMain": "Widget"
+}

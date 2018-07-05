@@ -1,0 +1,95 @@
+.AdvancedQuery {
+    padding-top: 15px;
+    width: 100%;
+    height: 80px;
+    .AdvancedQuery-cantainer {
+        float: left;
+        margin-left: 15px;
+    }
+    .AdvancedQuery-img-container {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ddd;
+        position: relative;
+        cursor: pointer;
+    }
+    .AdvancedQuery-img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+    }
+}
+
+.AdvancedQuery-attribute-value {
+    height: 115px;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+.AdvancedQuery-datewidget {
+    margin-left: 50px;
+}
+
+.AdvancedQuery-tufu {
+    margin-left: 5px;
+}
+
+.AdvancedQuery-tufu-container {
+    margin-left: 8px !important;
+}
+
+.AdvancedQuery-address-container {
+    margin-left: 8px !important;
+}
+
+input.AdvancedQuery-DIAMETER {
+    margin-left: 30px;
+}
+
+.AdvancedQuery-DIAMETER-input {
+    float: left !important;
+    width: 206px !important;
+    top: 10px;
+}
+
+.AdvancedQuery-queryBtn {
+    width: 263px;
+    margin-left: 13px;
+}
+
+.AdvancedQuery-attribute-value {
+    width: 255px;
+}
+
+.AdvancedQuery-starttext {
+    margin-top: -3px;
+}
+
+.AdvancedQuery-datewidget-start {
+    width: 150px;
+    float: right;
+    height: 30px;
+}
+
+.AdvancedQuery-datewidget-end {
+    float: right;
+    width: 150px;
+    margin-top: 15px;
+    height: 30px;
+}
+
+span.dateStart {
+    float: left;
+    margin-top: 10px
+}
+
+span.dateEnd {
+    float: left;
+    margin-top: 30px;
+}

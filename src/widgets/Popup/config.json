@@ -1,0 +1,6 @@
+{
+    "widgetUrl": "widgets/Popup",
+    "tmplateUrl": "widgets/Popup/Widget.html",
+    "styleUrl": "widgets/Popup/css/style.css",
+    "closeIcon": "./widgets/Popup/images/close.png"
+}

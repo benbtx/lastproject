@@ -1,0 +1,13 @@
+.widget-logo {
+    width: 105px;
+    height: 30px;
+    cursor: pointer;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    .logo-img{
+        width: 100%;
+        height: 100%;
+        padding-left: 5px;
+    }
+}

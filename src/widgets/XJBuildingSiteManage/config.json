@@ -1,0 +1,92 @@
+{
+    "widgetUrl": "widgets/XJBuildingSiteManage",
+    "tmplateUrl": "widgets/XJBuildingSiteManage/Widget.html",
+    "styleUrl": "widgets/XJBuildingSiteManage/css/style.scss",
+
+    "setBuildSiteSymbol": {
+        "Img_buildsite": "/widgets/XJBuildingSiteManage/css/img/buildsite.png"
+    },
+    "requestCompanyInfo": {
+        "URL_request": "/Device/Get_Company_List",
+        "MSG_error": "查询公司信息出错！",
+        "MSG_null": "查询公司信息为空！"
+    },
+    "initDepartment": {
+        "URL_request": "/Groups/list",
+        "MSG_error": "查询部门信息出错！",
+        "MSG_null": "查询部门信息为空！"
+    },
+    "requestBuildingSiteInfo": {
+        "URL_request": "/BuildManage/List",
+        "MSG_error": "查询工地台账信息出错！",
+        "MSG_null": "查询工地台账信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize": 25
+    },
+    "initSelect": {
+        "URL_buildsiterequest": "/BuildProjectType/List",
+        "Count_pageindex": 1,
+        "Count_pagesize": 100000,
+        "MSG_buildsiteerror": "查询工地类型出错！",
+        "MSG_buildsitenull": "查询工地类型为空！"
+    },
+    "initFinderSelect": {
+        "URL_request": "/User/List",
+        "Count_pageindex": 1,
+        "Count_pagesize": 100000,
+        "MSG_error": "查询巡检人员出错！",
+        "MSG_null": "查询巡检人员为空！"
+    },
+    "addBuildSiteInfo": {
+        "URL_request": "/BuildManage/Add",
+        "MSG_error": "添加工地台账信息出错！",
+        "MSG_success": "添加工地台账信息成功！"
+    },
+    "deleteBuildSiteInfo": {
+        "URL_request": "/BuildManage/Delete",
+        "MSG_error": "删除工地台账信息出错！",
+        "MSG_success": "删除工地台账信息成功！"
+    },
+    "viewBuildSiteInfo": {
+        "URL_request": "/BuildManage/List",
+        "MSG_error": "查询工地台账信息出错！",
+        "MSG_null": "查询工地台账信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize": 20,
+        "MSG_loginnull": "查询回报日志为空",
+        "MSG_loginerror": "查询回报日志出错"
+    },
+    "initeModifyBuildSiteInfo": {
+        "URL_request": "/BuildManage/List",
+        "MSG_error": "查询工地台账信息出错！",
+        "MSG_null": "查询工地台账信息为空！",
+        "Count_pageindex": 1,
+        "Count_pagesize": 20
+    },
+    "initPreviousData": {
+        "URL_request": "/BuildManage/List"
+    },
+    "modifyBuildSiteInfo": {
+        "URL_request": "/BuildManage/Update",
+        "MSG_error": "修改工地台账信息出错！",
+        "MSG_success": "修改工地台账信息成功！"
+    },
+    "initUserSelect": {
+        "Count_pageindex": 1,
+        "Count_pagesize": 100000,
+        "URL_departmentrequest": "/Groups/list",
+        "MSG_departmenterror": "查询部门（分组）信息出错！",
+        "MSG_departmentnull": "查询部门（分组）信息为空！",
+        "URL_userrequest": "/User/List"
+    },
+    "assignBuildSiteWatcher": {
+        "URL_request": "/BuildManage/Assign",
+        "MSG_buildsiteerror": "指派巡检人员出错！",
+        "MSG_success": "指派成功！"
+    },
+    "closeBuildSite": {
+        "URL_request": "/BuildManage/Check",
+        "MSG_buildsiteerror": "结案出错！",
+        "MSG_success": "成功！"
+    }
+}

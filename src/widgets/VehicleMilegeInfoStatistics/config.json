@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/VehicleMilegeInfoStatistics",
+    "tmplateUrl": "widgets/VehicleMilegeInfoStatistics/Widget.html",
+    "styleUrl": "widgets/VehicleMilegeInfoStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getCarMileageReport": "/CarReport/ReportCarMileage",
+    "pagenumber": 0,
+    "pagesize": 15,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000
+}

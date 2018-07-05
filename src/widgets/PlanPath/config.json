@@ -1,0 +1,36 @@
+{
+    "widgetUrl": "widgets/PlanPath",
+    "tmplateUrl": "widgets/PlanPath/Widget.html",
+    "styleUrl": "widgets/PlanPath/css/style.css",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getPlanPointList": "/PlanPoint/List",
+    "getPlanPathList": "/PlanPoint/List",
+    "getPlanRegionList": "/GpsRegion/List",
+    "addPlanPathInfo": "/PlanPoint/Add",
+    "updatePlanPath": "/PlanPoint/Update",
+    "deletePlanPath": "/PlanPoint/Delete/",
+    "isUpdate":"/PlanPoint/Get_Point_State/",
+    "getSetting":"/SysSetting/Info",
+    "pagenumber": 1,
+    "pagesize": 25,
+    "maxsize":100000, 
+    "rangeall":"00",   
+    "MarkPictureSymbol": "./widgets/PlanPath/images/planpoint.png",
+    "TextbgSymbol": "./widgets/PlanPath/images/textbg.png",
+    "color": [0,0,255,0.6],
+    "device_type_id":{
+        "path":"6",
+        "point":"1"
+    },
+    "distance":100,
+    "insert_num":20,
+     "lengthUnit":[
+        {
+            "name":"米",
+            "number":9001
+        },{
+            "name":"千米",
+            "number":9036
+        }
+    ] 
+}

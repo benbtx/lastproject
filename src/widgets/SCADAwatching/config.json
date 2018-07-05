@@ -1,0 +1,8 @@
+{
+    "onePageCount": 6,
+    "updateInterval": 6000,
+    "dataPanel": {
+        "width": 1100,
+        "height": 550
+    }
+}

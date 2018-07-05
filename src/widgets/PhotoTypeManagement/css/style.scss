@@ -1,0 +1,69 @@
+.widget-phototypemanagement {
+    height: 100%;
+    .hiddendangertypeinfo-tool {
+        margin: 4px;
+        .btn_search {
+            &:hover {
+                cursor: pointer
+            }
+        }
+        .toolbar {
+            margin-bottom: 9px; // margin-left: 6px;
+        }
+    }
+    .hiddendangertypeinfo {
+        float: left;
+        width: 100%; // height: 90%;
+        height: calc(100% - 51px);
+        overflow-y: auto;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+            height: calc(100% - 51px);
+            a {
+                cursor: pointer;
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+            th,
+            td {
+                vertical-align: middle;
+                text-align: center;
+            } // .goto {
+            //     height: 37px;
+            // }
+        }
+        .hiddendangertypeinfo_pagecontrol {
+            position: absolute;
+            bottom: 10px;
+            width: 98%;
+            margin-left: 4px;
+        }
+    }
+}
+
+#phototypemanagement_addpopup,
+#phototypemanagement_updatepopup {
+    margin-top: 30px;
+    textarea {
+        resize: none;
+    }
+}
+
+#phototypemanagement_searchpopup {
+    margin-top: 30px;
+    textarea {
+        resize: none;
+    }
+}

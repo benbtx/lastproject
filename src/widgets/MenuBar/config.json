@@ -1,0 +1,8 @@
+{
+    "widgetUrl": "widgets/BaseMap",
+    "tmplateUrl": "widgets/BaseMap/Widget.html",
+    "styleUrl": "widgets/BaseMap/css/style.css",
+    "panelWidgetPath": "widgets/Panel",
+    "panelWidgetMain": "Widget",
+    "menuListData": null
+}

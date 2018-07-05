@@ -1,0 +1,9 @@
+{
+    "widgetUrl": "widgets/StationPathAnalysis",
+    "tmplateUrl": "widgets/StationPathAnalysis/Widget.html",
+    "styleUrl": "widgets/StationPathAnalysis/css/style.css",
+
+     "getUserList": "/user/list"
+
+  
+}

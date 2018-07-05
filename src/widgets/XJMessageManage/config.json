@@ -1,0 +1,61 @@
+{
+    "widgetUrl": "widgets/PanelDemo",
+    "tmplateUrl": "widgets/PanelDemo/Widget.html",
+    "styleUrl": "widgets/PanelDemo/css/style.css",
+    "hello": "Hello ",
+
+
+
+    "requestAdminMessage": {
+        "URL_Request": "/SysMsg/Search_Recive_Msg",
+        "Data_pageindex": 1,
+        "Data_pagesize": 1000,
+        "Data_sendusertype": "管理员",
+        "Data_isread": "0",
+        "MSG_Error": "获取通知消息失败！"
+    },
+    "initDepartmentList": {
+        "URL_Request": "/Groups/list",
+        "MSG_Error": "获取部门列表出错!",
+        "MSG_Null": "获取部门列表为空！"
+    },
+    "initUserList": {
+        "URL_Request": "/User/List",
+        "MSG_Error": "获取巡检人员列表出错!",
+        "MSG_Null": "获取巡检人员列表为空！"
+    },
+    "sendMessage": {
+        "URL_Rquest": "/SysMsg/Send",
+        "MSG_sucess": "发送成功！",
+        "MSG_error": "发送失败"
+    },
+    "getSendMessagerData": {
+        "SELECT_user": ".XJMessageManage select.receviceuser",
+        "SELECT_content": ".XJMessageManage textarea.content",
+        "SELECT_files": ".XJMessageManage #input-fileupload ",
+        "MSG_usernull": "请选择接收人员！",
+        "MSG_contentnull": "请填写发送内容"
+    },
+
+    "handleMessage": {
+        "URL_Check": "/SysMsg/Mark_Read_Msg",
+        "URL_Del": "/SysMsg/Delete_Recive_Msg",
+        "MSG_delerror": "消息删除失败！",
+        "MSG_markerror": "消息标记已读失败！"
+    },
+    "requestSendMessageList": {
+        "URL_request": "/SysMsg/Search_Send_Msg",
+        "pageindex": 1,
+        "pagesize": 5,
+        "MSG_delerror": "获取消息历史失败！"
+
+    },
+    "goToOtherWidget": {
+        "hidedangerjibie":"yinhuandingji",
+        "hidedangercheck":"yinhuandingjishenhe",
+        "hidedangerchuli":"yinhuanshenhe",
+        "buildsiteassign":"gongditaizhangguanli"
+       
+    }
+
+}

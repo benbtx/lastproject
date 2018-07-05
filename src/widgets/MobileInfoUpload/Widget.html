@@ -1,0 +1,91 @@
+<div class="MobileInfoUpload">
+    <fieldset>
+        <legend>
+            查询条件
+            <span class="glyphicon glyphicon-question-sign" title="输人查询条件-标题/上报人。"></span>
+        </legend>
+        <div class="foldable">
+            <input type="text" class="input-sm form-control filter " placeholder="标题/上报人">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            时间段
+            <span class="glyphicon glyphicon-question-sign" title="选择查询时间段。"></span>
+        </legend>
+        <div class="foldable  ">
+            <div class="  caption">
+                <div class="input-group ">
+                    <div class="input-group-btn ">
+                        <span class="form-control dropdown-toggle condition  selectionChange">
+                         起始时间 
+                     </span>
+                    </div>
+                    <input type="text" class=" form-control title date startDate" placeholder="起始时间" readonly>
+                </div>
+                <div class="input-group nextDate">
+                    <div class="input-group-btn ">
+                        <span class="form-control dropdown-toggle condition  selectionChange">
+                        终止时间 
+                     </span>
+                    </div>
+                    <input type="text" class=" form-control title date endDate" placeholder="终止时间" readonly>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            查询结果
+            <span class="glyphicon glyphicon-question-sign" title="下表为查询结果"></span>
+        </legend>
+        <div class="foldable">
+            <div class="form-group">
+                <table class="table table-bordered table-hover worckspace-table-list">
+                    <thead>
+                        <tr>
+                            <td>标题</td>
+                            <td>上报人</td>
+                            <td>上报日期</td>
+                            <td>地址</td>
+                        </tr>
+                    </thead>
+                    <tbody class="pick-pipe-tbody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-toolbar" role="toolbar">
+                <div class=" btn-group btn-group-sm">
+                    <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                    <button type="button" class="btn btn-primary disabled content">第1页共1页</button>
+                    <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                </div>
+                <div class="input-group input-group-sm go">
+                    <input type="number" min=1 class="form-control currpage">
+                    <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+					</span>
+                </div>
+            </div>
+            <br>
+        </div>
+    </fieldset>
+    <div class="form-group ">
+        <button type="button" class="btn btn-primary btn-sm btn-block query">查询</button>
+    </div>
+    $$
+    <div class="templateOfInfo">
+        <p><span>上报人：${realname}</span></P>
+        <p><span>地址：${address}</span></p>
+        <p> <span>上报时间:${submitdate}</span></p>
+        <div>
+            <span>任务内容：</span></br>
+            <textarea readonly="true">${content}</textarea>
+        </div>
+        <div>
+            <span>附件：</span></br>
+            <div class="well picture">
+                ${fileids}
+            </div>
+        </div>
+    </div>
+</div>

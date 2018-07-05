@@ -1,0 +1,44 @@
+{
+    "widgetUrl": "widgets/PlanEquipmentLedger",
+    "tmplateUrl": "widgets/PlanEquipmentLedger/Widget.html",
+    "styleUrl": "widgets/PlanEquipmentLedger/css/style.css",
+    "getCompanyList": "/Device/Get_Company_List",
+    "getDeviceList": "/plan/GetJianXiuRecord",
+    "getDevicePointTypeList": "/PlanPointType/List",
+    "getDevicePointLevelList": "/level/list",
+    "getUserList": "/user/list",
+    "getDevicePointList": "/PlanPointDevice/List",
+    "getDevicePointInfo": "/Trouble/info/",
+    "gradingDevicePoint": "/Trouble/Trouble_Level",
+    "getPlanPointRepair": "/plan/PlanPointChildRepair/List/",
+
+
+    "getTYSB": "/AdjustablePressure/List/",
+    "getTYSBpic": "/AdjustablePressure/GetFiles/",
+    "getFM": "/Valve/List/",
+    "getFMpic": "/Valve/GetFiles/",
+
+   
+
+    "getFiles": "/File/Files",
+    "pagenumber": 1,
+    "pagesize": 25,
+    "MarkPictureSymbol": "./widgets/PlanEquipmentLedger/images/point.png",
+    "YclPictureSymbol": "./widgets/PlanEquipmentLedger/images/point_ycl.png",
+    "TextbgSymbol": "./widgets/PlanEquipmentLedger/images/textbg.png",
+    "ZanWuTuPian": "./widgets/PlanEquipmentLedger/images/zanwutupian.png",
+    "yhjbtable": "./widgets/PlanEquipmentLedger/data/equipmentledgerclasstable.pdf",
+    "color": [0, 0, 255, 0.8],
+    "mapindex": 0,
+    "rangeall": "00",
+    "maxsize": 100000,
+    "picdic": {
+        "qingxiqian": "清洗前",
+        "qingxihou": "清洗后",
+        "jianlouqian": "检漏前",
+        "jianlouhou": "检漏后",
+        "guanbiyali": "关闭压力",
+        "yunxingyali": "运行压力",
+        "qieduanyali": "切断压力"
+    }
+}

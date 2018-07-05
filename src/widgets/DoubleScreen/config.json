@@ -1,0 +1,46 @@
+{
+    "widgetUrl": "widgets/DoubleScreen",
+    "tmplateUrl": "widgets/DoubleScreen/Widget.html",
+    "styleUrl": "widgets/DoubleScreen/css/style.css",
+    "leftMapID": "leftMap",
+
+    
+    "pipemap":{
+        "name":"TFGIS_PIPE",
+        "title":"管网",
+        "url":"http://192.168.1.101:6080/arcgis/rest/services/chongqing/TFGIS_PIPE/MapServer",
+        "remark":""
+    },
+    "terrainmap":[{
+        "name":"TFGIS_TERRAIN",
+        "title":"地形",
+        "url":"http://192.168.1.101:6080/arcgis/rest/services/chongqing/TFGIS_TERRAIN/MapServer",
+        "remark":""
+    }],
+    "rastermap":{
+        "name":"",
+        "title":"",
+        "url":"http://192.168.1.101:6080/arcgis/rest/services/chongqing/TFGIS_RASTER/MapServer",
+        "remark":""
+    },
+    "poimap":{
+        "name":"TFGIS_POI",
+        "title":"地名",
+        "url":"http://192.168.1.101:6080/arcgis/rest/services/chongqing/TFGIS_POI/MapServer",
+        "remark":""
+    },
+    "gridmap":[
+        {
+            "name":"TFGIS_GRID",
+            "title":"网格地图",
+            "url":"http://192.168.1.101:6080/arcgis/rest/services/chongqing/TFGIS_GRID/MapServer",
+            "remark":"包含多个标准分幅的网格图层"
+        }
+    ],
+    "gridlayer":"grid",
+    "optionallayers":["poi","pipe"],
+    "baselayers":["privateterrain","terrain","raster"],
+    "mapService": [
+        "pipe","poi","raster"
+    ]
+}

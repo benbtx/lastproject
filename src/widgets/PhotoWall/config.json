@@ -1,0 +1,5 @@
+{
+    "widgetUrl":"widgets/PhotoWall",
+    "tmplateUrl":"widgets/PhotoWall/Widget.html",
+    "styleUrl":"widgets/PhotoWall/css/style.css"
+}

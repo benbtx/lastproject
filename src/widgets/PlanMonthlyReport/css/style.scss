@@ -1,0 +1,131 @@
+.widget-planmonthlyreport {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .planmouthlyreport-search {
+        float: left;
+        width: 100%;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+        /*日期控件样式（pensiveant）*/
+        input.date {
+            cursor: pointer;           
+        }
+    }
+    .planmouthlyreport-list {       
+        width: 100%;
+        height: calc(100% - 73px);
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+        overflow-y: auto;
+    }
+    .thspan {
+        color: red;
+        font-weight: bold;
+    }
+    .toolbar {
+        margin-top: 6px;
+        margin-bottom: 9px;
+        margin-left: 6px;
+    }
+    .goto {
+        height: 37px;
+    }
+    a {
+        cursor: pointer;
+    }
+    label,
+    th {
+        text-align: center;
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+        
+    }
+    td {                
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+        min-width: 100px;
+    }
+    .tdcontent{
+        text-align: center;
+        vertical-align: middle;
+    }
+    .thright{
+        text-align:right;
+        max-width: 30px;
+        margin-right: 5px;
+    }
+    .tdtitcenter{
+        text-align:center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+    .titcenter{
+        text-align:center;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .tdtitspit{
+        text-align:center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    .tit {
+        th {
+            text-align: center;
+            vertical-align: middle;
+            padding: 1px!important;
+        }
+    }  
+    .minwidth{
+        width: 120px;
+        height: 30px;
+    }
+    .btn {
+        padding: 4px 8px;
+    }          
+    .reportname {
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        margin: 5px;
+    }
+    /*.shenhe {
+        float: left !important;
+        text-align: center;
+    }
+    .zhibiao {
+        text-align: center;
+        margin-right: calc(25%) !important;
+    }
+    .shijian {
+        float: right;
+        text-align: center;
+    }*/
+    ::-webkit-scrollbar {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .btn_export{
+        color: #fff;
+        background-color: #ed4e2a;
+        border-color: #ED5A24;
+    }
+    .groupleft{
+        margin-left: 10px;
+    }
+}

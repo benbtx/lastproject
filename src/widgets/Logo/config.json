@@ -1,0 +1,7 @@
+{
+    "widgetUrl":"widgets/Logo",
+    "tmplateUrl":"widgets/Logo/Widget.html",
+    "styleUrl":"widgets/Logo/css/style.css",
+    "logoPath": "images/toflyLogo.png",
+    "link": "http://www.tofly.cn"
+}

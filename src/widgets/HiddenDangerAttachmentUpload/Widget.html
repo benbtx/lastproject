@@ -1,0 +1,415 @@
+<div class="widget-hiddendangerattachmentupload">
+    <div class="widget-hiddendangerattachmentupload-list">
+        <div id="toolbar" class=" pull-right btn-group btn-group-sm toolbar">
+                    <!--<button id="btn_add" type="button" class="btn btn-default btn_list">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>列表
+                        </button>
+                    <button id="btn_delete" type="button" class="btn btn-default btn_icon">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 图标
+                        </button>-->
+
+                <!--<div class="imgTool btn_icon">
+                    <img src="./widgets/HiddenDangerAttachmentUpload/images/picture.png" width="20" height="20" alt="图标" />
+                    <span>图标</span>
+                </div>
+                <div class="imgTool btn_list">
+                    <img src="./widgets/HiddenDangerAttachmentUpload/images/list.png" width="20" height="20" alt="列表" />
+                    <span>列表</span>
+                </div>-->
+         
+        </div>
+        <div id="toolbar" class="btn-group btn-group-sm toolbar">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="pdaid">设备名称</label>
+                    <select class="input-sm form-control pdaid" id="pdaid"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="trouble_typeid">隐患类型</label>
+                    <select class="input-sm form-control trouble_typeid" id="trouble_typeid"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">上报人员</label>
+                    <select class="input-sm form-control username" id="username"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="handle_state">处理状态</label>
+                    <select class="form-control input-sm handle_state">
+                                <option></option>
+                            <option value="0">未处理</option>
+                            <option value="1">已处理</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="handle_trouble_clear">隐患是否清除</label>
+                    <select class="form-control input-sm handle_trouble_clear">
+                                <option></option>
+                                <option value="1">已清除</option>
+                                <option value="0">其他</option>
+                        </select>
+                </div>
+                <button type="button" class="btn btn-default btn-primary btn-search"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+                <button type="button" class="btn btn-default btn-success save2csv">
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                        导出 Excel
+                </button>
+            </form>
+        </div>
+        <div class="halfpaneltable hiddedangerinfo">
+            <table class="table table-bordered  table-striped">
+                <thead>
+                    <tr>
+                        <th>设备名称</th>
+                        <th>隐患设备名称</th>
+                        <th>隐患类型</th>
+                        <th>隐患备注</th>
+                        <th>上报人员</th>
+                        <th>地址</th>
+                        <th>发现时间</th>
+                        <th>是否为隐患</th>
+                        <th>是否处理登记</th>
+                        <!--<th>是否处理</th>-->
+                        <th>隐患是否清除 </th>
+                        <th>操作</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class="addhiddendanger">
+                
+                </tbody>
+            </table>
+            <!--<label class="pagecontrol">
+                总共条记录，每页默认显示条记录
+            </label>
+            <div class="pull-right input-group btn-toolbar " role="toolbar">
+                <div class=" btn-group btn-group-sm">
+                    <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                    <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                    <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                </div>
+                <div class="input-group input-group-sm go">
+                    <input type="number" min=1 value=1 class="form-control currpage">
+                    <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                            </span>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    
+     <div class="bottom_pagecontrol">
+           <label class="pagecontrol">
+                总共条记录，每页默认显示条记录
+            </label>
+            &nbsp;  &nbsp;
+             每页  
+                <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                     <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> 条
+            <!--<label>
+            </label>-->
+            <div class="pull-right input-group btn-toolbar " role="toolbar">
+            
+                        <div class=" btn-group btn-group-sm">
+                                <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                                <button type="button" class="btn btn-primary disabled content">第页共页</button>
+                                <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                        </div>
+                        <div class="input-group input-group-sm go">
+                            <input type="number" min=1 value=1 class="form-control currpage">
+                            <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                        </span>
+                        </div>
+            </div>
+
+     </div>
+
+
+    $$
+    <div class="widget-hiddendangerattachmentupload-icon">
+
+        <div id="toolbar" class=" pull-right btn-group btn-group-sm toolbar">
+                    <!--<button id="btn_add" type="button" class="btn btn-default btn_list">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>列表
+                        </button>
+                    <button id="btn_delete" type="button" class="btn btn-default btn_icon">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 图标
+                        </button>-->
+
+                    <div class="imgTool btn_icon">
+                        <img src="./widgets/HiddenDangerAttachmentUpload/images/picture.png" width="20" height="20" alt="图标" />
+                        <span>图标</span>
+                    </div>
+                    <div class="imgTool btn_list">
+                        <img src="./widgets/HiddenDangerAttachmentUpload/images/list.png" width="20" height="20" alt="列表" />
+                        <span>列表</span>
+                    </div>
+         
+        </div>
+        <div id="toolbar" class="btn-group btn-group-sm toolbar">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="pdaid">设备名称</label>
+                    <select class="input-sm form-control pdaid" id="pdaid"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="trouble_typeid">隐患类型</label>
+                    <select class="input-sm form-control trouble_typeid" id="trouble_typeid"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">上报人员</label>
+                    <select class="input-sm form-control username" id="username"> 
+                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="handle_state">处理状态</label>
+                    <select class="form-control input-sm handle_state">
+                                <option></option>
+                            <option value="0">未处理</option>
+                            <option value="1">已处理</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="handle_trouble_clear">隐患是否清除</label>
+                    <select class="form-control input-sm handle_trouble_clear">
+                                <option></option>
+                                <option value="0">未清除</option>
+                                <option value="1">已清除</option>
+                        </select>
+                </div>
+                <button type="button" class="btn btn-default btn-primary btn-search"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+                <button type="button" class="btn btn-default btn-success save2csv">
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                        导出 Excel
+                </button>
+
+
+
+
+
+                
+
+
+
+
+            </form>
+        </div>
+
+        <ul class="halfpaneltable imglist">
+            <!--<li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>标题内容 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-3.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+              <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>标题内容 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-3.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+              <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>标题内容 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-3.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/i160x90-2.jpg"><span>自制快手糟黄瓜 吃完整个</span></a></li>-->
+        </ul>
+
+    </div>
+     $$
+    <div class="widget-hiddendangerattachmentupload-pictureshow">
+
+
+      
+
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators hiddendanger_photo_tit">
+                <% photoData.forEach(function(value,i) { %>
+                        <% if (i==0) { %>
+                            <li data-target="#myCarousel" data-slide-to="0" class="active">
+
+                        <% } else { %>
+                            <li data-target="#myCarousel" data-slide-to="<%= i %>"></li>
+                        <% } %>
+                    
+                <% }); %>
+            </ol>   
+
+
+       
+            <div class="carousel-inner  hiddendanger_photo_con">
+                 <% photoData.forEach(function(value,i) { %>
+                        <% if (i==0) { %>
+                            <div class="item active">
+                                <img src="<%= value.src %>" alt="First slide">
+                                <div class="carousel-caption"><%= value.alt %></div>
+                            </div>
+                         <% } else { %>
+                            <div class="item">
+                                <img src="<%= value.src %>" alt="<%= value %> slide">
+                                <div class="carousel-caption"><%= value.alt %></div>
+                            </div>
+                        <% } %>
+                 <% }); %>
+            </div>
+
+
+        
+            <a class="carousel-control left" href="#myCarousel" 
+            data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" 
+            data-slide="next">&rsaquo;</a>
+        </div> 
+     
+    </div>
+     $$
+
+
+</div>
+||
+<div class="templateOfInfo-search">
+    <p><span>地址：${address}</span></p>
+    <p><span>隐患类型：${trouble_type_name}</span></P>
+    <p><span>上报人员：${username}</span></p>
+    <p><span>备注：${notes}</span></p>
+    <!--<p><span><img src="./widgets/HiddenDangerAttachmentUpload/images/audio.png" class="audio">${yhyp}</span> </p>-->
+    <p><span>${yhyp}</span> </p>
+    <p> <span>创建时间：${uploadtime}</span></p>
+    <!--<p><span>处理状态：handle_state</span></p>-->
+    <p><span>是否为隐患：${state}</span></p>
+    <p><span>隐患级别：${yhjb}</span></p>
+    <p><span>隐患是否清除：${handle_trouble_clear}</span></p>
+    <div>
+        <span>隐患发现照片：</span></br>
+        <div class="picture-search">
+            ${yhfx}
+        </div>
+    </div>
+    <!--<div>
+        <span>隐患清除照片：</span></br>
+        <div class="picture-search">
+            ${yhqc}
+        </div>
+    </div>-->
+
+     <!--<button type="button" class="btn btn-primary btn-xs btn-block btn-handleregistration "  data=${id} >隐患处理信息登记</button>-->
+</div>
+||
+<div class="templateOfInfo-search-isnohiddendanger">
+    <p><span>地址：${address}</span></p>
+    <p><span>隐患类型：${trouble_type_name}</span></P>
+    <p><span>上报人员：${username}</span></p>
+    <p><span>备注：${notes}</span></p>
+    <!--<p><span><img src="./widgets/HiddenDangerAttachmentUpload/images/audio.png" class="audio">${yhyp}</span> </p>-->
+    <p><span>${yhyp}</span> </p>
+    <p> <span>创建时间：${uploadtime}</span></p>
+    <!--<p><span>处理状态：handle_state</span></p>-->
+    <p><span>是否为隐患：${state}</span></p>
+    <p><span>隐患是否清除：${handle_trouble_clear}</span></p>
+    <div>
+        <span>隐患发现照片：</span></br>
+        <div class="picture-search">
+            ${yhfx}
+        </div>
+    </div>
+</div>
+||
+<div class="templateOfInfo-search-isnothiddendanger">
+    <p><span>地址：${address}</span></p>
+    <p><span>隐患类型：${trouble_type_name}</span></P>
+    <p><span>上报人员：${username}</span></p>
+    <p><span>备注：${notes}</span></p>
+    <!--<p><span><img src="./widgets/HiddenDangerAttachmentUpload/images/audio.png" class="audio">${yhyp}</span> </p>-->
+    <p><span>${yhyp}</span> </p>
+    <p> <span>创建时间：${uploadtime}</span></p>
+    <!--<p><span>处理状态：handle_state</span></p>-->
+    <p><span>是否为隐患：${state}</span></p>
+    <p><span>隐患是否清除：${handle_trouble_clear}</span></p>
+    <div>
+        <span>隐患发现照片：</span></br>
+        <div class="picture-search">
+            ${yhfx}
+        </div>
+    </div>
+</div>
+||
+<div class="templateOfInfo-handle">
+    <p><span>地址：${address}</span> </p>
+    <p><span>隐患类型：${trouble_type_name}</span></p>
+    <p><span>上报人员：${username}</span> </p>
+    <p><span>备注：${notes}</span> </p>
+    <!--<p><span><img src="./widgets/HiddenDangerAttachmentUpload/images/audio.png" class="audio"  data-audio="${yhyp}">${yhyp}</span> </p>-->
+    <p><span>${yhyp}</span> </p>
+    <p><span>创建时间：${uploadtime}</span> </p>
+    <p><span>处理状态：${handle_state}</span> </p>
+    <div>
+        <span>隐患发现照片：</span></br>
+        <div class="picture-handle">
+            ${yhfx}
+        </div>
+    </div>
+    <div>
+        <!--<span>处理意见：</span></br>
+        <textarea></textarea>-->
+    </div>
+    <p><span>隐患级别:</span></p>
+    <div class="well">
+        <h6> 国家标准：
+            <select class='HiddenDangerHandle HiddenDangerHandle-countryclass'>
+            <option value="11">重大隐患 </option>
+             <option value="12">较大隐患 </option>
+            <option value="13">一般隐患 </option>
+            </select>
+        </h6>
+        <h6>重庆市标准：
+            <select class='HiddenDangerHandle HiddenDangerHandle-cityclass '>
+            <option value="21">重大隐患 </option>
+             <option value="22">较大隐患 </option>
+             <option value="23">一般隐患 </option> </select>
+        </h6>
+        <h6>燃气集团标准：
+            <select class='HiddenDangerHandle HiddenDangerHandle-companyclass'>
+            <option value="31"> 一级</option>
+             <option value="32">二级 </option>
+              </select>
+        </h6>
+    </div>
+    <button type="button" class="btn btn-primary btn-xs btn-block HiddenDangerHandle-handletrouble"> 定级处理</button>
+</div>
+||
+<div class="templateOfInfo-basic">
+    <p><span>地址：${address}</span></p>
+    <p><span>隐患类型：${trouble_typeid}</span></P>
+    <p><span>上报人员：${username}</span></p>
+    <p><span>备注：${notes}</span></p>
+</div>
+||
+<div class="template-handleregistration">
+      <div class="form-group">
+          
+             附件：            
+            <input id="input-fileupload" type="file" class="file appfile" data-preview-file-type="text" multiple="multiple">
+              
+           
+      </div>
+
+   
+</div>

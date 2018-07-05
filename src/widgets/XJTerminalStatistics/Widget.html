@@ -1,0 +1,132 @@
+<div class="widget-XJTerminalStatistics">
+    <div class="xjterminalstatistics-search">
+        <table class="table table-bordered  table-striped">
+            <tr>
+                <th>
+                    <div class="form-inline">
+                        <div class="form-group company_serch" style="display: none;">
+                            <span class="thspan"> * </span>公司
+                            <select class="input-sm form-control company minwidth"></select>
+                        </div>
+                        <div class="form-group department_btn groupleft">
+                            <span class="thspan"> * </span>部门
+                            <select class="input-sm form-control department minwidth"></select>
+                        </div>
+                        <div class="form-group" style="margin-left: 10px;">
+                            <span class="thspan">*</span>人员
+                            <select class="input-sm form-control users minwidth"></select>
+                        </div>
+                        <div class="form-group" style="margin-left: 10px;">
+                            <span class="thspan"> * </span>查询时间
+                            <input type="text" readonly="readonly" class="form-control start_date minwidth" placeholder="年-月-日">
+                        </div>
+                        <div class="form-group">
+                            <label for="enddate">~</label>
+                            <input type="text" readonly="readonly" class="form-control end_date minwidth" placeholder="年-月-日">
+                        </div>
+
+                        <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                                    </button>
+                        <!-- <button id="btn_print" type="button" class="btn btn-default btn-success btn_print" >
+                                        <span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印
+                                    </button>   -->
+                        <a id="xjterminalstatisticslink" style="display:none;"></a>
+                        <button id="btn_export" type="button" class="btn btn-default btn_export">
+                                        <span class="glyphicon glyphicon-export" aria-hidden="true"></span>导出
+                                    </button>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="xjterminalstatisticslist" class="xjterminalstatisticslist">
+        <div class="reportname" style="text-align: center;font-weight: 600;">终端使用情况表</div>
+        <!-- <table style="width: 100%;" border="1" cellspacing="0" cellpadding="0" class="table table-striped  table-bordered">
+            <caption class="table-caption" style="text-align: left;font-weight:600;">              
+                <p><span class="user_name" style="float: left;">员工：</span><span class="time_qj" style="float: right;">日期区间：</span></p>
+            </caption>
+            <tbody>
+                <th>时间</th>
+                <th>状态</th>
+                <th>通讯</th>
+                <th>定位</th>
+                <th>电量</th>
+            </tbody>
+            <tbody class="terminalstatistics-list">
+                
+            </tbody>
+        </table> -->
+
+        <div class="table-head">
+            <table class="table table-bordered " style="border:none" border="1" cellspacing="0" cellpadding="0">
+                <!-- <caption class="table-caption" style="text-align: left;font-weight:600;">
+                    <div class="cxgs" style="float:left;">公司：</div>
+                    <div class='cxqj' style="float:right;margin-right: 40px;">查询时间：</div>
+                </caption> -->
+                <thead style="border:none;">
+                    <tr style="border:none;">
+                        <td class="user_name" colspan="8" style="text-align: left;border:none;font-weight:bold">公司：</td>
+                        <td class='time_qj' colspan="8" style="border:none;text-align: right;font-weight:bold">查询时间：</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">时间</th>
+                        <th colspan="3">状态</th>
+                        <th colspan="3">通讯</th>
+                        <th colspan="3">定位</th>
+                        <th colspan="3">电量</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="table-body">
+
+            <table style="width: 100%;" class="table table-bordered " border="1" cellspacing="0" cellpadding="0">
+
+
+                <!-- <colgroup>
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+
+                </colgroup> -->
+
+
+                <tbody class="terminalstatistics-list">
+
+                </tbody>
+
+            </table>
+        </div>
+        <table>
+            <tfoot style="border:none">
+                <tr style="border:none">
+                    <td class="shenhe" colspan="9" style="border:none;font-weight:bold;text-align: right;">审核人：</td>
+                    <td class="zhibiao" colspan="3" style="border:none;font-weight:bold;text-align: right;">制表人</td>
+                    <td class="shijian" colspan="4" style="border:none;font-weight:bold;text-align: right;">制表时间：</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <!-- <label class="shenhe" style="text-align: left;vertical-align: middle !important;margin-right: 20px;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label>
+        <label class="zhibiao" style="text-align: center;margin-right: 20px;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label>
+        <label class="shijian" style="text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label> -->
+
+        <!-- <label class="shijian" style="float: right;text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label> 
+                        <label class="zhibiao" style="float: right;text-align: center;margin-right: 20px;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label> 
+                        <label class="shenhe" style="float: right;text-align: left;vertical-align: middle !important;margin-right: 20px;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label> -->
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        function mothedexport_xjterminal() {
+            exportExcel("xjterminalstatisticslist", "终端情况使用表", "xjterminalstatisticslink");
+        }
+
+    </script>
+    <script src="../../vendor/extentjs/exportexcel.js"></script>
+</div>

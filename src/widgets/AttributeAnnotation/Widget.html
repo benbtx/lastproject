@@ -1,0 +1,77 @@
+<div class="widget-AttributeAnnotation">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#labeling" data-toggle="tab">属性标注</a>
+        </li>
+        <li>
+            <a href="#setting" data-toggle="tab">设置</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="labeling">
+            <div class="form-group">
+                <fieldset>
+                    <legend>
+                        要素选择
+                        <span class="glyphicon glyphicon-question-sign" title="在地图上点击选取管线。下方将会列出所选管线的相关信息。"></span>
+                        <input type='checkbox' class='chooseType'> 框选</input>
+                    </legend>
+                    <div>
+                        <!--<select class="form-control input-sm featureset"></select>-->
+                        <ul class="list-group fields"></ul>
+
+                        <div>详细</div>
+                        <div class="xiangxi showtable">
+                            <table class="table table-bordered table-hover">
+                                <tbody class="table data">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <!--<div class="showtable">
+                <table class="table table-bordered table-hover">
+                    <tbody class="table data">
+                    </tbody>
+                </table>
+            </div>-->
+        </div>
+        <div class="tab-pane fade" id="setting">
+            <div class="form-group">
+                <fieldset>
+                    <legend>
+                        图层名称
+                        <span class="glyphicon glyphicon-question-sign" title="指定查询的图层。"></span>
+                    </legend>
+                    <div class="foldable">
+                        <select class="form-control input-sm layers"> 
+                            <% layers.forEach(function(item) { %>
+                                    <option value="<%= item.urlindex+'/'+item.id %>">
+                                    <a href="#" class="<%= item.name %>" ><%= item.name %></a>
+                                    </option>
+                            <% }); %>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        可见属性
+                        <span class="glyphicon glyphicon-question-sign" title="指定所要查询的属性字段。"></span>
+                    </legend>
+                    <div class="foldable">
+                        <ul class="list-group visibleattribution"></ul>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <button type="button" class="btn btn-default btn-sm col-xs-2 col-xs-offset-0 btnselectall ">全选</button>
+                    <button type="button" class="btn btn-default btn-sm col-xs-3 col-xs-offset-1 btnunselectall ">全不选</button>
+                    <button type="button" class="btn btn-default btn-sm col-xs-2 col-xs-offset-1 btnreset ">重置</button>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-block btnsave">保存</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,187 @@
+<div class="widget-VehicleWarnAreaManagement">
+    <div class="VehicleWarnAreaManagement_toolbar"> 
+        <div class="form-inline">
+            <div class="form-group company_serch" style="display: none;">
+                公司
+                <select class="input-sm form-control company must-width" ></select>
+            </div>
+             <div class="form-group">
+                <label for="search_condition">区域名称</label>
+                <input type="text" class="form-control search_condition must-width" placeholder="请输入区域名称">
+            </div>
+            <div class="form-group">
+                <label for="region_type_id">区域类型</label>
+                <select class="input-sm form-control region_type_id  must-width"></select>
+            </div>
+          
+            <div class="form-group">              
+                <button type="button" class="btn btn-sm btn-default btn-success btn-search"> 
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                </button> 
+            </div>                  
+            <div class="form-group">
+                <button id="btn_add" type="button" class="btn  btn-sm btn-default btn-success btn_addwarnregion">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+                </button>
+            </div>
+            <div class="form-group">
+                <button id="btn_edit" type="button" class="btn  btn-sm btn-default btn-success btn_editwarnregion">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+                </button>
+            </div>
+            <div class="form-group">
+                <button id="btn_delete" type="button" class="btn  btn-sm btn-default btn-success btn_deletewarnregion">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                </button>
+            </div>
+            <div class="form-group">
+                <button id="btn_add" type="button" class="btn  btn-sm btn-default btn-success btn_binding">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>车辆绑定
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="VehicleWarnAreaManagement_content halfpaneltable">
+            <table class="table table-bordered  table-striped">
+                <tbody>
+                    <tr>
+                        <th class="checkwidth"><input type="checkbox" class="select_region_all_list"/></th>
+                        <th title="区域名称">区域名称</th>
+                        <th title="开始日期">开始日期</th>
+                        <th title="结束日期">结束日期</th>
+                        <th title="区域类型">区域类型</th>
+                        <th title="限速（km/h）">限速（km/h）</th>
+                        <th title="执行方式">执行方式</th>
+                        <th title="执行时间">执行时间</th>
+                        <th title="所属车辆">所属车辆</th> 
+                        <th title="状态">状态</th>                          
+                    </tr>
+                </tbody>
+                <tbody class="regionalarmlist">                    
+                    
+                </tbody>
+            </table>
+    </div>
+
+    <div class="VehicleWarnAreaManagement_pagecontrol">
+            <label class="pagecontrol">
+                总共-条，每页              
+            </label> 
+                <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                     
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select><label>条</label>
+                <label class="selectpagecontrol"> ，当前选中-条</label>
+            <div class="pull-right input-group btn-toolbar " role="toolbar">
+                        <div class=" btn-group btn-group-sm">
+                                <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                                <button type="button" class="btn btn-primary disabled content">第-页共-页</button>
+                                <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                        </div>
+                        <div class="input-group input-group-sm go">
+                            <input type="number" min=1 value=1 class="form-control currpage">
+                            <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                        </span>
+                        </div>
+            </div>
+
+    </div>
+    
+    $$    
+    <div class="widget-VehicleWarnAreaManagement_addpopup">
+        <div class="form-group">
+            <div class="col-lg-3 control-label"><span class="must-span">*</span><label>区域名称</label></div>                    
+            <div class="col-lg-8">
+                <input type="text" class="form-control district_name" name="district_name" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The district_name is not valid"
+                                required data-bv-notempty-message="不能为空"/>
+            </div>                        
+        </div> 
+        <div class="form-group">
+            <div class="col-lg-3 control-label"><span class="must-span">*</span><label>区域类型</label></div>                               
+            <div class="col-lg-8">
+                <select class="form-control region_type_id" />
+            </div>                         
+        </div> 
+        <div class="form-group">
+             <div class="col-lg-3 control-label"><span class="must-span">*</span><label>限速(km/h)</label></div>                            
+            <div class="col-lg-8">
+                <input class="form-control limit_speed"  disabled='true'/>
+            </div>                         
+        </div>
+        <div class="form-group">
+            <div class="col-lg-3 control-label"><span class="must-span">*</span><label>开始时间</label></div>                    
+            <div class="col-lg-8">
+                <input type="text" class="form-control start_date" placeholder="年-月-日" name="start_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The start_date is not valid"
+                                required data-bv-notempty-message="不能为空"/>
+            </div>                        
+        </div> 
+         <div class="form-group">
+             <div class="col-lg-3 control-label"><span class="must-span">*</span><label>结束时间</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control end_date" placeholder="年-月-日" name="end_date" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The end_date is not valid"
+                                required data-bv-notempty-message="不能为空"/>
+                </div>                        
+        </div> 
+        <div class="form-group">
+             <div class="col-lg-3 control-label"><span class="must-span">*</span><label>执行方式</label></div>                    
+                <div class="col-lg-8">
+                    <select class="form-control executiong_mode_id" />
+                </div>                        
+        </div> 
+        <div class="form-group">
+             <div class="col-lg-3 control-label"><span class="must-span"></span><label>执行时间</label></div>                    
+                <div class="col-lg-8">
+                    <input type="text" class="form-control link_date" name="link_date"/>
+                </div>                        
+        </div>
+        <div class="form-group">
+            <div class="col-lg-3 control-label"><span class="must-span">*</span><label>是否启用</label></div>                                 
+            <div class="col-lg-8">
+                <select class="form-control state" />
+            </div>                         
+        </div>
+        <div class="form-group">
+            <div class="col-lg-3 control-label"><label>所属车辆</label></div>                                 
+            <div class="col-lg-8">
+                <div class="form-control listbox carlists">
+                    
+                </div>                
+            </div>                         
+        </div>
+    </div>
+    $$
+    <div class="widget-VehicleWarnAreaManagement_bindpopup">
+        <div class="form-group">
+            <div class="col-lg-3 control-label"><label>区域名称</label></div>                    
+            <div class="col-lg-8">
+                <input type="text" disabled class="form-control district_name" name="district_name" 
+                                data-bv-trigger="blur"
+                                data-bv-message="The district_name is not valid"
+                                required data-bv-notempty-message="不能为空"/>
+            </div>                        
+        </div>
+        <div class="form-group">
+            <div class="col-lg-3 control-label"><span class="must-span">*</span><label>所属车辆</label></div>                                
+            <div class="col-lg-8">
+                <div class="form-control listbox carlists" style="height: 150px;">
+                    
+                </div>                
+            </div>                          
+        </div>
+    </div>
+    $$
+</div>
+
+
+
+
+

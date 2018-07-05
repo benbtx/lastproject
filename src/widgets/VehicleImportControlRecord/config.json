@@ -1,0 +1,35 @@
+{
+    "widgetUrl": "widgets/VehicleImportControlRecord",
+    "tmplateUrl": "widgets/VehicleImportControlRecord/Widget.html",
+    "styleUrl": "widgets/VehicleImportControlRecord/css/style.css",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList":"/groups/list",
+    "getVehicleList":"/Car/List",
+    "getCarValuablePartReplaceList": "/CarValuablePartReplace/List",   
+    "addCarValuablePartReplace": "/CarValuablePartReplace/Add",
+    "deleteCarValuablePartReplace": "/CarValuablePartReplace/Delete",
+    "updateCarValuablePartReplace": "/CarValuablePartReplace/Update",
+    "getConfigList":"/SysConfig/List",
+    "partnamekey":"0016",
+    "partmodekey":"0008",   
+    "pagenumber": 0,
+    "pagesize": 50,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000,
+    "popupsize":{
+        "height":500,
+        "width":650
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加贵重零部件更换记录信息成功！",
+        "delete":"删除贵重零部件更换记录信息成功！",
+        "update":"更新贵重零部件更换记录信息成功！",
+        "other":"服务端ajax出错，获取数据失败!"
+    }
+}

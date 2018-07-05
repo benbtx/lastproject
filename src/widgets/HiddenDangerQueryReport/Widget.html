@@ -1,0 +1,193 @@
+<div class="widget-hiddendangerqueryreport ">
+    <div class="hiddendangerqueryreportinfo-search">
+        <table class="table table-bordered  table-striped">
+            <tr>
+                <th class="thleft">
+                    <div class="form-inline">
+                        <div class="form-group company_serch" style="display: none;">
+                            公司
+                            <select class="input-sm form-control company minwidth"></select>
+                        </div>
+                        <div class="form-group department_btn groupleft">
+                            部门
+                            <select class="input-sm form-control department minwidth" id="department"></select>
+                        </div>
+                        <div class="form-group groupleft">
+                            <span class="thspan">*</span>隐患发生时间
+                            <input type="text" class="form-control hiddendangerqueryreport_begindate minwidth" id="hiddendangerqueryreport_begindate"
+                                placeholder="年/月/日">
+                        </div>
+                        <div class="form-group">
+                            <label for="hiddendangerqueryreport_enddate">~</label>
+                            <input type="text" class="form-control hiddendangerqueryreport_enddate minwidth" id="hiddendangerqueryreport_enddate" placeholder="年/月/日">
+                        </div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th class="thleft">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            设备类型
+                            <select class="input-sm form-control pdaid minwidth" id="pdaid">
+                                     </select>
+                        </div>
+                        <div class="form-group groupleft">
+                            隐患类型
+                            <select class="input-sm form-control trouble_typeid minwidth" id="trouble_typeid"></select>
+                        </div>
+                        <div class="form-group groupleft">
+                            处理现状
+                            <select class="form-control input-sm handle_state minwidth">
+                                                <option value="" selected>所有</option>
+                                                <option value="0">未处理</option>
+                                                <option value="1">已处理</option>
+                                    </select>
+                        </div>
+                        <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                                    </button>
+                        <!-- <button id="btn_print" type="button" class="btn btn-default btn-success btn_print" >
+                                        <span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印
+                                    </button>    -->
+                        <a id="hiddendangerqueryexportlink" style="display:none;"></a>
+                        <button id="btn_export" type="button" class="btn btn-default btn_export">
+                                        <span class="glyphicon glyphicon-export" aria-hidden="true"></span>导出
+                                    </button>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="hiddendangerqueryreportinfo">
+        <div id="content_holder">
+
+            <div class="example">
+                <div class="hiddendangerqueryreportinfo-list" id="hiddendangerqueryreportinfo-list">
+                    <div class="reportname" style="text-align: center;font-weight: 600;">隐患类型查询报表</div>
+                    <!-- <table class="table table-bordered  table-striped" border="1" cellspacing="0" cellpadding="0" style="width: 100%;" >
+                            <caption class="table-caption" style="text-align: left;font-weight:600;"><div class="cxgs" style="float:left;">公司：</div><div class='cxqj' style="float:right;">查询日期：</div></caption> 
+                            <tbody>
+                                <tr class="tit">
+                                    <th class="numwidth">序号</th>
+                                    <th>隐患来源</th>
+                                    <th>上报人员</th>
+                                    <th>设备类型</th>
+                                    <th>隐患类型</th>
+                                    <th>是否处理</th>
+                                    <th>隐患是否清除 </th>
+                                    <th>隐患地址</th>
+                                    <th>发现时间</th>
+                                </tr>
+                            </tbody>
+                            <tbody class="hiddendangerqueryreport">
+                            </tbody>
+                        </table> -->
+
+                    <div class="table-head">
+                        <table class="table table-bordered " style="border:none" border="1" cellspacing="0" cellpadding="0">
+                            <!-- <caption class="table-caption" style="text-align: left;font-weight:600;">
+                                <div class="cxgs" style="float:left;">公司：</div>
+                                <div class='cxqj' style="float:right;margin-right: 40px;">查询时间：</div>
+                            </caption> -->
+                            <colgroup>
+                                <col width="50">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+
+
+                            </colgroup>
+                            <thead>
+                                <tr style="border:none;">
+                                    <td class="cxgs" colspan="4" style="border:none;text-align: left;font-weight:bold">公司：</td>
+                                    <td class='cxqj' colspan="5" style="border:none;text-align: right;font-weight:bold">查询时间：</td>
+                                </tr>
+                                <tr class="tit">
+                                    <th class="numwidth">序号</th>
+                                    <th>隐患来源</th>
+                                    <th>上报人员</th>
+                                    <th>设备类型</th>
+                                    <th>隐患类型</th>
+                                    <th>是否处理</th>
+                                    <th>隐患是否清除 </th>
+                                    <th>隐患地址</th>
+                                    <th>发现时间</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="table-body">
+
+                        <table style="width: 100%;" class="table table-bordered " border="1" cellspacing="0" cellpadding="0">
+
+
+                            <colgroup>
+                                <col width="50">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                                <col width="100">
+                            </colgroup>
+
+
+                            <tbody>
+
+                            </tbody>
+                            <tbody class="hiddendangerqueryreport">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <table style="width:100%">
+                        <colgroup>
+                            <col width="50">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                        </colgroup>
+                        <tfoot style="border:none">
+                            <tr style="border:none">
+                                <td class="shenhe" colspan="5" style="border:none;font-weight:bold;text-align: right;">审核人：</td>
+                                <td class="zhibiao" colspan="2" style="border:none;font-weight:bold;text-align: right;">制表人</td>
+                                <td class="shijian" colspan="2" style="border:none;font-weight:bold;text-align: right;">制表时间：</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <!-- <label class="shenhe" style="text-align: left;vertical-align: middle !important;margin-right: 20px;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label>
+                    <label class="zhibiao" style="text-align: center;margin-right: 20px;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label>
+                    <label class="shijian" style="text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label> -->
+
+
+                    <!-- <label class="shijian" style="float: right;text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label> 
+                        <label class="zhibiao" style="float: right;text-align: center;margin-right: 20px;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label> 
+                        <label class="shenhe" style="float: right;text-align: left;vertical-align: middle !important;margin-right: 20px;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        function mothedexport_hiddendangerquery() {
+            exportExcel("hiddendangerqueryreportinfo-list", "隐患查询报表", "hiddendangerqueryexportlink");
+        }
+
+    </script>
+    <script src="../../vendor/extentjs/exportexcel.js"></script>
+
+</div>

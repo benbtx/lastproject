@@ -1,0 +1,148 @@
+.widget-XJloginStatisitics {
+    height: 100%;
+    .go {
+        width: 200px;
+    }
+    .xjloginstatisitics-search {
+        /*float: left;*/
+        width: 100%;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    .goto {
+        height: 37px;
+    }
+    a {
+        cursor: pointer;
+    }
+    label,
+    th {
+        text-align: center;
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white; //overflow: hidden;
+        //text-overflow: ellipsis;
+        //white-space: nowrap;   
+    }
+    .btn {
+        padding: 4px 8px;
+    }
+    td {
+        text-align: center;
+        vertical-align: middle !important;
+        padding: 5px!important; //background-color: white;
+    }
+    tbody {
+        border-top: 1px solid #ddd !important;
+    }
+    .xjloginstatisiticslist td {
+        text-align: center;
+        min-width: 50px;
+    }
+    .thright {
+        text-align: right;
+        margin-right: 5px;
+    }
+    .thleft {
+        text-align: left;
+        margin-right: 5px;
+    }
+    .thspan {
+        color: red;
+        font-weight: bold;
+    }
+    .minwidth {
+        width: 120px;
+        height: 30px;
+    }
+    .tit {
+        th {
+            text-align: center;
+            vertical-align: middle;
+            padding: 1px!important;
+        }
+    }
+    .xjloginstatisiticslist {
+        width: 100%;
+        height: calc(100% - 45px);
+        margin: 4px;
+        /*overflow: auto;*/
+        .table-head {
+            padding-right: 10px;
+            table {
+                margin-bottom: 0;
+            }
+        }
+        .table-body {
+            height: calc(100% - 165px);
+            overflow: auto;
+        }
+    }
+    .reportname {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: black; //margin: 5px;
+    }
+    .plantitle {
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    /*.shenhe {
+        float: left !important;
+        text-align: center;
+    }
+    .zhibiao {
+        text-align: center; // margin-right: calc(25%) !important;
+    }
+    .groupleft {
+        margin-left: 10px;
+    }
+    .shijian {
+        // float: right;
+        text-align: center;
+    }*/
+     ::-webkit-scrollbar {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .btn_export {
+        color: #fff;
+        background-color: #ed4e2a;
+        border-color: #ED5A24;
+    }
+    .numwidth {
+        width: 50px;
+    }
+    table tr:nth-child(2n) {
+        background-color: #eeeeee !important;
+    }
+    .fht-thead {
+        padding-right: 10px;
+    }
+    .fht-table {
+        width: 100% !important;
+    }
+    .time_qj {
+        float: right;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    .user_name {
+        float: left;
+        margin-bottom: 5px;
+    }
+}
+
+@media print {
+    .fht-thead {
+        display: none;
+    }
+    table tr:nth-child(2n) {
+        background-color: #eeeeee !important;
+    }
+}

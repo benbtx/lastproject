@@ -1,0 +1,16 @@
+{
+    "widgetUrl": "widgets/HiddenDangerGradigTable",
+    "tmplateUrl": "widgets/HiddenDangerGradigTable/Widget.html",
+    "styleUrl": "widgets/HiddenDangerGradigTable/css/style.scss",
+    "mapDiv": "myMap",
+    "getHiddenDangerGradigTableList": "/troublecategory/list",
+    "getHiddenDangerGradigTableInfo": "/troubletype/info/",
+    "addHiddenDangerGradigTable": "/troublecategory/add",
+    "deleteHiddenDangerGradigTable": "/troublecategory/delete/",
+    "updateHiddenDangerGradigTable": "/troublecategory/update",
+    "getHiddenDangerLevelList": "/level/list",
+    "getHiddenDangerTypeList": "/troubletype/list",
+    "getDeviceTypeList": "/SysDeviceType/list",
+    "pagenumber": 1,
+    "pagesize": 100
+}

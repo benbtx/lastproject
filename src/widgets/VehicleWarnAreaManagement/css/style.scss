@@ -1,0 +1,116 @@
+.widget-VehicleWarnAreaManagement {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .VehicleWarnAreaManagement_toolbar {
+        height: 30px;
+        margin-left: 5px;
+        .form-group{
+            float: left;
+            margin: 5px 3px 5px 0px;
+        }
+    }
+    .VehicleWarnAreaManagement_content {
+        width: 100%;
+        height: calc(100% - 70px);
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            table-layout: fixed;
+            tbody {
+                border-top: 1px solid #ddd;
+            }
+            td {
+                padding: 3px !important;
+                a:hover {
+                    cursor: pointer
+                }
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                    overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; 
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+            .goto {
+                height: 26px;
+            }
+            td,th{
+                vertical-align: middle;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; 
+            }
+            .checkwidth{
+                width: 40px;
+            }
+        }
+    }
+    .must-width{
+        width: 150px;
+        height: 30px;    
+    }
+    .halfpaneltable {
+        overflow-y: scroll;
+    }
+    .VehicleWarnAreaManagement_pagecontrol {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        margin-left: 5px;
+    }   
+    .regionname,
+    .address,
+    .notes {
+        width: 85px;
+    }
+    .checkcenter {
+        text-align: center;
+    }
+}
+
+.widget-VehicleWarnAreaManagement_bindpopup,.widget-VehicleWarnAreaManagement_addpopup{
+    float: left;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    margin: 5px;
+    .must-span{
+        color: red;
+        text-align: center;
+        vertical-align: middle;
+    }    
+    .form-group{
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .col-lg-3{
+        text-align: right !important;
+    }
+
+    .col-lg-8{
+        margin-bottom: 10px !important;
+    }
+
+    .listbox{
+        border: 1px solid #dad7d2;
+        height: 80px;;
+        border-radius: 4px;
+        overflow-y: auto;
+        .select_car_list{
+            margin-left: 11px;
+        }
+    }
+}

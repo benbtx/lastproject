@@ -1,0 +1,178 @@
+<div class="widget-XJCarPathAnalysis">
+    <fieldset>
+        <div class="company">
+            <legend>
+                公司
+                <span class="glyphicon glyphicon-question-sign" title="选择查询的公司。"></span>
+            </legend>
+            <div class="foldable">
+                <select class="form-control input-sm company">
+            </select>
+            </div>
+        </div>
+        <div class="department">
+            <legend>
+                部门
+                <span class="glyphicon glyphicon-question-sign" title="选择查询的部门。"></span>
+            </legend>
+            <div class="foldable">
+                <select class="form-control input-sm department">
+                <option value="allDepartment">所有</option>
+                 <script type="text/departmentList" id="departmentList">
+                  <option value="%data">%data</option>
+                 </script>
+            </select>
+            </div>
+        </div>
+        <div>
+            <legend>
+                车辆
+                <span class="glyphicon glyphicon-question-sign" title="选择查询的人员。"></span>
+            </legend>
+            <div class="foldable">
+                <select class="form-control input-sm userName">
+                  <script type="text/departmentList" id="userList">
+                  <option value="%data">%data</option>
+                 </script>
+            </select>
+            </div>
+        </div>
+        <div>
+            <legend>
+                日期：
+                <span class="glyphicon glyphicon-question-sign" title="选择日期。"></span>
+            </legend>
+            <div class="foldable">
+                <input type="text" class="input-sm form-control title date" maxlength="10" readonly>
+            </div>
+        </div>
+        <div>
+            <legend>
+                时间段：
+                <span class="glyphicon glyphicon-question-sign" title="选择日期。"></span>
+            </legend>
+            <div class="foldable time" style="margin-top: -20px;">
+                <input type="text" class="input-sm form-control title startTime" maxlength="10" readonly>
+                <hr class="timeline" />
+                <input type="text" class="input-sm form-control title endTime" maxlength="10" readonly>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm btn-block query">查询</button>
+    </fieldset>
+</div>
+$$
+<div class="XJPathAnalysis-result">
+    <div class="totalinfo">
+        <div><span>路程：</span><span class="distance"></span><span>千米</span></div>|
+        <div><span>耗时：</span><span class="time"></span><span>分</span></div>|
+        <div><span>平均速度：</span><span class="speed"></span><span>千米/小时</span></div>
+    </div>
+    <div class="detailresult">
+        <div class="table-head">
+            <table class="table table-bordered  ">
+                <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>间距(米)</th>
+                        <th>耗时(秒)</th>
+                        <th>速度(米/秒)</th>
+                        <th>卫星(个)</th>
+                        <th>精度</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tablecontainer">
+            <table class="table table-bordered  table-hover">
+                <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                    <col width="150">
+                </colgroup>
+                <tbody>
+                    <script type="text/template" id="pathanalysistemplate">
+                        <tr prepoint="%data" point="%data">
+                            <td>%data</td>
+                            <td>%data</td>
+                            <td>%data</td>
+                            <td>%data</td>
+                            <td>%data</td>
+                            <td>%data</td>
+                        </tr>
+                    </script>
+                    <!--<tr choosed="no">
+                    <td>1</td>
+                    <td>重庆花卉园管线施工</td>
+                    <td>曾先生</td>
+                    <td>中国移动江北分公司</td>
+                    <td>道路施工</td>
+                    <td>重庆花卉园</td>
+                    <td>李玲</td>
+                </tr>
+                <tr choosed="no">
+                    <td>2</td>
+                    <td>重庆花卉园管线施工</td>
+                    <td>曾先生</td>
+                    <td>中国移动江北分公司</td>
+                    <td>道路施工</td>
+                    <td>重庆花卉园</td>
+                    <td>李玲</td>
+                </tr>
+                <tr choosed="no">
+                    <td>3</td>
+                    <td>重庆花卉园管线施工</td>
+                    <td>曾先生</td>
+                    <td>中国移动江北分公司</td>
+                    <td>道路施工</td>
+                    <td>重庆花卉园</td>
+                    <td>李玲</td>
+                </tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="div-pagetool">
+        <label class="pagecontrol">总共<span class="total"></span>条记录，每页默认显示<span class="pagesize"></span>条</label>
+        <span>每页</span>
+        <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                     <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+        <span>条</span>
+        <div class="pull-right input-group btn-toolbar" role="toolbar">
+            <div class=" btn-group btn-group-sm">
+                <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                <button type="button" class="btn btn-primary disabled current">第<span class="currentpage">1</span>页共<span class="totalpage">5</span> 页</button>
+                <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+            </div>
+            <div class="input-group input-group-sm go">
+                <input type="number" min=1 value=1 class="form-control currpage">
+                <span class="input-group-btn "> <button class="btn btn-default btn-primary pageturning" type="button">跳转</button>
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+$$
+<div class="pathpointinfowindow">
+    <p><span>定位时间：${time}</span></p>
+    <p><span>间距：${distance}</span></p>
+    <p><span>耗时：${timespan}</span></p>
+    <p><span>速度：${speed}</span></p>
+    <p><span>卫星：${star}</span></P>
+    <p><span>精度：${precision}</span></p>
+</div>

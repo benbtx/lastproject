@@ -1,0 +1,23 @@
+{
+    "widgetUrl": "widgets/PlanPoint",
+    "tmplateUrl": "widgets/PlanPoint/Widget.html",
+    "styleUrl": "widgets/PlanPoint/css/style.css",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getPlanPointList": "/PlanPoint/List",
+    "getPlanPathList": "/PlanPoint/List",
+    "getPlanRegionList": "/GpsRegion/List",
+    "addPlanPointInfo": "/PlanPoint/Add",
+    "updatePlanPoint": "/PlanPoint/Update",
+    "deletePlanPoint": "/PlanPoint/Delete/",
+    "isUpdate":"/PlanPoint/Get_Point_State/",
+    "pagenumber": 1,
+    "pagesize": 25,
+    "MarkPictureSymbol": "./widgets/PlanPoint/images/planpoint.png",
+    "TextbgSymbol": "./widgets/PlanPoint/images/textbg.png",
+    "device_type_id":{
+        "path":"6",
+        "point":"1"
+    },
+    "rangeall":"00", 
+    "maxsize":100000
+}

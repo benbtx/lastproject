@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/14c74ee373501a19c60253ab4aff0f9e2575516e/dojo/dojo.d.ts",
+    "raw": "registry:dt/dojo#1.9.0+20160907111543",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/14c74ee373501a19c60253ab4aff0f9e2575516e/dojo/dojo.d.ts"
+  }
+}

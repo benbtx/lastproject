@@ -1,0 +1,18 @@
+{
+    "widgetUrl": "widgets/QuestionMark",
+    "tmplateUrl": "widgets/QuestionMark/Widget.html",
+    "styleUrl": "widgets/QuestionMark/css/style.css",
+    "hello": "Hello ",
+    "MarkPictureSymbol": "./widgets/QuestionMark/images/RedPin1LargeB.png",
+    "lineColor": "#ff1a1a",
+    "lineWidth": 2,
+    "questionMark": "/webapp/questionmarks",
+    "questionMarkAdd": "/webapp/questionmarks/add",
+    "questionMarkDelete": "/webapp/questionmarks/delete",
+    "filePath":"/webapp/file/",
+    "pagenumber": 1,
+    "pagesize": 5,
+    "maxnumber": 5,
+    "namelength":15,
+    "zoomscale" : 2000
+}

@@ -1,0 +1,26 @@
+{
+    "gemotryserverUrl":"http://192.168.1.101:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+    "lengthUnit":[
+        {
+            "name":"米",
+            "number":9001
+        },{
+            "name":"千米",
+            "number":9036
+        }
+    ],
+    "areaUnit":[
+        {
+            "name":"平方米",
+            "number":"square-meters"
+        },{
+            "name":"平方千米",
+            "number":"square-kilometers"
+        }
+    ],
+    "pngs":{
+        "length":"/widgets/MeasureTool/images/length.png",
+        "area":"/widgets/MeasureTool/images/area.png",
+        "angle":"/widgets/MeasureTool/images/angle.png"
+    }
+}

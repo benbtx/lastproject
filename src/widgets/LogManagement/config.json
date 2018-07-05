@@ -1,0 +1,11 @@
+{
+    "widgetUrl": "widgets/LogManagement",
+    "tmplateUrl": "widgets/LogManagement/Widget.html",
+    "styleUrl": "widgets/LogManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getLogList": "/Log/list",
+  
+  
+    "pagenumber": 1,
+    "pagesize": 13
+}

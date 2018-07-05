@@ -1,0 +1,93 @@
+<div class="widgets-side_menu no-user-select">
+    <div class="widgets-side_menu-footer">
+        <div class="widgets-side_menu-footer-foldable">
+            <span class="widgets-side_menu-title widgets-side_menu-small_hidden">功能菜单</span>
+            <image class="widgets-side_menu-footer-foldable-icon"
+                src="<%= media.foldImageURL %>"
+                title="展开或折叠面板"
+                data-isFold=false />
+        </div>
+    </div>
+    <div class="widgets-side_menu-sidebar">
+        <div class="widgets-side_menu-accordion accordion">
+            <% menuListData.forEach(function(section) { %>
+                <% if (section.widget) { %>
+                    <div class="widgets-side_menu-item_header widgets-side_menu-single_widget fire-on"
+                        data-id="<%= section.widget.id %>"
+                        data-widget="<%= section.widget.widget %>"
+                        data-main="<%= section.widget.main %>"
+                        data-label="<%= section.widget.label %>"
+                        data-in-panel="<%= section.widget.inPanel %>">
+                            <img src="<%= root + section.icon %>" alt="" class="widgets-side_menu-big_item_icon">
+                            <%= section.label %>
+                    </div>
+                    <div></div>
+                <% } else { %>
+                    <div class="widgets-side_menu-item_header">
+                            <img src="<%= root + section.icon %>" alt="" class="widgets-side_menu-big_item_icon">
+                            <%= section.label %>
+                    </div>
+                    <div class="widgets-side_menu-item_content">
+                        <% section.data.forEach(function(item) { %>
+                            <div class="widgets-side_menu-item_header fire-on"
+                                data-id="<%= item.id %>"
+                                data-widget="<%= item.widget %>"
+                                data-main="<%= item.main %>"
+                                data-label="<%= item.label %>"
+                                data-panel="<%= item.panel %>"
+                                data-in-panel="<%= item.inPanel %>">
+                                <img src="<%= root + item.icon %>" class="widgets-side_menu-small_item_icon">
+                                <%= item.label %>
+                            </div>
+                        <% }); %>
+                    </div>
+                <% } %>
+            <% }); %>
+        </div>
+        <div class="widgets-side_menu-flag">
+            <% menuListData.forEach(function(section) { %>
+                <% if (section.widget) { %>
+                    <div class="widgets-side_menu-flag-section">
+                        <img src="<%= root + section.icon %>"
+                            class="widgets-side_menu-flag-icon"
+                            title="<%= section.label %>">
+                        <div class="widgets-side_menu-flag-right_flag">
+                            <div class="widgets-side_menu-flag-label fire-on"
+                                data-id="<%= section.widget.id %>"
+                                data-widget="<%= section.widget.widget %>"
+                                data-main="<%= section.widget.main %>"
+                                data-label="<%= section.widget.label %>"
+                                data-in-panel="<%= section.widget.inPanel %>">
+                                <%= section.label %>
+                            </div>
+                        </div>
+                    </div>
+                <% } else { %>
+                    <div class="widgets-side_menu-flag-section">
+                        <img src="<%= root + section.icon %>"
+                            class="widgets-side_menu-flag-icon">
+                        <div class="widgets-side_menu-flag-right_flag">
+                            <div class="widgets-side_menu-flag-label">
+                                <%= section.label %>
+                            </div>
+                            <div class="widgets-side_menu-flag-right_flag-list">
+                                <% section.data.forEach(function(item) { %>
+                                    <div class="widgets-side_menu-flag-right_flag-list-item fire-on"
+                                        data-id="<%= item.id %>"
+                                        data-widget="<%= item.widget %>"
+                                        data-main="<%= item.main %>"
+                                        data-label="<%= item.label %>"
+                                        data-panel="<%= item.panel %>"
+                                        data-in-panel="<%= item.inPanel %>">
+                                        <img src="<%= root + item.icon %>" class="widgets-side_menu-flag-right_flag-list-item-icon">
+                                        <%= item.label %>
+                                    </div>
+                                <% }); %>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }); %>
+        </div>
+    </div>
+</div>

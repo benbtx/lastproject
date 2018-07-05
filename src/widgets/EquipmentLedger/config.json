@@ -1,0 +1,138 @@
+{
+    "widgetUrl": "widgets/EquipmentLedger",
+    "tmplateUrl": "widgets/EquipmentLedger/Widget.html",
+    "styleUrl": "widgets/EquipmentLedger/css/style.css",
+    "getRecordStates":"/PlanPointRepair/States",
+    "getPlanPointRepair": "/PlanPointRepair/List/",
+    "getCompanyList":"/Device/Get_Company_List",
+    "pagenumber": 0,
+    "pagesize": 25,
+    "currentpage":1,
+    "pagetotal":0,
+    "mapindex": 0,
+    "rangeall":"00",
+    "maxsize":100000,
+    "layerids":{
+        "deviceledger_layer":"deviceledger_layer"
+    },
+    "layernamedic":{
+        "7":"booster",
+        "11":"valve",
+        "13":"yjbh",
+        "14":"yjbhcsz",
+        "41":"fswall",
+        "42":"station",
+        "10":"nsg"
+    },
+    "layeroutfield":{
+        "7":"OBJECTID, SID, CODE, SUBTYPE, DISTRICT_XZQ,ADDR,STATUS,MANAGEDEPT_CODE",
+        "11":"OBJECTID, SID, CODE, SUBTYPE, DISTRICT_XZQ,ADDR,STATUS,MANAGEDEPT_CODE",
+        "13":"OBJECTID, SID, CODE, SUBTYPE, DISTRICT_XZQ,LOCATION,STATUS,MANAGEDEPT_CODE",
+        "14":"OBJECTID, SID, CODE, SUBTYPE, DISTRICT_XZQ,LOCATION,STATUS,MANAGEDEPT_CODE",
+        "41":"OBJECTID, SID, CODE, SUBTYPE, DISTRICT_XZQ,ADDR,STATUS,MANAGEDEPT_CODE",
+        "42":"OBJECTID, SID, CODE, SUBTYPE, DISTRICT_XZQ,ADDR,STATUS,MANAGEDEPT_CODE",
+        "10":"OBJECTID, SID, CODE, SUBTYPE, DISTRICT_XZQ,ADDR,STATUS,MANAGEDEPT_CODE"
+    },
+    "device_type_id": [{
+        "name": "所有设备",
+        "value": "",
+        "layer": "7,11,13,14,41,42,10",
+        "layername": "booster,booster,valve,yjbh,yjbh",
+        "where":"",
+        "managecode":"MANAGEDEPT_CODE"
+    },{
+        "name": "调压箱",
+        "value": "调压箱",
+        "layer": "7",
+        "layername": "booster",
+        "where":"SUBTYPE",
+        "managecode":"MANAGEDEPT_CODE"
+    }, {
+        "name": "调压柜",
+        "value": "调压柜",
+        "layer": "7",
+        "layername": "booster",
+        "where":"SUBTYPE",
+        "managecode":"MANAGEDEPT_CODE"
+    }, {
+        "name": "阀门",
+        "value": "",
+        "layer": "11",
+        "layername": "valve",
+        "where":"",
+        "managecode":"MANAGEDEPT_CODE"
+    },{
+        "name": "阀室",
+        "value": "",
+        "layer": "41",
+        "layername": "fswall",
+        "where":"",
+        "managecode":"MANAGEDEPT_CODE"
+    },{
+        "name": "站场",
+        "value": "",
+        "layer": "42",
+        "layername": "station",
+        "where":"",
+        "managecode":"MANAGEDEPT_CODE"
+    },{
+        "name": "凝水缸",
+        "value": "",
+        "layer": "10",
+        "layername": "nsg",
+        "where":"",
+        "managecode":"MANAGEDEPT_CODE"
+    },{
+        "name": "阴保站（恒电位仪）",
+        "value": "阴保站",
+        "layer": "13",
+        "layername": "yjbh",
+        "where":"SUBTYPE",
+        "managecode":"MANAGEDEPT_CODE"
+    },{
+        "name": "测试桩",
+        "value": "牺牲阳极测试桩",
+        "layer": "14",
+        "layername": "yjbhcsz",
+        "where":"SUBTYPE",
+        "managecode":"MANAGEDEPT_CODE"
+    }],"runstatus":[{
+        "where":"",
+        "value":"",
+        "name":"所有状态"
+    },{
+        "where":"STATUS",
+        "value":"废弃",
+        "name":"废弃"
+    },{
+        "where":"STATUS",
+        "value":"规划",
+        "name":"规划"
+    },{
+        "where":"STATUS",
+        "value":"竣工",
+        "name":"竣工"
+    },{
+        "where":"STATUS",
+        "value":"运行",
+        "name":"运行"
+    },{
+        "where":"STATUS",
+        "value":"闲置",
+        "name":"闲置"
+    },{
+        "where":"STATUS",
+        "value":null,
+        "name":"未知"
+    }],
+    "color":[0,0,255,0.8],
+    "picdic":{
+        "qingxiqian":"清洗前",
+        "qingxihou":"清洗后",
+        "jianlouqian":"检漏前",
+        "jianlouhou":"检漏后",
+        "guanbiyali":"关闭压力",
+        "yunxingyali":"运行压力",
+        "qieduanyali":"切断压力"
+    }
+}

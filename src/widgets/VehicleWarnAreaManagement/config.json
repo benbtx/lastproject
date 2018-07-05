@@ -1,0 +1,49 @@
+{
+    "widgetUrl": "widgets/VehicleWarnAreaManagement",
+    "tmplateUrl": "widgets/VehicleWarnAreaManagement/Widget.html",
+    "styleUrl": "widgets/VehicleWarnAreaManagement/css/style.css",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getRegionAlarmList": "/CarRegionAlarm/List",
+    "addRegionAlarmInfo": "/CarRegionAlarm/Add",   
+    "updateRegionAlarm": "/CarRegionAlarm/Update",
+    "deleteRegionAlarm": "/CarRegionAlarm/Delete",
+    "getConfigList":"/SysConfig/List",
+    "getVehicleList": "/Car/List",
+    "bindRegion":"/CarRegionAlarm/UpdateBinds",
+    "typekey":"0005",
+    "excukey":"0012",
+    "pagenumber": 0,
+    "pagesize": 25,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000,
+    "popupsize":{
+        "height":530,
+        "width":650
+    },
+    "popuptip":{
+        "height":150,
+        "width":300
+    },
+    "messages":{
+        "add":"添加报警区域成功！",
+        "delete":"删除报警区域成功！",
+        "update":"更新报警区域成功！",
+        "other":"服务端ajax出错，获取数据失败!"
+    },    
+    "MarkPictureSymbol": "./widgets/VehicleWarnAreaManagement/images/textbg.png",
+    "TextbgSymbol": "./widgets/VehicleWarnAreaManagement/images/textbg.png",
+    "isdicdata":[
+        {
+            "id":"1",
+            "value":"启用"
+        },{
+            "id":"0",
+            "value":"不启用"
+        }
+    ],
+    "isrun":{
+        "1":"启用",
+        "0":"不启用"
+    }
+}

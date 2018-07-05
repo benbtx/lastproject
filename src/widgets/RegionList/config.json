@@ -1,0 +1,6 @@
+{
+    "widgetUrl": "widgets/RegionList",
+    "tmplateUrl": "widgets/RegionList/Widget.html",
+    "styleUrl": "widgets/RegionList/css/style.css",
+    "regionListAPI": "/webapp/summary/catalog"
+}

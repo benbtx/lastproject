@@ -1,0 +1,39 @@
+{
+    "widgetUrl": "widgets/GroupsManagement",
+    "tmplateUrl": "widgets/GroupsManagement/Widget.html",
+    "styleUrl": "widgets/GroupsManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getUserList": "/user/list",
+    "getGroupList": "/groups/list",
+    "getGroupInfo": "/groups/info/",
+    "addGroup": "/groups/add",
+    "deleteGroup": "/groups/delete/",
+    "updateGroup": "/groups/update",
+    "getCompanyList": "/Device/Get_Company_List",
+    "crdepartmentid": "88",
+
+
+    "getWebUserList_withoutgroup": "/webapp/users/withoutgroup",
+    "getWebUserList_ondepartment": "/webapp/users/ondepartment",
+
+    "getWebUserList_ongroup": "/webapp/users/ongroup",
+
+    "bindgroup": "/webapp/users/bindgroup",
+
+
+    "unbindgroup": "/webapp/users/unbindgroup",
+
+
+
+    "pagenumber": 1,
+    "pagesize": 13,
+    "ry": [{
+            "name": "sl",
+            "id": "1"
+        },
+        {
+            "name": "ly",
+            "id": "2"
+        }
+    ]
+}

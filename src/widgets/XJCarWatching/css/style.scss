@@ -1,0 +1,226 @@
+.XJCarWatching {
+    margin: 0 -5px;
+    .tab-content {
+        height: 300px;
+        #worker {
+            height: 100%;
+            .selector {
+                padding: 10px 4px 4px;
+                label {
+                    margin-left: 5px;
+                    font-weight: lighter;
+                    vertical-align: middle;
+                    margin-bottom: 0;
+                }
+                select {
+                    height: 25px;
+                    font-size: 10px;
+                    padding: 3px 6px;
+                    width: 100px;
+                }
+                select.company {
+                    width: 240px;
+                }
+            }
+            /* 巡检人员列表样式*/
+            .workerlist {
+                border: 1px solid #dddddd;
+                padding: 0px 3px;
+                overflow-y: auto;
+                height: 100%;
+                .item {
+                    border-bottom: 1px solid #dddddd;
+                    .maininfo {
+                        div.img {
+                            width: 55px;
+                            height: 55px;
+                            display: inline-flex;
+                            border: 1px solid #dddddd;
+                            padding: 2px;
+                            margin-top: 3px;
+                            cursor: pointer;
+                            position: relative;
+                            img.avatar {
+                                border-radius: 50px;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        div.content {
+                            cursor: pointer;
+                            display: inline-block;
+                            width: 218px;
+                            div.head {
+                                height: 30px;
+                                font-weight: bold;
+                                span.title {
+                                    width: 100px;
+                                    display: inline-block;
+                                    a {
+                                        color: #9e9898;
+                                    }
+                                    a[userstate="workNormal"] {
+                                        color: #337ab7;
+                                    }
+                                }
+                                span.right {
+                                    float: right;
+                                }
+                                span.tool {
+                                    margin-left: -5px;
+                                    a {
+                                        display: inline-block;
+                                        padding: 0;
+                                        margin-bottom: 0;
+                                    }
+                                    a.nocar {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            div.foot {
+                                height: 20px;
+                                span.right {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                    .relativeinfo {
+                        border-top: 1px solid #dddddd;
+                        overflow-y: auto;
+                        #workerlog {
+                            p {
+                                padding: 0px 25px;
+                            }
+                            span.text {
+                                margin-left: 50px;
+                            }
+                            span.time {
+                                float: right;
+                            }
+                        }
+                        #workercheckpoint {
+                            padding: 5px 5px 0px;
+                            div.checkplan {
+                                border-bottom: 1px solid #dddddd;
+                                div.progress {
+                                    width: 100px;
+                                    display: inline-flex;
+                                    float: right;
+                                    height: 15px;
+                                    margin-bottom: 0;
+                                    .progress-bar {
+                                        color: #337ab7;
+                                    }
+                                }
+                            }
+                            div.checkpoints {
+                                padding: 0px;
+                                p.checkpointitem {
+                                    padding-left: 30px;
+                                    span.checkpointname {
+                                        display: inline-block;
+                                        width: 120px;
+                                    }
+                                    span.checktime {
+                                        float: right;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        #workerpath {
+                            img {
+                                cursor: pointer;
+                            }
+                            span.pathname {
+                                margin-left: 30px;
+                            }
+                            span.timespan {
+                                /* float: right;*/
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+                }
+                /*人员状态样式*/
+                div.item[userstate="noWork"] {
+                    img.avatar[oraginal="no"] {
+                        opacity: 0.4;
+                    }
+                }
+                div.item[userstate="offWork"] {
+                    img.avatar[oraginal="no"] {
+                        opacity: 0.4;
+                    }
+                }
+                div.item[userstate="workNormal"] {
+                    div.avatar-state {
+                        background: url("img/onWorkState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 20px;
+                        top: 20px;
+                    }
+                }
+                div.item[userstate="workNetError"] {
+                    div.avatar-state {
+                        background: url("img/netErrorState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 20px;
+                        top: 20px;
+                    }
+                }
+                div.item[userstate="workNoGps"] {
+                    div.avatar-state {
+                        background: url("img/workNoGps.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 20px;
+                        top: 20px;
+                    }
+                }
+                div.item[userstate="workGpsError"] {
+                    div.avatar-state {
+                        background: url("img/gpsErrorState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 20px;
+                        top: 20px;
+                    }
+                }
+                div.item[userstate="offWork"] {
+                    div.avatar-state {
+                        background: url("img/offWorkState.png");
+                        height: 30px;
+                        width: 30px;
+                        position: absolute;
+                        border-radius: 50px;
+                        left: 20px;
+                        top: 20px;
+                    }
+                }
+            }
+            .workerlist.department {
+                height: calc(100% - 45px);
+            }
+            .workerlist.company {
+                height: calc(100% - 65px);
+            }
+        }
+    }
+}
+
+.panel-content {
+    height: 100%;
+}

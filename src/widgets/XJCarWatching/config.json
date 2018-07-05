@@ -1,0 +1,174 @@
+{
+    "widgetUrl": "widgets/XJCarWatching",
+    "tmplateUrl": "widgets/XJCarWatching/Widget.html",
+    "styleUrl": "widgets/XJCarWatching/css/style.css",
+
+
+    "requestWatchingSetting": {
+        "URL_request": "/SysSetting/Info"
+    },
+    "requestAllCarInfo": {
+        "URL_Query": "/DeviceUpload/ListCar",
+        "MSG_Error": "查询巡检人员信息出错！",
+        "MSG_Null": "查询巡检人员信息为空！"
+    },
+    "initCarList": {
+        "IMG_nowork": "widgets/XJCarWatching/css/img/noWork.png",
+        "IMG_offwork": "widgets/XJCarWatching/css/img/offWork.png",
+        "IMG_onwork": "widgets/XJCarWatching/css/img/onWork.png",
+        "IMG_gpsandnet": "widgets/XJCarWatching/css/img/netAndGps.png",
+        "IMG_gpserror": "widgets/XJCarWatching/css/img/gpsError.png",
+        "IMG_neterror": "widgets/XJCarWatching/css/img/netError.png",
+        "IMG_avatarOn": "widgets/XJCarWatching/css/img/avatarOn.png",
+        "IMG_avatarOff": "widgets/XJCarWatching/css/img/avatarOff.png"
+    },
+
+    "requestCarAllPath": {
+        "URL_request": "/Gps/List",
+        "MSG_Error": "查询巡检轨迹出错！",
+        "MSG_Null": "查询巡检轨迹为空"
+    },
+    "addWorkerAllPathToMap": {
+        "IMG_startpoint": "/widgets/XJCarWatching/css/img/go.png",
+        "IMG_endpoint": "/widgets/XJCarWatching/css/img/end.png"
+    },
+    "requestCarSectionPathIndex": {
+        "URL_request": "/Car/Get_Section",
+        "MSG_error": "获取轨迹出错!",
+        "MSG_null": "获取轨迹为空!"
+    },
+    "requestWorkerSectionPath": {
+        "URL_request": "/Car/Get_Gps_Section",
+        "MSG_error": "查询轨迹信息出错！",
+        "MSG_null": "查询轨迹信息为空！"
+    },
+
+
+
+    "requestCompanyInfo": {
+        "URL_request": "/Device/Get_Company_List",
+        "MSG_error": "查询公司信息出错！",
+        "MSG_null": "查询公司信息为空！"
+    },
+    "relativeLayerIds": ["worker_allPathGraphicLayer", "worker_pathShowGraphicLayer", "worker_pathMoveGraphicLayer", "worker_checkPointGraphicLayer", "worker_activeGraphicLayer"],
+    "baseLayerIds": ["GraphicLayer_car"],
+    "setSymbol": {
+        "PNGPATH_WorkerPng": {
+            "onWork": "/widgets/XJCarWatching/css/img/onWork.png",
+            "offWork": "/widgets/XJCarWatching/css/img/offWork.png",
+            "noWork": "/widgets/XJCarWatching/css/img/noWork.png",
+            "gpsError": "/widgets/XJCarWatching/css/img/gpsError.png",
+            "netError": "/widgets/XJCarWatching/css/img/netError.png",
+            "gpsErrorActive": "/widgets/XJCarWatching/css/img/gpsErrorActive.png",
+            "netErrorActive": "/widgets/XJCarWatching/css/img/netErrorActive.png",
+            "offActive": "/widgets/XJCarWatching/css/img/offActive.png",
+            "onActive": "/widgets/XJCarWatching/css/img/onActive.png",
+            "noActive": "/widgets/XJCarWatching/css/img/noWorkActive.png"
+        },
+        "PNGPATH_CheckPointPng": {
+            "checked": "/widgets/XJCarWatching/css/img/handledPoint.png",
+            "checking": "/widgets/XJCarWatching/css/img/handlingPoint.png"
+
+        },
+        "PNGPATH_HideDangerPng": {
+            "handled": "/widgets/XJCarWatching/css/img/handledDanger.png",
+            "handling": "/widgets/XJCarWatching/css/img/handlingDanger.png",
+            "active": "/widgets/XJCarWatching/css/img/dangerActive.png"
+        },
+        "PNGPATH_PathPlayerPng": "/widgets/XJCarWatching/css/img/pathplayer.png"
+    },
+    "workerDetailLinkClick": {
+        "PNGPATH_OnActive": "widgets/XJCarWatching/css/img/onActive.png",
+        "PNGPATH_OffActive": "widgets/XJCarWatching/css/img/offActive.png",
+        "PNGPATH_ErrorActive": "widgets/XJCarWatching/css/img/errorActive.png"
+    },
+    "requestAllPath": {
+        "URL_Query": "/Gar/list",
+        "MSG_Error": "查询所有巡检人员轨迹出错！",
+        "MSG_Null": "查询所有巡检人员轨迹为空！"
+    },
+    "getWorkerPath": {
+        "URL_Query": "/Gps/list",
+        "MSG_Error": "查询巡检人员轨迹出错！",
+        "MSG_Null": "查询巡检人员轨迹为空！"
+    },
+    "addPathPointToMap": {
+        "PNGPATH_Start": "/widgets/XJCarWatching/css/img/startPoint.png",
+        "PNGPATH_End": "/widgets/XJCarWatching/css/img/endPoint.png"
+    },
+    "requestWorkerLog": {
+        "URL_request": "/DeviceUpload/RunLog_List",
+        "MSG_error": "查询巡检人员工作日志出错！",
+        "MSG_null": "查询巡检人员工作日志为空！"
+    },
+    "initWorkerLog": {
+        "IMG_gpsnormal": "widgets/XJCarWatching/css/img/loggpsnormal.png",
+        "IMG_gpserror": "widgets/XJCarWatching/css/img/loggpserror.png",
+        "IMG_onwork": "widgets/XJCarWatching/css/img/logonwork.png",
+        "IMG_offwork": "widgets/XJCarWatching/css/img/logoffwork.png"
+
+
+    },
+    "requestWorkerAllPlanId": {
+        "URL_request": "/Plan/list",
+        "MSG_error": "查询巡检人员巡检计划出错！",
+        "MSG_null": "查询巡检人员巡检计划为空！"
+    },
+    "requestCheckedPoint": {
+        "URL_request": "/Plan/Plan_List_Point_Current",
+        "MSG_error": "查询巡检人员巡检子计划出错！",
+        "MSG_null": "查询巡检人员巡检子计划为空！"
+    },
+    "getWorkePoint": "/PlanPoint/List",
+    "pathPlayerPng": "widgets/XJCarWatching/css/img/people0.png",
+    "setIntervalTime": 3000,
+    "requestDepartmentInfo": {
+        "URL_request": "/Groups/list",
+        "MSG_error": "获取部门列表出错!",
+        "MSG_null": "获取部门列表为空！"
+    },
+    "requestUserInfo": {
+        "URL_Request": "/User/List",
+        "MSG_Error": "获取巡检人员列表出错!",
+        "MSG_Null": "获取部门列表为空！"
+    },
+    "locateWorkerItem": {
+        "onWork": "/widgets/XJCarWatching/css/img/onActive.png",
+        "offWork": "/widgets/XJCarWatching/css/img/offActive.png",
+        "noWork": "/widgets/XJCarWatching/css/img/noWorkActive.png",
+        "gpsError": "/widgets/XJCarWatching/css/img/gpsErrorActive.png",
+        "netError": "/widgets/XJCarWatching/css/img/netErrorActive.png",
+        "MSG_locateerror": "无定位信息！"
+
+    },
+    "initBaseLayer": {
+        "URL_hidedanger": "/Trouble/List",
+        "URL_worker": "/DeviceUpload/List",
+        "URL_buildsite": "/BuildManage/List",
+        "URL_xjpoint": "/PlanPoint/List",
+        "URL_xjline": "/PlanPoint/List",
+        "URL_region": "/GpsRegion/List",
+        "buildsite_layerid": "Graphiclayer_buildsite",
+        "xjpoint_layerid": "Graphiclayer_xjpoint",
+        "xjline_layerid": "Graphiclayer_xjline",
+        "xjregion_layerid": "Graphiclayer_xjregion"
+    },
+    "requestBuildSiteInfoCallback": {
+        "Str_layerid": "Graphiclayer_buildsite",
+        "URL_symbol": "/widgets/XJCarWatching/css/img/buildsite.png"
+    },
+    "requestXJpointInfoCallback": {
+        "URL_symbol": "/widgets/XJCarWatching/css/img/planpoint.png"
+    },
+    "requestXJLineInfoCallback": {
+        "Str_layerid": "Graphiclayer_xjline"
+
+    },
+    "requestXJRegionInfoCallback": {
+        "Str_layerid": "Graphiclayer_xjregion"
+
+    },
+    "watchingConfig": {
+        "refreshtimespan": 60000
+    }
+}

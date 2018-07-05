@@ -1,0 +1,25 @@
+{
+    "widgetUrl": "widgets/PlanTimeStatistics",
+    "tmplateUrl": "widgets/PlanTimeStatistics/Widget.html",
+    "styleUrl": "widgets/PlanTimeStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getUserList": "/user/list",
+    "getPlanType": "/PlanPointType/List/",
+    "getPeriod": "/PeriodType/List",
+    "getAnnualStatistics": "/PatrolReport/ReportPatrolRealtime",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000,
+    "device_type_selects":["1","6","9","10","11","12"],
+    "device_name_selects":{         
+        "1":"巡检点</br>（个）",
+        "6":"巡检线</br>（km）",
+        "9":"次高压管线</br>（km）",        
+        "10":"中压管线</br>（km）",
+        "11":"低压管线</br>（km）",
+        "12":"高压管线</br>（km）"      
+    }
+}

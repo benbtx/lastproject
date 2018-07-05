@@ -1,0 +1,140 @@
+.widget-groupsmanagement {
+    height: 100%;
+    .groupinfo {
+        float: left;
+        width: 50%;
+        height: 90%;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    .userinfo {
+        float: left;
+        width: 45%;
+        height: 90%;
+        margin: 4px;
+        .users {
+            height: calc(100% - 10px);
+            margin-top: 10px;
+            border: 1px solid #617775;
+            background-color: #F0F6E4;
+            .users_li {
+                margin-left: 10px;
+                list-style: none;
+            }
+        }
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    .toolbar {
+        margin-top: 6px;
+        margin-bottom: 9px;
+        margin-left: 6px;
+    }
+    .goto {
+        height: 37px;
+    }
+    a {
+        cursor: pointer;
+    }
+    tr.active {
+        color: #FFF;
+        td {
+            background-color: #337ab7 !important;
+        }
+        a {
+            color: #FFF;
+        }
+        a:hover {
+            color: #eee;
+        }
+    } // position: absolute;
+    // width: 100%;
+    // top: 10px;
+    // left: 10px;
+    // padding: 2px 5px 2px 5px;
+    // .toolbar {
+    //     padding-top: 2px;
+    //     padding-bottom: 10px;
+    // }
+    // .btn-toolbar {
+    //     position: absolute;
+    //     right: 10px;
+    //     .go {
+    //         width: 40px;
+    //     }
+    //     .currpage {
+    //         width: 50px;
+    //         margin-top: 0px;
+    //     }
+    //     .wj {
+    //         position: absolute;
+    //         bottom: -20px;
+    //         left: 10px;
+    //     }
+    // }
+    // .modal.fade.in {
+    //     top: 25%;
+    //     left: 30%;
+    // }
+    // .modal-backdrop fade in {
+    //     z-index: 0px;
+    // }
+    // .modal-header,
+    // .modal-body,
+    // .modal-body,
+    // .modal-footer {
+    //     position: relative;
+    //     padding: 15px!important;
+    // }
+    .table {
+        // margin-bottom: 20px!important;
+        height: 85%;
+    } // .form-group,
+    // .form-control,
+    // .btn-add,
+    // .btn-edit,
+    // .btn-close {
+    //     padding: 6px 12px !important;
+    //     margin: 2px
+    // }
+    .ztree li span.button.add {
+        margin-left: 2px;
+        margin-right: -1px;
+        background-position: -144px 0;
+        vertical-align: top;
+        *vertical-align: middle
+    }
+    .ztree-group {
+        margin-top: 10px;
+        border: 1px solid #617775;
+        background: #f0f6e4;
+        width: 100%; // height: 550px;
+        height: calc(100% - 10px);
+        overflow-y: scroll;
+        overflow-x: auto;
+    }
+}
+
+#groupsmanagement_addpopup,
+#groupsmanagement_updatepopup {
+    margin-top: 30px;
+}
+
+.groupsmanagement_bindpopup {
+    // margin-top: 30px;
+    .users {
+        width: 95%;
+        height:360px;
+        margin-left: 10px;
+        overflow-y: scroll;
+        position: relative; // border: 1px solid #CCC;
+        padding: 5px;
+        margin-bottom: 0px !important;
+          border: 1px solid #617775;
+    }
+}

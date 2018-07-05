@@ -1,0 +1,13 @@
+{
+    "widgetUrl": "widgets/XJDiskWatching",
+    "tmplateUrl": "widgets/XJDiskWatching/Widget.html",
+    "styleUrl": "widgets/XJDiskWatching/css/style.scss",
+
+    "getDiskInfo":{
+        "URL_request":"/Config/Get_Monitor_Info",
+        "MSG_Null":"查询磁盘信息出错！"
+    }
+
+
+
+}

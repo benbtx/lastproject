@@ -1,0 +1,29 @@
+{
+    "widgetUrl": "widgets/UsersManagement",
+    "tmplateUrl": "widgets/UsersManagement/Widget.html",
+    "styleUrl": "widgets/UsersManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "bindpad": "/user/bindpad",
+    "firebind": "/user/firebind/",
+    "grouping": "/groups/grouping",
+    "getDeviceList": "/device/list",
+    "getCompanyList": "/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getUserList": "/user/list",
+    "getUserInfo": "/user/info/",
+    "addUser": "/user/add",
+    "deleteUser": "/user/delete/",
+    "updateUser": "/user/update",
+    "resetpassword": "/User/ResetPassword/",
+    "resetuser": "",
+    "pagenumber": 1,
+    "pagesize": 13,
+
+    "patrol_type": [{
+        "name": "人巡",
+        "value": 1
+    }, {
+        "name": "车巡",
+        "value": 2
+    }]
+}

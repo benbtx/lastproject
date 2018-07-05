@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/PhotoTypeManagement",
+    "tmplateUrl": "widgets/PhotoTypeManagement/Widget.html",
+    "styleUrl": "widgets/PhotoTypeManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getPhotoTypeList": "/SysConfig/list",
+    "getPhotoTypeInfo": "/SysConfig/info/",
+    "addPhotoType": "/SysConfig/add",
+    "deletePhotoType": "/SysConfig/delete/",
+    "updatePhotoType": "/SysConfig/update",
+
+    "pagenumber": 1,
+    "pagesize": 13
+}

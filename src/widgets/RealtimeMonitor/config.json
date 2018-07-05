@@ -1,0 +1,13 @@
+{
+    "widgetUrl": "widgets/RealtimeMonitor",
+    "tmplateUrl": "widgets/RealtimeMonitor/Widget.html",
+    "styleUrl": "widgets/RealtimeMonitor/css/style.css",
+    "gpsinfo": "/webapp/gps",
+    "userinfo": "/webapp/job/users",
+    "pagenumber": 1,
+    "pagesize": 2,
+    "MarkPictureSymbol": "./widgets/RealtimeMonitor/images/people.png",
+    "TextbgSymbol": "./widgets/RealtimeMonitor/images/textbg.png", 
+    "refreshtime":5,
+    "zoomscale" : 2000
+}

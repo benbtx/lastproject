@@ -1,0 +1,30 @@
+{
+    "widgetUrl": "widgets/PlanRegion",
+    "tmplateUrl": "widgets/PlanRegion/Widget.html",
+    "styleUrl": "widgets/PlanRegion/css/style.css",
+    "getCompanyList": "/Device/Get_Company_List",
+    "getPlanPointList": "/PlanPoint/List",
+    "getPlanPathList": "/PlanPoint/List",
+    "getPlanRegionList": "/GpsRegion/List",
+    "addPlanRegionInfo": "/GpsRegion/Add",
+    "updatePlanRegion": "/GpsRegion/Update",
+    "deletePlanRegion": "/GpsRegion/Delete/",
+    "isUpdate": "/GpsRegion/Get_Region_State/",
+    "pagenumber": 1,
+    "pagesize": 25,
+    "MarkPictureSymbol": "./widgets/PlanRegion/images/planpoint.png",
+    "WarnMarkPictureSymbol": "./widgets/PlanRegion/images/point.png",
+    "TextbgSymbol": "./widgets/PlanRegion/images/textbg.png",
+    "device_type_id": {
+        "path": "6",
+        "point": "1",
+        "warnpoint": "5"
+    },
+    "rangeall": "00",
+    "LengthstatisticService": "/exts/TFExtentionSOE/statistic",
+    "layerids": [6, 16, 17, 18, 19],
+    "managelayerindex": 0,
+    "managelayerfieldname": "MANAGEDEPT_CODE",
+    "maxsize": 1000000,
+    "color": "blue"
+}

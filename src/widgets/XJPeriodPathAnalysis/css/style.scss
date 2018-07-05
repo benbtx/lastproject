@@ -1,0 +1,71 @@
+.widget-XJPeriodPathAnalysis {
+    .time input {
+        display: inline-block;
+        width: 40%;
+    }
+    .timeline {
+        display: inline-block;
+        border: 1px solid #dddddd;
+        width: 40px;
+        position: relative;
+        top: 15px;
+    }
+    .query {
+        margin-top: 15px;
+    }
+}
+
+.XJPeriodPathAnalysis-result {
+    div.result div.allPlan {
+        height: 150px;
+        border: 1px solid #dddddd;
+        overflow-y: auto;
+        padding: 10px;
+        #workercheckpoint {
+            padding: 5px 5px 0px;
+            div.checkplan {
+                border-bottom: 1px solid #dddddd;
+                height: 25px;
+                div.progress {
+                    width: 100px;
+                    display: inline-flex;
+                    float: right;
+                    height: 20px;
+                    margin-bottom: 0;
+                    .progress-bar {
+                        color: #337ab7;
+                    }
+                }
+            }
+            div.checkpoints {
+                padding: 0px;
+                p.checkpoint-item {
+                    padding-left: 30px;
+                    span.checkpointname {
+                        display: inline-block;
+                        width: 120px;
+                    }
+                    span.checktime {
+                        float: right;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    div.result div.allPath {
+        height: 150px;
+        border: 1px solid #dddddd;
+        overflow-y: auto;
+        padding: 15px;
+        .path-item p{
+            margin-left: 15px;
+            span{
+                margin-left: 15px;
+            }
+        }
+    }
+    .backup {
+        margin-top: 10px;
+    }
+}

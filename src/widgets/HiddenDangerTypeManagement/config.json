@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/HiddenDangerTypeManagement",
+    "tmplateUrl": "widgets/HiddenDangerTypeManagement/Widget.html",
+    "styleUrl": "widgets/HiddenDangerTypeManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getHiddenDangerTypeList": "/troubletype/list",
+    "getHiddenDangerTypeInfo": "/troubletype/info/",
+    "addHiddenDangerType": "/troubletype/add",
+    "deleteHiddenDangerType": "/troubletype/delete/",
+    "updateHiddenDangerType": "/troubletype/update",
+    "getVersion": "/TroubleType/Get_Version",
+    "pagenumber": 1,
+    "pagesize": 13
+}

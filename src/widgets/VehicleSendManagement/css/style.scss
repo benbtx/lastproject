@@ -1,0 +1,217 @@
+.widget-VehicleSendManagement {
+    height: 100%;
+    .go{
+        width: 200px;
+    }
+    .sendinfo-tool {
+        margin: 4px;
+        .btn_search {
+            &:hover {
+                cursor: pointer
+            }
+        }        
+    }
+    .btn{
+        padding: 4px 8px
+    }
+    .sendinfo {
+        float: left;
+        width: 100%;
+        height: calc(100% - 73px);
+        overflow-y: auto;
+        margin: 4px;
+         .sendinfo-pagecontrol{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            margin-left: 5px;
+            background-color: white;
+        }
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+            table-layout: fixed;
+            tbody {
+                border-top: 1px solid #ddd;
+            }
+            a {
+                cursor: pointer;
+            }
+            tr.active {
+                color: #FFF;
+                td {
+                    background-color: #337ab7 !important;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                a {
+                    color: #FFF;
+                }
+                a:hover {
+                    color: #eee;
+                }
+            }
+
+            td,th{
+                text-align: center;
+                vertical-align:middle; 
+                min-width: 60px; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;              
+            }
+            .checkwidth{
+                width: 40px;
+            }
+        }
+    }
+    .minwidth{
+       width: 120px;
+       height: 30px;
+    }
+    ::-webkit-scrollbar {
+        width: 5px !important;
+        height: 5px !important;
+    }
+    .groupleft{
+        margin-left: 2px;
+    }
+}
+
+.widget-VehicleSendManagement_addpopup{
+    float: left;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    margin: 5px;
+    .form-group{
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .col-lg-3{
+        text-align: right !important;
+        padding-right: 0px !important; 
+    } 
+    .must-span{
+        color:red;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .must-width{
+            min-width: 120px;           
+            min-height: 32px;
+            margin-bottom: 8px;
+            padding: 2px 5px;
+    } 
+
+    .mustdate-width{          
+            min-height: 32px;
+            margin-bottom: 8px;
+            padding: 2px 5px;
+    } 
+
+    .checkClass{
+            width: 30px;
+            border: none;
+            height: 20px;
+            box-shadow: none;
+            text-align: right;
+            vertical-align: middle;
+            margin-right: 0px !important;
+            margin-bottom: 7px;
+    } 
+
+    .listbox{
+        border: 1px solid #dad7d2;
+        height: 100px;;
+        border-radius: 4px;
+        overflow-y: auto;
+        margin-bottom: 8px;       
+    }  
+    .img-remove{
+            float: left;
+            width: 16px;
+            height: 16px;
+            display: block;
+            border-radius: 50%;
+            background: white;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.25rem;
+            overflow: hidden;
+            background-clip: padding-box;
+    } 
+}
+
+.widget-VehicleSendManagement_stop{
+    float: left;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    margin: 5px;
+    .form-group{
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .col-lg-3{
+        text-align: right !important;
+        padding-right: 0px !important; 
+    } 
+    .must-span{
+        color:red;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .must-width{
+            min-width: 120px;           
+            min-height: 32px;
+            margin-bottom: 8px;
+            padding: 2px 5px;
+    } 
+
+    .mustdate-width{          
+            min-height: 32px;
+            margin-bottom: 8px;
+            padding: 2px 5px;
+    } 
+
+    .checkClass{
+            width: 30px;
+            border: none;
+            height: 20px;
+            box-shadow: none;
+            text-align: right;
+            vertical-align: middle;
+            margin-right: 0px !important;
+            margin-bottom: 7px;
+    } 
+
+    .listbox{
+        border: 1px solid #dad7d2;
+        height: 100px;;
+        border-radius: 4px;
+        overflow-y: auto;
+        margin-bottom: 8px;       
+    }  
+    .img-remove{
+            float: left;
+            width: 16px;
+            height: 16px;
+            display: block;
+            border-radius: 50%;
+            background: white;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.25rem;
+            overflow: hidden;
+            background-clip: padding-box;
+    } 
+}
+
+
+

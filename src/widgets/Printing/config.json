@@ -1,0 +1,18 @@
+{
+	"widgetUrl": "widgets/Printing",
+	"tmplateUrl": "widgets/Printing/Widget.html",
+	"styleUrl": "widgets/Printing/css/style.scss",
+	"imagePath": "images/image.png",
+	"pdfPath": "images/pdf.png",
+	"defaultTitle": "铜仁综合管网",
+	"defaultAuthor": "",
+	"defaultCopyright": "",
+	"defaultFormat": "PDF",
+	"defaultLayout": "Letter ANSI A Landscape",
+	"maxgridid":"0",
+	"outfields":["*"],
+    "gridlayer":"grid",
+	"inputmaxlength":25,
+	"scales":[500,2000],
+	"baselayers":["terrain","raster"]
+	}

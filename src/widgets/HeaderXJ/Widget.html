@@ -1,0 +1,71 @@
+<div id="header" class="widget-header">
+    <img class="logo" src="<%=root%>/images/logo.png" alt="<%=title%>">
+    <p>
+        <%=title%>
+    </p>
+    <span class="name"></span>
+    <!--<span class="department"></span>-->
+    <span class="company"></span>
+    <div class="userInfo">
+        <div class="avatar " title="个人信息">
+        </div>
+        <div class="userInfo-arrow hidded"></div>
+        <div class="userInfo-detail hidded">
+            <div class="userInfo-header">
+                <div class="left-avatar ">
+                </div>
+                <div class="right-info modifyPassword">
+                    <span class="detail-name"></span>
+                    <a title="点击修改密码" class="btn-modify">密码修改</a>
+                    <a title="点击退出登录" class="btn-exit">退出登录</a>
+                </div>
+            </div>
+            <div class="userInfo-body">
+                <ul>
+                    <li>姓名：<span class="detail-name"></span></li>
+                    <li>手机：<span class="detail-phone"></span></li>
+                    <li>邮箱：<span class="detail-email"></span></li>
+                    <li>所属公司：<span class="detail-department"></span></li>
+                </ul>
+            </div>
+            <div class="modify">
+                <form role="form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label>
+                        新密码：
+                        <input type="password" class="form-control input-sm password1 " placeholder="请输入新的密码">
+                    </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                        重复密码：
+                        <input type="password" class="form-control input-sm password2" placeholder="请再次输入新的密码">
+                    </label>
+                    </div>
+                    <button class="btn btn-primary btn-sm savepwd">确认</button>
+                    <button class="btn btn-default btn-sm cancel cancelsavepwd">取消</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="header-navbar">
+        <div class="nav-button" title="选择首页">
+            <span class="icon-bar" />
+            <span class="icon-bar" />
+            <span class="icon-bar" />
+        </div>
+        <div class="navbar-arrow hidded"></div>
+        <div class="navbar-detail hidded">
+            <div class="navbar-body">
+                <div class="option-item gis">
+                    <div class="img" />
+                    <span class="imglabel">GIS</span>
+                </div>
+                <div class="option-item xj">
+                    <div class="img" />
+                    <span class="imglabel">巡检</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

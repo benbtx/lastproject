@@ -1,0 +1,130 @@
+.SCADAwatching {
+    margin: 10px;
+    margin-bottom: -10px;
+    form fieldset+fieldset {
+        width: 300px;
+        margin-left: -13px;
+        margin-top: 20px;
+    }
+    form thead {
+        font-weight: bold;
+    }
+    .go {
+        left: 16px;
+        width: 140px;
+    }
+    .bookmarkname {
+        z-index: auto !important
+    }
+    .currpage,
+    .goto {
+        z-index: auto !important
+    }
+    .pageturning {
+        z-index: auto !important
+    }
+    td {
+        vertical-align: middle;
+        text-align: center;
+        height: 30px;
+        min-width: 50px;
+    }
+    .showAll {
+        position: absolute;
+        margin-top: -1px;
+        padding-left:5px;
+    }
+    input[type=checkbox]{
+            margin: 1px 0 0;
+    }
+}
+
+.infoWindow {
+    width: 230px;
+    height: 125px;
+    position: absolute;
+}
+
+.SCADAwatching-titlePane {
+    background-color: #444444;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding-left: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.SCADAwatching-titleButton {
+    right: 3px;
+    background-position: 0 0;
+    width: 12px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+    background: url(./images/popup.png)
+}
+
+.SCADAwatching-contentPane {
+    position: relative;
+    max-height: 300px;
+    overflow: auto;
+    padding: 10px 6px 6px 10px;
+    background-color: #F7F7F7;
+    z-index: 0;
+    color: #333333;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.SCADAwatching-pointer {
+    left: 2px;
+    bottom: -5px;
+    background: #F7F7F7;
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    z-index: 0;
+    transform: rotate(45deg);
+    // box-shadow: rgb(119, 119, 119) 0px 0px 8px 0px;
+}
+
+.SCADAwatching-PopupWrapper {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    border-radius: 5px;
+    box-shadow: rgb(119, 119, 119) 0px 0px 8px 0px;
+    font-size: 12px;
+    position: relative;
+}
+
+.SCADAwatching-infoWindow .SCADAwatching-contentPane span {
+    float: right;
+    padding-right: 10px;
+    color: blue;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.SCADAwatching-station {
+    position: absolute;
+    width: 95%;
+    height: 90%;
+    background-image: url(./images/station.png);
+    background-size: 100% 100%;
+    z-index: 1;
+    border: blue solid 3px;
+}
+
+#stationFlowsheet {
+    z-index: 2;
+}
+
+.SCADAwatching a {
+    cursor: pointer;
+}
+
+.SCADAwatching .tableContainer {
+    margin-top: 7px;
+    margin-bottom: 0px;
+}

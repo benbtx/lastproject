@@ -1,0 +1,60 @@
+.widget-XJMessager {}
+
+ul.messenger-on-right {
+    right: 50px!important;
+    z-index: 1!important;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/*设置消息提示插件宽度*/
+
+ul.messenger.messenger-fixed.messenger-on-right,
+ul.messenger.messenger-fixed.messenger-on-left {
+    width: 200px !important;
+}
+
+.widget-XJMessager {
+    .messageDetail {
+        width: 100%;
+        height: 100%;
+        .tab-content {
+            padding: 10px 15px;
+            height: calc(100% - 45px)
+        }
+        span {
+            margin-left: 20px;
+        }
+        textarea {
+            height: 140px;
+            resize: none;
+        }
+        #message-audio {
+            height: 70px;
+            overflow-y: auto;
+        }
+        #messagealert-files {
+            height: 100%;
+            overflow-y: auto;
+            .imgtemplate {
+                width: 100%;
+                height: 100%;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: 0;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p {
+                margin-left: 20px;
+            }
+        }
+    }
+}

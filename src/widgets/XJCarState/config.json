@@ -1,0 +1,46 @@
+{
+    "widgetUrl": "widgets/XJCarState",
+    "tmplateUrl": "widgets/XJCarState/Widget.html",
+    "styleUrl": "widgets/XJCarState/css/style.css",
+    "widgetUniqueClass": "widget-XJCarState",
+
+
+
+
+    "requestCompanyInfo": {
+        "URL_request": "/Device/Get_Company_List",
+        "MSG_error": "查询公司信息出错！",
+        "MSG_null": "查询公司信息为空！"
+    },
+    "requestDepartmentInfo": {
+        "URL_request": "/Groups/list",
+        "MSG_error": "获取部门列表出错!",
+        "MSG_null": "获取部门列表为空！"
+    },
+    "requestCarInfo": {
+        "URL_Request": "/Car/List",
+        "MSG_Error": "获取车辆列表出错!"
+    },
+
+    "workPngPath": "/widgets/XJCarState/css/img/work.png",
+    "offLinePath": "/widgets/XJCarState/css/img/work.png",
+    "offWorkPath": "/widgets/XJCarState/css/img/work.png",
+    "requestTerminalState": {
+        "URL_request": "/DeviceUpload/ListCar",
+        "MSG_error": "获取终端状态出错!"
+    },
+
+    "requestRunLog": {
+        "URL_request": "/DeviceUpload/RunLog_List",
+        "MSG_null": "获取终端日志为空！",
+        "MSG_error": "获取终端日志出错！"
+    },
+    "showTerminalStateByPicture": {
+        "URL_avatarOnWork": "./widgets/XJCarState/css/img/avatarOn.png",
+        "URL_avatarOffWork": "./widgets/XJCarState/css/img/avatarOff.png"
+    },
+    "log": {
+        "Num_pageindex": 1,
+        "Num_pagesize": 10
+    }
+}

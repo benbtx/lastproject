@@ -1,0 +1,136 @@
+<div class="widget-VehicleRefuelingRecordStatistics ">
+        <div class="refuelingrecordstatistics-search">
+            <table class="table table-bordered  table-striped">
+                 <tr>
+                    <th>  
+                        <div class="form-inline">
+                             <div class="form-group company_serch groupleft" style="display: none;">
+                                 公司
+                                <select class="input-sm form-control company minwidth" ></select>
+                            </div>
+                            <div class="form-group department_btn groupleft">
+                                部门
+                                <select class="input-sm form-control department minwidth"></select>                                   
+                            </div>
+                            <div class="form-group groupleft">
+                                车牌号
+                                <select class="input-sm form-control plate_number minwidth"></select>
+                            </div>                           
+                             <div class="form-group groupleft">
+                                日期
+                                <input type="text" class="form-control start_date minwidth" placeholder="年-月-日">       
+                                ~
+                                <input type="text" class="form-control end_date minwidth"  placeholder="年-月-日"> 
+                            </div>
+
+                            <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search" style="margin-left: 10px;" >
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                            </button>
+                             <!-- <button id="btn_print" type="button" class="btn btn-default btn-success btn_print">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印
+                            </button> -->
+                             <a id="linkrefuelingrecordstatistics"  style="display:none;"></a>
+                             <button id="btn_export" type="button" class="btn btn-default btn-success btn_export">
+                                <span class="glyphicon glyphicon-export" aria-hidden="true"></span>导出
+                            </button>                            
+                        </div>                                
+                    </th>
+                </tr>  
+            </table>          
+        </div>
+   
+        <div class="refuelingrecordstatistics-list" id="refuelingrecordstatistics-list">
+            <div class="reportname" style="text-align: center;font-weight: 600;">车辆加油统计表</div>
+                <!-- <table style="width: 100%;" class="table table-bordered  table-striped"  border="1" cellspacing="0" cellpadding="0">
+                    <caption class="refuelingrecordstatisticscaption"  style="text-align: left;font-weight:600;"><div class="cxgs" style="float:left;">公司：</div><div class='cxqj' style="float:right;">查询日期：</div></caption>                          
+                    <tbody>
+                                <tr>
+                                    <th rowspan="2">部门名称</th>
+                                    <th rowspan="2">车牌号</th>
+                                    <th rowspan="2">加油数(次)</th>
+                                    <th rowspan="2">总金额(元)</th>
+                                    <th rowspan="2">总里程(km)</th>
+                                    <th rowspan="2">均价(元/次)</th>
+                                    <th colspan="2">百公里加油与金额</th>
+                                </tr>
+                                <tr>
+                                    <th>加油(L)</th>
+                                    <th>金额(元)</th>                                  
+                                </tr>
+                    </tbody>
+                        <tbody class="refuelingrecordstatistics">
+                                
+                         </tbody>
+                </table> -->
+
+                        <div class="table-head"> 
+                            <table class="table table-bordered " border="1" cellspacing="0" cellpadding="0">
+                                <caption class="table-caption" style="text-align: left;font-weight:600;"><div class="cxgs" style="float:left;">公司：</div><div class='cxqj' style="float:right;margin-right: 40px;">查询时间：</div></caption> 
+                                <colgroup>
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="80" span='2'>
+                                  
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">部门名称</th>
+                                        <th rowspan="2">车牌号</th>
+                                        <th rowspan="2">加油数(次)</th>
+                                        <th rowspan="2">总金额(元)</th>
+                                        <th rowspan="2">总里程(km)</th>
+                                        <th rowspan="2">均价(元/次)</th>
+                                        <th colspan="2">百公里加油与金额</th>
+                                    </tr>
+                                    <tr>
+                                        <th>加油(L)</th>
+                                        <th>金额(元)</th>                                  
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                        <div class="table-body">
+
+                            <table style="width: 100%;" class="table table-bordered " border="1" cellspacing="0" cellpadding="0">
+                            
+                                
+                                <colgroup>
+                                     <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="120">
+                                    <col width="80" span='2'>
+                                </colgroup>
+
+
+                                <tbody class="refuelingrecordstatistics">
+                                                             
+                                </tbody>
+                                
+                            </table>
+                        </div>
+
+                <label class="shenhe" style="float: left;text-align: left;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label>  
+                <label class="zhibiao" style="float: left;text-align: center;margin-left: calc(40%);vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label>  
+                <label class="shijian" style="float: right;text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label> 
+        </div>
+               
+
+            <script language="javascript" type="text/javascript"> 
+                
+                function mothedexport(){
+                    exportExcel("refuelingrecordstatistics-list","车辆加油统计表","linkrefuelingrecordstatistics");
+                }
+            </script>
+            <script src="../../vendor/extentjs/exportexcel.js"></script>
+       
+</div>
+
+

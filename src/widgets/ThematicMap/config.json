@@ -1,0 +1,13 @@
+{
+	"widgetUrl":"widgets/SqlQuery",
+    "tmplateUrl":"widgets/SqlQuery/Widget.html",
+    "styleUrl":"widgets/SqlQuery/css/style.css",
+	"shieldField":["OBJECTID"],
+	"queryAlias":"/exts/TFExtentionSOE/queryAlias",
+	"getuniquevalue":"/exts/TFExtentionSOE/getFieldUniqueValue",
+	"getextent":"/exts/TFExtentionSOE/getExtent",
+    "firstsublayerid":1,
+	"uniquemaxnum":20
+
+
+}

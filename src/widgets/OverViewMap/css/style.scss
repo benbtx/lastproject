@@ -1,0 +1,45 @@
+.esriOverviewMap {
+    right: 50px !important;
+    bottom: 23px !important;
+    z-index: 0 !important;
+}
+
+.ovwContainer {
+    width: 291.55px !important;
+    height: 164px !important;
+    bottom: -3px !important;
+    border-top: 1px solid #CCC !important;
+    border-right: 1px solid #CCC !important;
+    border-bottom: 1px solid #CCC !important;
+    border-left: 1px solid #CCC !important;
+    background-color: white !important;
+}
+
+.ovwController {
+    width: 30px !important;
+    height: 30px !important;
+    right: -40px !important;
+    background: #3385ff !important;
+    text-align: center !important;
+    line-height: 30px !important;
+    vertical-align: middle !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    font-size: 16px;
+    /* .glyphicon  */
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    /* .glyphicon-globe */
+    &::before {
+        content: "\e135";
+    }
+    &:hover {
+        background-color: #2e77e5 !important;
+    }
+}

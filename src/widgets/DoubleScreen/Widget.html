@@ -1,0 +1,50 @@
+<div class="widget-double-screen">
+    <form role="form" onsubmit="return false;">
+        <fieldset>
+            <legend>
+                模式选择
+                <span class="glyphicon glyphicon-question-sign" title="选择双屏协动模式。"></span>
+            </legend>
+            <div class="">
+                <table class="table table-bordered pattern-select">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="checkbox-label">
+                                中心同步
+                                <input type="checkbox" class="center-sync" checked>
+                            </label>
+                            </td>
+                            <td>
+                                <label class="checkbox-label">
+                                缩放同步
+                                <input type="checkbox" class="zoom-sync" checked>
+                            </label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                副视图图层控制
+                <span class="glyphicon glyphicon-question-sign" title="控制副视图中的图层显示，如需控制主视图请直接使用主视图的图层控制。"></span>
+            </legend>
+            <div class="foldable">
+                <div role="tabpanel" class="tab-pane fade in active layer-pipe">
+                    <ul class="nav nav-pills nav-stacked pipe-layers">
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade layer-base">
+                    <ul class="nav nav-pills nav-stacked base-layers">
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade layer-grid">
+                    <ul class="nav nav-pills nav-stacked grid-layers">
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

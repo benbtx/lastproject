@@ -1,0 +1,15 @@
+{
+    "widgetUrl": "widgets/DeviceTypeManagement",
+    "tmplateUrl": "widgets/DeviceTypeManagement/Widget.html",
+    "styleUrl": "widgets/DeviceTypeManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getDeviceTypeList": "/SysDeviceType/list",
+    "getDeviceTypeInfo": "/SysDeviceType/info/",
+    "addDeviceType": "/SysDeviceType/add",
+    "deleteDeviceType": "/SysDeviceType/delete/",
+    "updateDeviceType": "/SysDeviceType/update",
+    "getXJTypeList": "/SysPointType/list",
+    "LayerName": "/exts/TFExtentionSOE/getLayerInfor",
+    "pagenumber": 1,
+    "pagesize": 13
+}

@@ -1,0 +1,19 @@
+{
+    "widgetUrl": "widgets/Dashboard",
+    "tmplateUrl": "widgets/Dashboard/Widget.html",
+    "styleUrl": "widgets/Dashboard/css/style.css",
+    "regionCountAPI": "/webapp/summary/count",
+    "pipeLengthAPI": "/webapp/summary/length",
+    "lengthofRegionAPI": "/webapp/summary/lengthonregion",
+    "lengthofXZQAPI": "/webapp/summary/lengthonxzq",
+    "itemColors":[
+        "#C23531",
+        "#2F4554",
+        "#61A0A8",
+        "#D48265",
+        "#00b0f0",
+        "#BDA29A",
+        "#6E7074",
+        "#6A5ACD"        
+    ]
+}

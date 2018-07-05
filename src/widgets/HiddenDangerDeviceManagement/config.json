@@ -1,0 +1,13 @@
+{
+    "widgetUrl": "widgets/HiddenDangerDeviceManagement",
+    "tmplateUrl": "widgets/HiddenDangerDeviceManagement/Widget.html",
+    "styleUrl": "widgets/HiddenDangerDeviceManagement/css/style.scss",
+    "mapDiv": "myMap",
+    "getHiddenDangerDeviceList": "/PlanPointType/list",
+    "getHiddenDangerDeviceInfo": "/PlanPointType/info/",
+    "addHiddenDangerDevice": "/PlanPointType/add",
+    "deleteHiddenDangerDevice": "/PlanPointType/delete/",
+    "updateHiddenDangerDevice": "/PlanPointType/update",
+    "pagenumber": 1,
+    "pagesize": 13
+}

@@ -1,0 +1,154 @@
+.widget-hiddendangerqueryreport {
+    height: 100%;
+    .go {
+        width: 200px;
+    }
+    .hiddendangerqueryreportinfo-search {
+        float: left;
+        width: 100%;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    #content_holder {
+        height: 100%;
+        .example {
+            height: 100%;
+            .hiddendangerqueryreportinfo-list {
+                height: 100%;
+            }
+        }
+    }
+    .hiddendangerqueryreportinfo {
+        float: left;
+        width: 100%;
+        height: calc(100% - 120px); // overflow-y: auto;
+        // overflow-x: auto;
+        margin: 4px;
+        table {
+            margin-bottom: 10px;
+            padding: 2px 5px 2px 5px;
+            tbody {
+                border-top: 1px solid #ddd !important;
+            }
+            table-layout: fixed;
+            margin-bottom: 0px;
+        }
+        flex-direction: column;
+        .table-body {
+            padding-right: 4px;
+            height: calc(100% - 190px);
+            overflow-y: scroll;
+            overflow-x: hidden;
+            flex-grow: 1;
+        }
+        .table-head {
+            padding-right: 4px;
+            padding-right: 13px;
+        } // overflow-x: auto;
+    }
+    .toolbar {
+        margin-top: 6px;
+        margin-bottom: 9px;
+        margin-left: 6px;
+    }
+    .goto {
+        height: 37px;
+    }
+    a {
+        cursor: pointer;
+    }
+    .btn {
+        padding: 4px 8px;
+    }
+    label,
+    th {
+        vertical-align: middle !important;
+        padding: 5px!important;
+        background-color: white;
+    }
+    td {
+        vertical-align: middle !important;
+        padding: 5px!important; //background-color: white;
+    }
+    .hiddendangerqueryreportinfo td {
+        text-align: center;
+        min-width: 100px;
+    }
+    .hiddendangerqueryreportinfo th {
+        text-align: center;
+        vertical-align: middle;
+    }
+    .thright {
+        text-align: right;
+        margin-right: 5px;
+    }
+    .thleft {
+        text-align: left;
+        margin-right: 5px;
+    }
+    .thspan {
+        color: red;
+        font-weight: bold;
+    }
+    .minwidth {
+        width: 150px;
+        height: 30px;
+    }
+    .tit {
+        th {
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px!important;
+        }
+    }
+    #content_holder {
+        float: left;
+        width: 100%
+    }
+    .example {
+        float: left;
+        width: 100%;
+    }
+    .hiddendangerqueryreportinfo-list {
+        float: left;
+        width: 100%;
+    }
+    .reportname {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    /*.shenhe {
+        float: left !important;
+        text-align: center;
+    }
+    .zhibiao {
+        text-align: center; // margin-right: calc(25%) !important;
+    }
+    .shijian {
+        // float: right;
+        text-align: center;
+    }*/
+     ::-webkit-scrollbar {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .btn_export {
+        color: #fff;
+        background-color: #ed4e2a;
+        border-color: #ED5A24;
+    }
+    .groupleft {
+        margin-left: 10px;
+    }
+    .numwidth {
+        // width: 60px;
+    }
+    table tr:nth-child(2n) {
+        background-color: #eeeeee !important;
+    }
+}

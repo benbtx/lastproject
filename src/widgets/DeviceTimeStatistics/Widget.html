@@ -1,0 +1,176 @@
+<div class="widget-devicetimestatistics ">
+    <div class="devicetimestatistics-search">
+        <table class="table table-bordered  table-striped">
+            <tr>
+                <th style="text-align: left;">
+                    <div class="form-inline">
+                        <div class="form-group company_serch groupleft" style="display: none;">
+                            <span class="thspan"> * </span>公司
+                            <select class="input-sm form-control company minwidth"></select>
+                        </div>
+                        <div class="form-group department_btn groupleft">
+                            部门
+                            <select class="input-sm form-control department minwidth" id="department"></select>
+                        </div>
+                        <div class="form-group groupleft">
+                            人员
+                            <select class="input-sm form-control users minwidth" id="users"></select>
+                        </div>
+                        <div class="form-group groupleft">
+                            <span class="thspan"> * </span>设备类型
+                            <select class="input-sm form-control deviceplantype minwidth" id="deviceplantype" multiple="multiple"></select>
+                        </div>
+                        <div class="form-group groupleft">
+                            <span class="thspan"> * </span>巡检周期
+                            <select class="input-sm form-control deviceperiodid minwidth" id="deviceperiodid" multiple="multiple"></select>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">
+                    <div class="form-inline">
+                        <div class="form-group groupleft">
+                            <span class="thspan"> * </span>查询日期
+                            <input type="text" readonly="readonly" class="form-control begindate minwidth" id="begindate" placeholder="年-月-日">
+                        </div>
+                        <div class="form-group">
+                            <label for="enddate">~</label>
+                            <input type="text" readonly="readonly" class="form-control enddate minwidth" id="enddate" placeholder="年-月-日">
+                        </div>
+
+
+                        <button id="btn_search" type="button" class="btn btn-default  btn-primary btn_search">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                                </button>
+                        <!-- <button id="btn_print" type="button" class="btn btn-default btn-success btn_print" >
+                                    <span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印
+                                </button>        -->
+                        <a id="devicetimestatisticsexportlink" style="display:none;"></a>
+                        <button id="btn_export" type="button" class="btn btn-default btn_export">
+                                    <span class="glyphicon glyphicon-export" aria-hidden="true"></span>导出
+                                </button>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="devicetimestatistics-list" id="devicetimestatistics-list">
+        <div class="reportname" style="text-align: center;font-weight: 600;">设备巡检实时统计</div>
+        <!-- <table class="table table-bordered  table-striped" border="1" cellspacing="0" cellpadding="0" style="width: 100%;" >
+                           <caption class="table-caption" style="text-align: left;font-weight:600;"><div class="cxgs" style="float:left;">公司：</div><div class='cxqj' style="float:right;">查询时间：</div></caption>
+                            <tbody class="deviceplantime_title">
+                                <tr >                                  
+                                    <th>员工姓名</th>
+                                    <th>部门</th>
+                                    <th>巡检周期</th>
+                                    <th>调压箱</th>
+                                    <th>调压柜</th>
+                                    <th>阀门</th>
+                                    <th>阀室</th>
+                                    <th>阴保站（恒电位仪）</th>                                
+                                    <th>完成比例</th>
+                                </tr>                                
+                            </tbody>
+                            <tbody class="devicetimestatistics">
+                                                            
+                            </tbody>
+                        </table> -->
+
+        <div class="table-head">
+            <table class="table table-bordered " style="border:none" border="1" cellspacing="0" cellpadding="0">
+                <!-- <caption class="table-caption" style="text-align: left;font-weight:600;">
+                    <div class="cxgs" style="float:left;">公司：</div>
+                    <div class='cxqj' style="float:right;margin-right: 40px;">查询时间：</div>
+                </caption> -->
+                <colgroup class='col_group'>
+                    <col width="80">
+                    <col width="100">
+                    <col width="100">
+                    <col width="120">
+                    <col width="120">
+                    <col width="120">
+                    <col width="120">
+                    <col width="120">
+                    <col width="100">
+
+
+                </colgroup>
+                <thead>
+                    <tr style="border:none;">
+                        <td class="cxgs" colspan="4" style="text-align: left;border:none;font-weight:bold">公司：</td>
+                        <td class='cxqj' colspan="5" style="border:none;text-align: right;font-weight:bold">查询时间：</td>
+                    </tr>
+                </thead>
+                <thead class="deviceplantime_title">
+
+                    <tr>
+                        <th>员工姓名</th>
+                        <th>部门</th>
+                        <th>巡检周期</th>
+                        <th>调压箱</th>
+                        <th>调压柜</th>
+                        <th>阀门</th>
+                        <th>阀室</th>
+                        <th>阴保站（恒电位仪）</th>
+                        <th>完成比例</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="table-body">
+
+            <table style="width: 100%;" class="table table-bordered " border="1" cellspacing="0" cellpadding="0">
+
+
+                <colgroup class='col_group'>
+                    <col width="80">
+                    <col width="100">
+                    <col width="100">
+                    <col width="120">
+                    <col width="120">
+                    <col width="120">
+                    <col width="120">
+                    <col width="120">
+                    <col width="100">
+                </colgroup>
+
+
+                <tbody class="devicetimestatistics">
+
+                </tbody>
+
+            </table>
+        </div>
+        <table>
+            <tfoot style="border:none">
+                <tr style="border:none">
+                    <td class="shenhe" colspan="4" style="border:none;font-weight:bold;text-align: right;">审核人：</td>
+                    <td class="zhibiao" colspan="2" style="border:none;font-weight:bold;text-align: right;">制表人</td>
+                    <td class="shijian" colspan="3" style="border:none;font-weight:bold;text-align: right;">制表时间：</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- <label class="shenhe" style="text-align: left;vertical-align: middle !important;margin-right: 20px;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label>
+        <label class="zhibiao" style="text-align: center;margin-right: 20px;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label>
+        <label class="shijian" style="text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label> -->
+
+
+
+        <!-- <label class="shijian" style="float: right;text-align: right;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight:600;">制表时间：</label> 
+                        <label class="zhibiao" style="float: right;text-align: center;margin-right: 20px;vertical-align: middle !important;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">制表人：</label> 
+                        <label class="shenhe" style="float: right;text-align: left;vertical-align: middle !important;margin-right: 20px;padding: 5px !important;background-color: white;min-height: 25px;word-wrap: break-word;font-weight: 600;">审核人：</label> -->
+    </div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+    function mothedexport_devicetimestatistics() {
+        exportExcel("devicetimestatistics-list", "管线巡检实时统计表", "devicetimestatisticsexportlink");
+    }
+
+</script>
+<script src="../../vendor/extentjs/exportexcel.js"></script>
+</div>

@@ -1,0 +1,17 @@
+{
+    "widgetUrl": "widgets/VehicleWarnInfoStatistics",
+    "tmplateUrl": "widgets/VehicleWarnInfoStatistics/Widget.html",
+    "styleUrl": "widgets/VehicleWarnInfoStatistics/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getVehicleList":"/Car/List",
+    "getConfigList":"/SysConfig/List",
+    "getReportCarAlarm": "/CarReport/ReportCarAlarm",
+    "alarmtypekey":"0015",
+    "pagenumber": 0,
+    "pagesize": 15,
+    "currentpage":1,
+    "rangeall":"00",
+    "maxsize":100000
+}

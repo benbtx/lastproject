@@ -1,0 +1,173 @@
+<div class="widget-equipmentledger">
+   
+        <div id="toolbar" class="btn-group btn-group-sm toolbar">
+            <div class="form-inline">
+                 <div class="form-group company_serch" style="display: none;">
+                    <label for="company">公司</label>
+                    <select class="input-sm form-control company fixwidth" ></select>                
+                </div>
+                 <div class="form-group">
+                    <label for="trouble_typeid">唯一编号</label>
+                    <input type="text" class="form-control devicesid fixwidth">
+                </div>
+                 <div class="form-group">
+                    <label for="trouble_typeid">设备编码</label>
+                    <input type="text" class="form-control devicecode fixwidth">
+                </div>  
+
+                <div class="form-group">
+                    <label for="trouble_typeid">设备类型</label>
+                    <select class="input-sm  plantype fixwidth" id="plantype"></select>
+                </div>  
+                <div class="form-group">
+                    <label for="trouble_typeid">设施状态</label>
+                    <select class="input-sm  planrun fixwidth" id="planrun"></select>
+                </div> 
+               
+                <div class="form-group">              
+                    <button type="button" class="btn btn-default btn-primary btn-search"> 
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                    </button>
+                    <button type="button" class="btn btn-default btn-export save2csv">
+                        <span class="glyphicon glyphicon-export"></span>导出                
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="halfpaneltable">
+            <table class="table table-bordered  table-striped">
+                <tbody>
+                    <tr>   
+                        <th title="唯一编号">唯一编号</th>
+                        <th title="设备编码">设备编码</th> 
+                        <th title="设备类型">设备类型</th>
+                        <th title="所在区县">所在区县</th>
+                        <th title="设施状态">设施状态</th>
+                        <th title="地址">地址</th>
+                        <th title="最近检修时间">最近检修时间</th>
+                        <th title="检修记录详情">检修记录详情</th>                        
+                    </tr>
+                </tbody>
+                <tbody class="equipmentledgerlist">
+                
+                </tbody>
+            </table> 
+        </div>
+        <div class="equipmentledger-pagecontrol">
+          <label class="pagecontrol">
+                总共-条，每页
+            </label>
+            <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="dynamic_pagesize">
+                        
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+            </select><label>条</label>
+            <div class="pull-right input-group btn-toolbar " role="toolbar">
+            
+                        <div class=" btn-group btn-group-sm">
+                                <button type="button" class="btn btn-default pre"><span class="glyphicon glyphicon-step-backward"></span></button>
+                                <button type="button" class="btn btn-primary disabled content">第-页共-页</button>
+                                <button type="button" class="btn btn-default next">	<span class="glyphicon glyphicon-step-forward"></span></button>
+                        </div>
+                        <div class="input-group input-group-sm go">
+                            <input type="number" min=1 value=1 class="form-control currpage">
+                            <span class="input-group-btn "> <button class="btn btn-default pageturning" type="button">跳转</button>
+                        </span>
+                        </div>
+            </div>
+        </div>
+   
+    $$
+     <div class="widget-devicerepair-list">
+        
+        <div id="toolbar" class="btn-group btn-group-sm toolbar">
+            <form class="form-inline">
+               
+
+                 <button type="button" class="btn btn-default btn-return ">
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                        返回
+                </button>
+            </form>
+        </div>
+        <div class="halfpaneltable">
+            <table class="table table-bordered  table-striped">
+                <tbody>
+                    <tr>
+                   
+                        <th title="巡检人">巡检人</th>
+                        <th title="回报时间">回报时间</th>                        
+                        <th title="设备捡漏">设备捡漏</th>
+                        <th title="运行压力">运行压力</th>
+                        <th title="关闭压力">关闭压力</th>
+                        <th title="切断压力">切断压力</th>
+                        <th title="开关灵活度">开关灵活度</th>
+                        <th title="备注">备注</th>
+                        <th title="照片">照片</th>
+                        
+                    </tr>
+                </tbody>
+                <tbody class="adddevicerepair">                
+                </tbody>
+            </table>
+        </div>
+          
+    $$    
+    <div class="widget-hiddendangersearch-pictureshow">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators hiddendanger_photo_tit">
+                <% photoData.forEach(function(value,i) { %>
+                        <% if (i==0) { %>
+                            <li data-target="#myCarousel" data-slide-to="0" class="active">
+
+                        <% } else { %>
+                            <li data-target="#myCarousel" data-slide-to="<%= i %>"></li>
+                        <% } %>
+                    
+                <% }); %>
+            </ol>   
+
+
+       
+            <div class="carousel-inner  hiddendanger_photo_con">
+                 <% photoData.forEach(function(value,i) { %>
+                        <% if (i==0) { %>
+                            <div class="item active">
+                                <img src="<%= value.src %>" alt="First slide">
+                                <div class="carousel-caption"><%= value.alt %></div>
+                            </div>
+                         <% } else { %>
+                            <div class="item">
+                                <img src="<%= value.src %>" alt="<%= value %> slide">
+                                <div class="carousel-caption"><%= value.alt %></div>
+                            </div>
+                        <% } %>
+                 <% }); %>
+            </div>
+
+
+        
+            <a class="carousel-control left" href="#myCarousel" 
+            data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" 
+            data-slide="next">&rsaquo;</a>
+        </div> 
+     
+    </div>
+    $$
+    <div class="equipmentInfo-template" style="font-size: 14px;">
+        <p><span>设备编码：${code}</span></p>
+        <p><span>设备类型：${subtype}</span></P>
+        <p><span>所在区县：${district}</span></p>
+        <p><span>设施状态：${status}</span></p>
+        <p><span>设备地址：${addr}</span></p>
+    </div>
+    $$
+    <div class="widget-hiddendangersearch-pictureshow">     
+        <ul class="piclist">
+        </ul>
+    </div>
+    $$
+    </div>

@@ -1,0 +1,58 @@
+    .widget-XJFestivalManager {
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        div.tool {
+            height: 35px;
+            #toolbar {
+                padding-left: 5px;
+            }
+        }
+        #maincontent {
+            input[type="checkbox"] {
+                cursor: pointer;
+            }
+            table {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                tr {
+                    cursor: pointer;
+                }
+            }
+        }
+        .XJFestivalManager-tool {
+            margin: 4px;
+            .btn_search {
+                &:hover {
+                    cursor: pointer
+                }
+            }
+            .toolbar {
+                // margin-top: 6px;
+                margin-bottom: 9px; // margin-left: 6px;
+            }
+        }
+    }
+
+    #XJFestivalManager-add_1,
+    #XJFestivalManager-modify_2 {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #eeeeee;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: lighter;
+        label {
+            text-align: right;
+        }
+        textarea {
+            height: 115px;
+        }
+    }
+
+    .calendar-context-menu {
+        z-index: 10;
+        .submenu {
+            width: 80px;
+        }
+    }

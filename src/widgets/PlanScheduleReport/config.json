@@ -1,0 +1,14 @@
+{
+    "widgetUrl": "widgets/PlanScheduleReport",
+    "tmplateUrl": "widgets/PlanScheduleReport/Widget.html",
+    "styleUrl": "widgets/PlanScheduleReport/css/style.scss",
+    "mapDiv": "myMap",
+    "getCompanyList":"/Device/Get_Company_List",
+    "getGroupList": "/groups/list",
+    "getUserList": "/user/list",
+    "getPlanSchedule": "/Plan/Plan_Schedule",
+    "pagenumber": 1,
+    "pagesize": 13,
+    "rangeall":"00",
+    "maxsize":100000
+}

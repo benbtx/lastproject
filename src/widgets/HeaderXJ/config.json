@@ -1,0 +1,11 @@
+{
+   "homeDomID":"divHome",
+   "defaultTemplateData":{
+       "appname":"重庆燃气巡检系统",
+       "username":"未知用户",
+       "departname":"",
+       "photo":"",
+       "phone":"",
+       "email":""
+   }
+}
