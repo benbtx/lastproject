@@ -14,7 +14,7 @@ var AppX = {
             "styles": [],
             "customStyles": []
         },
-        "title": "重庆燃气巡检系统",
+        "title": "系统",
         "subtitle": "A configurable web application",
         "version": "1.0.2",//主版本号.分子版本号.小版本号.日期版本号_阶段标识
         "debug": false,//标记当前程序状态，当时bug版本时从本地加载配置
